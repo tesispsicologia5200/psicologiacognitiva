@@ -12,6 +12,8 @@ public class UsuarioActivity extends ActionBarActivity {
 
     String[] Estrato={"1","2","3","4","5","6"};
     Spinner psEstrato;
+    String[] Curso={"3","4","5","6","7","8","9","10","11","Ninguno"};
+    Spinner spCurso;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,11 +21,18 @@ public class UsuarioActivity extends ActionBarActivity {
         setContentView(R.layout.index);
         psEstrato= (Spinner)findViewById(R.id.sp_Estrato);
         cargaEstrato();
+        spCurso= (Spinner)findViewById(R.id.sp_curso);
+        cargaCurso();
     }
 
     public void cargaEstrato(){
         ArrayAdapter<String> adaptador = new ArrayAdapter<String>(this,android.R.layout.simple_spinner_item,Estrato);
         psEstrato.setAdapter(adaptador);
+    }
+
+    public void cargaCurso(){
+        ArrayAdapter<String> adaptador = new ArrayAdapter<String>(this,android.R.layout.simple_spinner_item,Curso);
+        spCurso.setAdapter(adaptador);
     }
 
     @Override
