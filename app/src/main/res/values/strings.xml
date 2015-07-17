@@ -13,6 +13,7 @@
     <string name="lb_curso">Curso: </string>
     <string name="lb_lateralidad">Lateralidad: </string>
     <string name="lb_tipoaplicacion">Tipo de Aplicacion: </string>
+    <string name="lb_Genero">Genero: </string>
     <string name="btn_siguiente">Siguiente</string>
     <string name="masculino">Masculino</string>
     <string name="femenino">Femenino</string>
