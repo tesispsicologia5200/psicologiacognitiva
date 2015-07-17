@@ -9,7 +9,7 @@ import android.database.sqlite.SQLiteOpenHelper;
  */
 public class UsuariosSqlHelper extends SQLiteOpenHelper {
 
-    String tabla="CREATE TABLE Usuarios(Id INTEGER PRYMARY KEY AUTOINCREMENT,Nombres TEXT,Apellidos TEXT,Identificacion TEXT,Edad TEXT,Fecha_nac TEXT,Estrato TEXT,Curso TEXT,Aditamento TEXT," +
+    String tabla="CREATE TABLE Usuarios(Id INTEGER PRYMARY KEY AUTOINCREMENT,Nombres TEXT,Apellidos TEXT,Identificacion TEXT,Edad TEXT,Genero TEXT,Fecha_nac TEXT,Estrato TEXT,Curso TEXT,Aditamento TEXT," +
             "Lateralidad TEXT,Memoria TEXT,Atencion TEXT,Auditivos TEXT,Lenguaje TEXT)";
 
     public UsuariosSqlHelper(Context context, String name, SQLiteDatabase.CursorFactory factory, int version) {
