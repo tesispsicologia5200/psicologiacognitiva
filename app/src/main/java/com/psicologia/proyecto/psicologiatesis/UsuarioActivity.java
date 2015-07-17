@@ -4,14 +4,26 @@ import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.ArrayAdapter;
+import android.widget.Spinner;
 
 
 public class UsuarioActivity extends ActionBarActivity {
+
+    String[] Estrato={"1","2","3","4","5","6"};
+    Spinner psEstrato;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.index);
+        psEstrato= (Spinner)findViewById(R.id.sp_Estrato);
+        cargaEstrato();
+    }
+
+    public void cargaEstrato(){
+        ArrayAdapter<String> adaptador = new ArrayAdapter<String>(this,android.R.layout.simple_spinner_item,Estrato);
+        psEstrato.setAdapter(adaptador);
     }
 
     @Override
