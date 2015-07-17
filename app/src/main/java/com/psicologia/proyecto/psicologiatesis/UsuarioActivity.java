@@ -83,14 +83,16 @@ public class UsuarioActivity extends ActionBarActivity {
     public void siguienteOnClick(View v){
         EditText nombres = (EditText) findViewById(R.id.txt_nombres);
         EditText apellidos = (EditText) findViewById(R.id.txt_apellidos);
-        EditText fechaNac = (EditText) findViewById(R.id.);
-        EditText curso = (EditText) findViewById(R.id.txt_curso);
-        EditText lateralidad = (EditText) findViewById(R.id.txt_lateralidad);
-        EditText genero = (EditText) findViewById(R.id.txt_genero);
-        EditText ciudad = (EditText) findViewById(R.id.txt_ciudad);
-        EditText sensorial = (EditText) findViewById(R.id.ch_visual);
-        EditText sensorial2 = (EditText) findViewById(R.id.ch_auditivo);
-        EditText aditamento = (EditText) findViewById(R.id.ch_aditamento);
+        EditText fechaNac = (EditText) findViewById(R.id.txt_FechaNac);
+        EditText curso = (EditText) findViewById(R.id.sp_curso);
+        EditText lateralidad = (EditText) findViewById(R.id.sp_Lateralidad);
+        EditText genero = (EditText) findViewById(R.id.);
+        EditText estrato = (EditText) findViewById(R.id.sp_Estrato);
+        EditText aditamento = (EditText) findViewById(R.id.sp_Aditamientos);
+        EditText memoria = (EditText) findViewById(R.id.chb_Memoria);
+        EditText atencion = (EditText) findViewById(R.id.chb_Atencion);
+        EditText auditivos = (EditText) findViewById(R.id.chb_Auditivo);
+        EditText lenguaje = (EditText) findViewById(R.id.chb_Lenguage);
     }
 
     @Override
