@@ -20,6 +20,8 @@ public class UsuarioActivity extends ActionBarActivity {
     Spinner spAditamientos;
     String[] Lateralidad={"Diestro","Zurdo","Indefinido"};
     Spinner spLateralidad;
+    String[] Edad={"5","6","7","8","9","10","11","12","13","14","15","16"};
+    Spinner spEdad;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,11 +37,18 @@ public class UsuarioActivity extends ActionBarActivity {
         cargaAditamientos();
         spLateralidad= (Spinner)findViewById(R.id.sp_Lateralidad);
         cargaLateralidad();
+        spEdad= (Spinner)findViewById(R.id.sp_Edad);
+        cargaEdad();
     }
 
     public void cargaLateralidad(){
         ArrayAdapter<String> adaptador = new ArrayAdapter<String>(this,android.R.layout.simple_spinner_item,Lateralidad);
         spLateralidad.setAdapter(adaptador);
+    }
+
+    public void cargaEdad(){
+        ArrayAdapter<String> adaptador = new ArrayAdapter<String>(this,android.R.layout.simple_spinner_item,Edad);
+        spEdad.setAdapter(adaptador);
     }
 
     public void cargaEstrato(){
