@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Psicologia</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="lb_nombre">Nombres: </string>
+    <string name="lb_apellidos">Apellidos: </string>
+    <string name="lb_fechanacimiento">Fecha de Nacimiento: </string>
+    <string name="lb_edad">Edad: </string>
+    <string name="lb_aditamientosterapeuticos">Aditamientos Terapeuticos: </string>
+    <string name="lb_numidentificacion">N° Identificacion: </string>
+    <string name="lb_estrato">Estrato: </string>
+    <string name="lb_curso">Curso: </string>
+    <string name="lb_lateralidad">Lateralidad: </string>
+    <string name="lb_tipoaplicacion">Tipo de Aplicacion: </string>
+    <string name="btn_siguiente">Siguiente</string>
+    <string name="masculino">Masculino</string>
+    <string name="femenino">Femenino</string>
+    <string name="oculares">Oculares</string>
+    <string name="auditivos">Auditivos</string>
+    <string name="diestro">Diestro</string>
+    <string name="zurdo">Zurdo</string>
+    <string name="indefinido">Indefinido</string>
+    <string name="completa">Completa</string>
+    <string name="memoria">Memoria</string>
+    <string name="atencion">Atencion</string>
+    <string name="funcionesejecutivas">Funciones Ejecutivas</string>
+    <string name="lenguaje">Lenguaje</string>
+</resources>
