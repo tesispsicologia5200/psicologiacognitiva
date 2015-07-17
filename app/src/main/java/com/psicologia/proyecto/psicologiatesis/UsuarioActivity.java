@@ -105,7 +105,8 @@ public class UsuarioActivity extends ActionBarActivity {
                     + nombres.getText().toString() +"','"+ apellidos.getText().toString() +"','"+ identificacion.getText().toString() +"','"+ edad.getSelectedItem().toString() +"','"+ genero.getSelectedItem().toString() +"','"+fechaNac.getText().toString() +"','"
                     + estrato.getSelectedItem().toString() +"','"+ curso.getSelectedItem().toString() +"','"+ aditamento.getSelectedItem().toString() +"','"+ lateralidad.getSelectedItem().toString() +"','"+ memoria.getText().toString() +"','"+ atencion.getText().toString() +"','"
                     + auditivos.getText().toString() +"','"+ lenguaje.getText().toString() +"')";
-            Toast.makeText(this, ins, Toast.LENGTH_LONG).show();
+            db.execSQL(ins);
+            Toast.makeText(this,"usuario añadido", Toast.LENGTH_LONG).show();
         }
         catch (Exception e){
             Toast.makeText(this, "Error:" + e.getMessage(), Toast.LENGTH_LONG).show();
