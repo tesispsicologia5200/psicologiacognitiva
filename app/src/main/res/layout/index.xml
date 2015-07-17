@@ -209,17 +209,6 @@
     <Spinner
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/sp_tda"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginTop="368dp"
-        android:layout_marginLeft="745dp"
-        android:spinnerMode="dropdown" />
-
-    <Spinner
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         android:id="@+id/sp_Aditamientos"
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
@@ -249,5 +238,53 @@
         android:layout_marginTop="308dp"
         android:layout_marginLeft="60dp"
         android:spinnerMode="dropdown" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/memoria"
+        android:id="@+id/chb_Memoria"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:checked="false"
+        android:layout_marginTop="363dp"
+        android:layout_marginLeft="740dp" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/lenguaje"
+        android:id="@+id/chb_Lenguage"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:checked="false"
+        android:layout_marginTop="363dp"
+        android:layout_marginLeft="1050dp" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/auditivos"
+        android:id="@+id/chb_Auditivo"
+        android:layout_alignTop="@+id/chb_Lenguage"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:checked="false"
+        android:layout_marginTop="0dp"
+        android:layout_marginLeft="940dp" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/atencion"
+        android:id="@+id/chb_Atencion"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:checked="false"
+        android:layout_marginTop="363dp"
+        android:layout_marginLeft="840dp" />
 
 </RelativeLayout>
