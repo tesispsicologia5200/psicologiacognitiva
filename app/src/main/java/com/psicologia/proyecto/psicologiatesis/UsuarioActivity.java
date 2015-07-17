@@ -4,14 +4,16 @@ import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.ArrayAdapter;
+import android.widget.EditText;
 import android.widget.Spinner;
 
 
 public class UsuarioActivity extends ActionBarActivity {
 
     String[] Estrato={"","1","2","3","4","5","6"};
-    Spinner psEstrato;
+    Spinner spEstrato;
     String[] Curso={"","3","4","5","6","7","8","9","10","11","Ninguno"};
     Spinner spCurso;
     String[] Aditamientos={"","Oculares","Auditivos","Ninguna"};
@@ -25,7 +27,7 @@ public class UsuarioActivity extends ActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.index);
-        psEstrato= (Spinner)findViewById(R.id.sp_Estrato);
+        spEstrato= (Spinner)findViewById(R.id.sp_Estrato);
         cargaEstrato();
         spCurso= (Spinner)findViewById(R.id.sp_curso);
         cargaCurso();
@@ -49,7 +51,7 @@ public class UsuarioActivity extends ActionBarActivity {
 
     public void cargaEstrato(){
         ArrayAdapter<String> adaptador = new ArrayAdapter<String>(this,android.R.layout.simple_spinner_item,Estrato);
-        psEstrato.setAdapter(adaptador);
+        spEstrato.setAdapter(adaptador);
     }
     public void cargaAditamientos(){
         ArrayAdapter<String> adaptador = new ArrayAdapter<String>(this,android.R.layout.simple_spinner_item,Aditamientos);
@@ -67,6 +69,19 @@ public class UsuarioActivity extends ActionBarActivity {
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.menu_usuario, menu);
         return true;
+    }
+
+    public void siguienteOnClick(View v){
+        EditText nombres = (EditText) findViewById(R.id.txt_nombres);
+        EditText apellidos = (EditText) findViewById(R.id.txt_apellidos);
+        EditText fechaNac = (EditText) findViewById(R.id.);
+        EditText curso = (EditText) findViewById(R.id.txt_curso);
+        EditText lateralidad = (EditText) findViewById(R.id.txt_lateralidad);
+        EditText genero = (EditText) findViewById(R.id.txt_genero);
+        EditText ciudad = (EditText) findViewById(R.id.txt_ciudad);
+        EditText sensorial = (EditText) findViewById(R.id.ch_visual);
+        EditText sensorial2 = (EditText) findViewById(R.id.ch_auditivo);
+        EditText aditamento = (EditText) findViewById(R.id.ch_aditamento);
     }
 
     @Override
