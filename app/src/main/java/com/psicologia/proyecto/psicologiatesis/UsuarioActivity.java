@@ -10,15 +10,15 @@ import android.widget.Spinner;
 
 public class UsuarioActivity extends ActionBarActivity {
 
-    String[] Estrato={"1","2","3","4","5","6"};
+    String[] Estrato={"","1","2","3","4","5","6"};
     Spinner psEstrato;
-    String[] Curso={"3","4","5","6","7","8","9","10","11","Ninguno"};
+    String[] Curso={"","3","4","5","6","7","8","9","10","11","Ninguno"};
     Spinner spCurso;
-    String[] Aditamientos={"Oculares","Auditivos","Ninguna"};
+    String[] Aditamientos={"","Oculares","Auditivos","Ninguna"};
     Spinner spAditamientos;
-    String[] Lateralidad={"Diestro","Zurdo","Indefinido"};
+    String[] Lateralidad={"","Diestro","Zurdo","Indefinido"};
     Spinner spLateralidad;
-    String[] Edad={"5","6","7","8","9","10","11","12","13","14","15","16"};
+    String[] Edad={"","5","6","7","8","9","10","11","12","13","14","15","16"};
     Spinner spEdad;
 
     @Override
