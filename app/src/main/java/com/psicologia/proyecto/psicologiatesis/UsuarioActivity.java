@@ -16,6 +16,10 @@ public class UsuarioActivity extends ActionBarActivity {
     Spinner spCurso;
     String[] Tda={"Completa","Memoria","Atencion","Funciones Jecutivas","Lenguaje"};
     Spinner spTda;
+    String[] Aditamientos={"Oculares","Auditivos","Ninguna"};
+    Spinner spAditamientos;
+    String[] Lateralidad={"Diestro","Zurdo","Indefinido"};
+    Spinner spLateralidad;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,10 +31,23 @@ public class UsuarioActivity extends ActionBarActivity {
         cargaCurso();
         spTda= (Spinner)findViewById(R.id.sp_tda);
         cargaTda();
+        spAditamientos= (Spinner)findViewById(R.id.sp_Aditamientos);
+        cargaAditamientos();
+        spLateralidad= (Spinner)findViewById(R.id.sp_Lateralidad);
+        cargaLateralidad();
+    }
+
+    public void cargaLateralidad(){
+        ArrayAdapter<String> adaptador = new ArrayAdapter<String>(this,android.R.layout.simple_spinner_item,Lateralidad);
+        psEstrato.setAdapter(adaptador);
     }
 
     public void cargaEstrato(){
         ArrayAdapter<String> adaptador = new ArrayAdapter<String>(this,android.R.layout.simple_spinner_item,Estrato);
+        psEstrato.setAdapter(adaptador);
+    }
+    public void cargaAditamientos(){
+        ArrayAdapter<String> adaptador = new ArrayAdapter<String>(this,android.R.layout.simple_spinner_item,Aditamientos);
         psEstrato.setAdapter(adaptador);
     }
 
