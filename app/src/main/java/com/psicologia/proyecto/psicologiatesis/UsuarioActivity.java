@@ -39,7 +39,7 @@ public class UsuarioActivity extends ActionBarActivity {
 
     public void cargaLateralidad(){
         ArrayAdapter<String> adaptador = new ArrayAdapter<String>(this,android.R.layout.simple_spinner_item,Lateralidad);
-        psEstrato.setAdapter(adaptador);
+        spLateralidad.setAdapter(adaptador);
     }
 
     public void cargaEstrato(){
@@ -48,7 +48,7 @@ public class UsuarioActivity extends ActionBarActivity {
     }
     public void cargaAditamientos(){
         ArrayAdapter<String> adaptador = new ArrayAdapter<String>(this,android.R.layout.simple_spinner_item,Aditamientos);
-        psEstrato.setAdapter(adaptador);
+        spAditamientos.setAdapter(adaptador);
     }
 
     public void cargaTda(){
