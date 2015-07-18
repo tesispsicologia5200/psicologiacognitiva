@@ -20,7 +20,7 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:src="@drawable/Uvas"
-        android:layout_marginTop="0dp"
+        android:layout_marginTop="10dp"
         android:layout_marginLeft="700dp" />
 
     <ImageView
