@@ -34,6 +34,20 @@
     <string name="lb_mariposa">Mariposa</string>
     <string name="lb_pato">Pato</string>
 
+    <string name="lb_sarten">Sarten</string>
+    <string name="lb_tenedor">Tenedor</string>
+    <string name="lb_jarra">Jarra</string>
+    <string name="lb_estufa">Estufa</string>
+
+    <string name="lb_guante">Guante</string>
+    <string name="lb_zapato">Zapato</string>
+    <string name="lb_sombrero">Sombrero</string>
+    <string name="lb_pañuelo">Pañuelo</string>
+
+    <string name="lb_fresa">Fresa</string>
+    <string name="lb_piña">Piña</string>
+    <string name="lb_uvas">Uvas</string>
+    <string name="lb_banano">Banano</string>
 
 
 </resources>
