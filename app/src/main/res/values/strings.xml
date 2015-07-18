@@ -27,4 +27,13 @@
     <string name="atencion">Atencion</string>
     <string name="funcionesejecutivas">Funciones Ejecutivas</string>
     <string name="lenguaje">Lenguaje</string>
+
+
+    <string name="lb_elefante">Elefante</string>
+    <string name="lb_conejo">Conejo</string>
+    <string name="lb_mariposa">Mariposa</string>
+    <string name="lb_pato">Pato</string>
+
+
+
 </resources>
