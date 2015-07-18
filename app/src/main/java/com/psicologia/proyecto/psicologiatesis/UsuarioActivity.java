@@ -46,21 +46,19 @@ public class UsuarioActivity extends ActionBarActivity {
         cargaGenero();
     }
 
+
     public void cargaLateralidad(){
         ArrayAdapter<String> adaptador = new ArrayAdapter<String>(this,android.R.layout.simple_spinner_item,Lateralidad);
         spLateralidad.setAdapter(adaptador);
     }
-
     public void cargaGenero(){
         ArrayAdapter<String> adaptador = new ArrayAdapter<String>(this,android.R.layout.simple_spinner_item,Genero);
         spGenero.setAdapter(adaptador);
     }
-
     public void cargaEdad(){
         ArrayAdapter<String> adaptador = new ArrayAdapter<String>(this,android.R.layout.simple_spinner_item,Edad);
         spEdad.setAdapter(adaptador);
     }
-
     public void cargaEstrato(){
         ArrayAdapter<String> adaptador = new ArrayAdapter<String>(this,android.R.layout.simple_spinner_item,Estrato);
         spEstrato.setAdapter(adaptador);
@@ -69,12 +67,11 @@ public class UsuarioActivity extends ActionBarActivity {
         ArrayAdapter<String> adaptador = new ArrayAdapter<String>(this,android.R.layout.simple_spinner_item,Aditamientos);
         spAditamientos.setAdapter(adaptador);
     }
-
-
     public void cargaCurso(){
         ArrayAdapter<String> adaptador = new ArrayAdapter<String>(this,android.R.layout.simple_spinner_item,Curso);
         spCurso.setAdapter(adaptador);
     }
+
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
