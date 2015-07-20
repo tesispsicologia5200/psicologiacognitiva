@@ -49,5 +49,8 @@
     <string name="lb_uvas">Uvas</string>
     <string name="lb_banano">Banano</string>
 
+    <string name="lb_intrucion">Intrucion</string>
+    <string name="lb_persevacion">Perseveracion</string>
+
 
 </resources>
