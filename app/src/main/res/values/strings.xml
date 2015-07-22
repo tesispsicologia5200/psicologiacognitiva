@@ -52,5 +52,16 @@
     <string name="lb_intrucion">Intrucion</string>
     <string name="lb_persevacion">Perseveracion</string>
 
+    <string name="lb_explicacion">Tache todas las "A" que encuentre en las siguientes letras</string>
+    <string name="lb_ensayo">Ensayo: </string>
+
+    <string name="lb_auditiva">Escuche atentamente y presione</string>
+    <string name="lb_auditiva3">el botón en el momento</string>
+    <string name="lb_auditiva2">que se mencione la letra A </string>
+
+    <string name="lb_aciertos">Aciertos: </string>
+    <string name="lb_errores">Errores: </string>
+
+
 
 </resources>
