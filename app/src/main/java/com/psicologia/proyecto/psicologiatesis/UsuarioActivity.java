@@ -1,5 +1,6 @@
 package com.psicologia.proyecto.psicologiatesis;
 
+import android.content.ContentValues;
 import android.database.sqlite.SQLiteDatabase;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
@@ -28,6 +29,8 @@ public class UsuarioActivity extends ActionBarActivity {
     String[] Genero={"","Hombre","Mujer"};
     Spinner spGenero;
 
+    EditText txt_nombres;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -44,6 +47,7 @@ public class UsuarioActivity extends ActionBarActivity {
         cargaEdad();
         spGenero= (Spinner)findViewById(R.id.sp_Genero);
         cargaGenero();
+        txt_nombres =(EditText) findViewById(R.id.txt_nombres);
     }
 
 
@@ -72,6 +76,20 @@ public class UsuarioActivity extends ActionBarActivity {
         spCurso.setAdapter(adaptador);
     }
 
+    public void GuardarDatos(View view){
+        String nombre =txt_nombres.getText().toString();
+        UsuariosHelper usuariosHelper = new UsuariosHelper(this,"PsicologiaDB",null,1);
+        SQLiteDatabase db = usuariosHelper.getWritableDatabase();
+        if(db!=null){
+            ContentValues registroNuevos = new ContentValues();
+            registroNuevos.put("Nombre",nombre);
+            long i = db.insert("Usuarios",null,registroNuevos);
+            if(i>0){
+                Toast.makeText(this,"registro ya porfin",Toast.LENGTH_SHORT).show();
+            }
+        }
+    }
+
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -81,36 +99,7 @@ public class UsuarioActivity extends ActionBarActivity {
     }
 
     public void siguienteOnClick(View v){
-        EditText nombres = (EditText) findViewById(R.id.txt_nombres);
-        EditText apellidos = (EditText) findViewById(R.id.txt_apellidos);
-        EditText identificacion = (EditText) findViewById(R.id.txt_identificacion);
-        EditText fechaNac = (EditText) findViewById(R.id.txt_FechaNac);
-        Spinner edad = (Spinner) findViewById(R.id.sp_Edad);
-        Spinner curso = (Spinner) findViewById(R.id.sp_curso);
-        Spinner lateralidad = (Spinner) findViewById(R.id.sp_Lateralidad);
-        Spinner genero = (Spinner) findViewById(R.id.sp_Genero);
-        Spinner estrato = (Spinner) findViewById(R.id.sp_Estrato);
-        Spinner aditamento = (Spinner) findViewById(R.id.sp_Aditamientos);
-        CheckBox memoria = (CheckBox) findViewById(R.id.chb_Memoria);
-        CheckBox atencion = (CheckBox) findViewById(R.id.chb_Atencion);
-        CheckBox auditivos = (CheckBox) findViewById(R.id.chb_Auditivo);
-        CheckBox lenguaje = (CheckBox) findViewById(R.id.chb_Lenguage);
-        UsuariosSqlHelper usdb = new UsuariosSqlHelper(this,"dbpsicologia",null,1);
-        SQLiteDatabase db = usdb.getWritableDatabase();
-        try{
-            String ins ="INSERT INTO Usuarios(Nombres,Apellidos,Identificacion,Edad,Genero,Fecha_nac,Estrato,Curso,Aditamiento,Lateralidad,Memoria,Atencion,Auditivos,Lenguaje,) values ('"
-                    + nombres.getText().toString() +"','"+ apellidos.getText().toString() +"','"+ identificacion.getText().toString() +"','"+ edad.getSelectedItem().toString() +"','"+ genero.getSelectedItem().toString() +"','"+fechaNac.getText().toString() +"','"
-                    + estrato.getSelectedItem().toString() +"','"+ curso.getSelectedItem().toString() +"','"+ aditamento.getSelectedItem().toString() +"','"+ lateralidad.getSelectedItem().toString() +"','"+ memoria.getText().toString() +"','"+ atencion.getText().toString() +"','"
-                    + auditivos.getText().toString() +"','"+ lenguaje.getText().toString() +"')";
-            db.execSQL(ins);
-            Toast.makeText(this,"usuario añadido", Toast.LENGTH_LONG).show();
-        }
-        catch (Exception e){
-            Toast.makeText(this, "Error:" + e.getMessage(), Toast.LENGTH_LONG).show();
-        }
-        finally {
-            db.close();
-        }
+
     }
 
     @Override

@@ -183,7 +183,7 @@
         android:layout_alignParentStart="true"
         android:layout_marginTop="543dp"
         android:layout_marginLeft="1000dp"
-        android:onClick="siguienteOnClick" />
+        android:onClick="GuardarDatos" />
 
     <Spinner
         android:layout_width="wrap_content"

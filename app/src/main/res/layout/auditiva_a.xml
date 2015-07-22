@@ -10,7 +10,7 @@
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:src="@drawable/Boton"
+        android:src="@drawable/boton"
         android:layout_marginLeft="700dp"
         android:layout_marginTop="80dp" />
 
@@ -78,4 +78,5 @@
         android:textSize="35dp"
         android:layout_marginTop="600dp"
         android:layout_marginLeft="340dp" />
+
 </RelativeLayout>

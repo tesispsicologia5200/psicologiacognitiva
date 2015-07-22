@@ -10,7 +10,7 @@
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:src="@drawable/Conejo"
+        android:src="@drawable/conejo"
         android:layout_marginTop="20dp"
         android:layout_marginLeft="220dp" />
 
@@ -21,7 +21,7 @@
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:src="@drawable/Sarten"
+        android:src="@drawable/sarten"
         android:layout_marginTop="20dp"
         android:layout_marginLeft="420dp" />
 
@@ -32,7 +32,7 @@
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:src="@drawable/Estufa"
+        android:src="@drawable/estufa"
         android:layout_marginTop="20dp"
         android:layout_marginLeft="620dp" />
 
@@ -43,7 +43,7 @@
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:src="@drawable/Elefante"
+        android:src="@drawable/elefante"
         android:layout_marginTop="20dp"
         android:layout_marginLeft="20dp" />
 
@@ -54,7 +54,7 @@
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:src="@drawable/Guante"
+        android:src="@drawable/guante"
         android:layout_marginLeft="820dp"
         android:layout_marginTop="20dp" />
 
@@ -65,7 +65,7 @@
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:src="@drawable/Zapato"
+        android:src="@drawable/zapato"
         android:layout_marginTop="20dp"
         android:layout_marginLeft="1020dp" />
 
@@ -76,7 +76,7 @@
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:src="@drawable/Pato"
+        android:src="@drawable/pato"
         android:layout_marginTop="220dp"
         android:layout_marginLeft="20dp" />
 
@@ -87,7 +87,7 @@
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:src="@drawable/Mariposa"
+        android:src="@drawable/mariposa"
         android:layout_marginTop="220dp"
         android:layout_marginLeft="220dp" />
 
@@ -98,7 +98,7 @@
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:src="@drawable/Tenedor"
+        android:src="@drawable/tenedor"
         android:layout_marginTop="220dp"
         android:layout_marginLeft="420dp" />
 
@@ -109,7 +109,7 @@
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:src="@drawable/Jarra"
+        android:src="@drawable/jarra"
         android:layout_marginTop="220dp"
         android:layout_marginLeft="620dp" />
 
@@ -120,7 +120,7 @@
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:src="@drawable/Sombrero"
+        android:src="@drawable/sombrero"
         android:layout_marginTop="220dp"
         android:layout_marginLeft="820dp" />
 
@@ -131,7 +131,7 @@
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:src="@drawable/PanÞuelo"
+        android:src="@drawable/panuelo"
         android:layout_marginTop="220dp"
         android:layout_marginLeft="1020dp" />
 
@@ -142,7 +142,7 @@
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:src="@drawable/Banano"
+        android:src="@drawable/banano"
         android:layout_marginLeft="20dp"
         android:layout_marginTop="420dp" />
 
@@ -153,7 +153,7 @@
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:src="@drawable/Uvas"
+        android:src="@drawable/uvas"
         android:layout_marginLeft="220dp"
         android:layout_marginTop="420dp" />
 
@@ -164,7 +164,7 @@
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:src="@drawable/Fresa"
+        android:src="@drawable/fresa"
         android:layout_marginLeft="420dp"
         android:layout_marginTop="420dp" />
 
@@ -175,7 +175,7 @@
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:src="@drawable/PinŽa"
+        android:src="@drawable/pinia"
         android:layout_marginLeft="620dp"
         android:layout_marginTop="420dp" />
 
