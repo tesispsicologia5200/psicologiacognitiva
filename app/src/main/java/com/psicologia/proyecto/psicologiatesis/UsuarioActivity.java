@@ -29,6 +29,9 @@ public class UsuarioActivity extends ActionBarActivity {
     EditText txt_identificacion;
     EditText txt_fechanac;
 
+    CheckBox ch_atencion;
+    String Vatencion="";
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -49,6 +52,20 @@ public class UsuarioActivity extends ActionBarActivity {
         txt_apellidos =(EditText) findViewById(R.id.txt_apellidos);
         txt_identificacion=(EditText) findViewById(R.id.txt_identificacion);
         txt_fechanac=(EditText) findViewById(R.id.txt_fechanac);
+        ch_atencion=(CheckBox) findViewById(R.id.chb_Atencion);
+        ch_atencion.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                boolean isChecked = ((CheckBox)view).isChecked();
+
+                if (isChecked) {
+                    Vatencion="1";
+                }
+                else {
+                    Vatencion="0";
+                }
+            }
+        });
     }
 
 
@@ -77,27 +94,43 @@ public class UsuarioActivity extends ActionBarActivity {
         spCurso.setAdapter(adaptador);
     }
 
+
+
     public void GuardarDatos(View view){
         String nombre =txt_nombres.getText().toString();
         String apellidos=txt_apellidos.getText().toString();
         String identificacion=txt_identificacion.getText().toString();
         String fecha=txt_fechanac.getText().toString();
         String edad=spEdad.getSelectedItem().toString();
-        UsuariosHelper usuariosHelper = new UsuariosHelper(this,"PsicologiaDBB",null,1);
+        String estrato=spEstrato.getSelectedItem().toString();
+        String curso=spCurso.getSelectedItem().toString();
+        String genero=spGenero.getSelectedItem().toString();
+        String aditamientos=spAditamientos.getSelectedItem().toString();
+        String lateralidad=spLateralidad.getSelectedItem().toString();
+        String atencion=Vatencion;
+        UsuariosHelper usuariosHelper = new UsuariosHelper(this,"Psicologia1",null,1);
         SQLiteDatabase db = usuariosHelper.getWritableDatabase();
         if(db!=null){
             ContentValues registroNuevos = new ContentValues();
             registroNuevos.put("Nombre",nombre);
             registroNuevos.put("Apellidos",apellidos);
             registroNuevos.put("Identificacion",identificacion);
-            registroNuevos.put("Fecha",fecha);
             registroNuevos.put("Edad",edad);
+            registroNuevos.put("Fecha",fecha);
+            registroNuevos.put("Estrato",estrato);
+            registroNuevos.put("Curso",curso);
+            registroNuevos.put("Genero",genero);
+            registroNuevos.put("Aditamentos",aditamientos);
+            registroNuevos.put("Lateralidad",lateralidad);
+            registroNuevos.put("Atencion",atencion);
             long i = db.insert("Usuarios",null,registroNuevos);
             if(i>0){
                 Toast.makeText(this,"registro ya porfin",Toast.LENGTH_SHORT).show();
             }
         }
     }
+
+
 
 
     @Override
