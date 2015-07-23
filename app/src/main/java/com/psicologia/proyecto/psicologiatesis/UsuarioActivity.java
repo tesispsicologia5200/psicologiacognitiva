@@ -29,8 +29,17 @@ public class UsuarioActivity extends ActionBarActivity {
     EditText txt_identificacion;
     EditText txt_fechanac;
 
-    CheckBox ch_atencion;
-    String Vatencion="";
+    CheckBox chb_Atencion;
+    String Vatencion="0";
+
+    CheckBox chb_Memoria;
+    String Vmemoria="0";
+
+    CheckBox chb_Lenguaje;
+    String Vlenguaje="0";
+
+    CheckBox chb_Auditivo;
+    String Vauditivo="0";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -52,8 +61,8 @@ public class UsuarioActivity extends ActionBarActivity {
         txt_apellidos =(EditText) findViewById(R.id.txt_apellidos);
         txt_identificacion=(EditText) findViewById(R.id.txt_identificacion);
         txt_fechanac=(EditText) findViewById(R.id.txt_fechanac);
-        ch_atencion=(CheckBox) findViewById(R.id.chb_Atencion);
-        ch_atencion.setOnClickListener(new View.OnClickListener() {
+        chb_Atencion=(CheckBox) findViewById(R.id.chb_Atencion);
+        chb_Atencion.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 boolean isChecked = ((CheckBox)view).isChecked();
@@ -63,6 +72,48 @@ public class UsuarioActivity extends ActionBarActivity {
                 }
                 else {
                     Vatencion="0";
+                }
+            }
+        });
+        chb_Memoria=(CheckBox) findViewById(R.id.chb_Memoria);
+        chb_Memoria.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                boolean isChecked = ((CheckBox)view).isChecked();
+
+                if (isChecked) {
+                    Vmemoria="1";
+                }
+                else {
+                    Vmemoria="0";
+                }
+            }
+        });
+        chb_Auditivo=(CheckBox) findViewById(R.id.chb_Auditivo);
+        chb_Auditivo.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                boolean isChecked = ((CheckBox)view).isChecked();
+
+                if (isChecked) {
+                    Vauditivo="1";
+                }
+                else {
+                    Vauditivo="0";
+                }
+            }
+        });
+        chb_Lenguaje=(CheckBox) findViewById(R.id.chb_Lenguage);
+        chb_Lenguaje.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                boolean isChecked = ((CheckBox)view).isChecked();
+
+                if (isChecked) {
+                    Vlenguaje="1";
+                }
+                else {
+                    Vlenguaje="0";
                 }
             }
         });
@@ -108,6 +159,9 @@ public class UsuarioActivity extends ActionBarActivity {
         String aditamientos=spAditamientos.getSelectedItem().toString();
         String lateralidad=spLateralidad.getSelectedItem().toString();
         String atencion=Vatencion;
+        String memoria=Vmemoria;
+        String auditivo=Vauditivo;
+        String lenguaje=Vlenguaje;
         UsuariosHelper usuariosHelper = new UsuariosHelper(this,"Psicologia1",null,1);
         SQLiteDatabase db = usuariosHelper.getWritableDatabase();
         if(db!=null){
@@ -123,6 +177,9 @@ public class UsuarioActivity extends ActionBarActivity {
             registroNuevos.put("Aditamentos",aditamientos);
             registroNuevos.put("Lateralidad",lateralidad);
             registroNuevos.put("Atencion",atencion);
+            registroNuevos.put("Memoria",memoria);
+            registroNuevos.put("Auditivo",auditivo);
+            registroNuevos.put("Lenguaje",lenguaje);
             long i = db.insert("Usuarios",null,registroNuevos);
             if(i>0){
                 Toast.makeText(this,"registro ya porfin",Toast.LENGTH_SHORT).show();
