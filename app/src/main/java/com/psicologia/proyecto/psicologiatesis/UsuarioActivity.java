@@ -80,7 +80,7 @@ public class UsuarioActivity extends ActionBarActivity {
         String identificacion=txt_identificacion.getText().toString();
         String fecha=txt_fechanac.getText().toString();
         String edad=spEdad.getSelectedItem().toString();
-        UsuariosHelper usuariosHelper = new UsuariosHelper(this,"PsicologiaDB",null,1);
+        UsuariosHelper usuariosHelper = new UsuariosHelper(this,"PsicologiaDBB",null,1);
         SQLiteDatabase db = usuariosHelper.getWritableDatabase();
         if(db!=null){
             ContentValues registroNuevos = new ContentValues();
