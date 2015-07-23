@@ -46,6 +46,9 @@ public class UsuarioActivity extends ActionBarActivity {
         spGenero= (Spinner)findViewById(R.id.sp_Genero);
         cargaGenero();
         txt_nombres =(EditText) findViewById(R.id.txt_nombres);
+        txt_apellidos =(EditText) findViewById(R.id.txt_apellidos);
+        txt_identificacion=(EditText) findViewById(R.id.txt_identificacion);
+        txt_fechanac=(EditText) findViewById(R.id.txt_fechanac);
     }
 
 
