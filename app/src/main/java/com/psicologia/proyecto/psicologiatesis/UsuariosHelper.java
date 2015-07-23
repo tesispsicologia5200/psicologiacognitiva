@@ -9,7 +9,7 @@ import android.database.sqlite.SQLiteOpenHelper;
  */
 public class UsuariosHelper extends SQLiteOpenHelper {
 
-    String tabla="CREATE TABLE Usuarios(Nombre text)";
+    String tabla="CREATE TABLE Usuarios(Nombre text,Apellidos text,identificacion text,Edad text,Fecha text)";
 
     public UsuariosHelper(Context context, String name, SQLiteDatabase.CursorFactory factory, int version) {
         super(context, name, factory, version);

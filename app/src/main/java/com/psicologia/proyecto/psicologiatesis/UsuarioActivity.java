@@ -17,19 +17,17 @@ import android.widget.Toast;
 public class UsuarioActivity extends ActionBarActivity {
 
     String[] Estrato={"","1","2","3","4","5","6"};
-    Spinner spEstrato;
+    Spinner spEstrato,spCurso,spAditamientos,spLateralidad,spEdad,spGenero;
     String[] Curso={"","3","4","5","6","7","8","9","10","11","Ninguno"};
-    Spinner spCurso;
     String[] Aditamientos={"","Oculares","Auditivos","Ninguna"};
-    Spinner spAditamientos;
     String[] Lateralidad={"","Diestro","Zurdo","Indefinido"};
-    Spinner spLateralidad;
     String[] Edad={"","5","6","7","8","9","10","11","12","13","14","15","16"};
-    Spinner spEdad;
     String[] Genero={"","Hombre","Mujer"};
-    Spinner spGenero;
 
     EditText txt_nombres;
+    EditText txt_apellidos;
+    EditText txt_identificacion;
+    EditText txt_fechanac;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -78,11 +76,19 @@ public class UsuarioActivity extends ActionBarActivity {
 
     public void GuardarDatos(View view){
         String nombre =txt_nombres.getText().toString();
+        String apellidos=txt_apellidos.getText().toString();
+        String identificacion=txt_identificacion.getText().toString();
+        String fecha=txt_fechanac.getText().toString();
+        String edad=spEdad.getSelectedItem().toString();
         UsuariosHelper usuariosHelper = new UsuariosHelper(this,"PsicologiaDB",null,1);
         SQLiteDatabase db = usuariosHelper.getWritableDatabase();
         if(db!=null){
             ContentValues registroNuevos = new ContentValues();
             registroNuevos.put("Nombre",nombre);
+            registroNuevos.put("Apellidos",apellidos);
+            registroNuevos.put("Identificacion",identificacion);
+            registroNuevos.put("Fecha",fecha);
+            registroNuevos.put("Edad",edad);
             long i = db.insert("Usuarios",null,registroNuevos);
             if(i>0){
                 Toast.makeText(this,"registro ya porfin",Toast.LENGTH_SHORT).show();
