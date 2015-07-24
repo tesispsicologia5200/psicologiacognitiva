@@ -90,7 +90,7 @@ public class UsuarioActivity extends ActionBarActivity {
                 }
             }
         });
-        chb_Funciones=(CheckBox) findViewById(R.id.chb_Auditivo);
+        chb_Funciones=(CheckBox) findViewById(R.id.chb_Funciones);
         chb_Funciones.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
