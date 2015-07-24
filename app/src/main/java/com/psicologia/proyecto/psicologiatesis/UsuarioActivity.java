@@ -1,6 +1,7 @@
 package com.psicologia.proyecto.psicologiatesis;
 
 import android.content.ContentValues;
+import android.content.Intent;
 import android.database.sqlite.SQLiteDatabase;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
@@ -162,29 +163,46 @@ public class UsuarioActivity extends ActionBarActivity {
         String memoria=Vmemoria;
         String auditivo=Vauditivo;
         String lenguaje=Vlenguaje;
-        UsuariosHelper usuariosHelper = new UsuariosHelper(this,"Psicologia1",null,1);
-        SQLiteDatabase db = usuariosHelper.getWritableDatabase();
-        if(db!=null){
-            ContentValues registroNuevos = new ContentValues();
-            registroNuevos.put("Nombre",nombre);
-            registroNuevos.put("Apellidos",apellidos);
-            registroNuevos.put("Identificacion",identificacion);
-            registroNuevos.put("Edad",edad);
-            registroNuevos.put("Fecha",fecha);
-            registroNuevos.put("Estrato",estrato);
-            registroNuevos.put("Curso",curso);
-            registroNuevos.put("Genero",genero);
-            registroNuevos.put("Aditamentos",aditamientos);
-            registroNuevos.put("Lateralidad",lateralidad);
-            registroNuevos.put("Atencion",atencion);
-            registroNuevos.put("Memoria",memoria);
-            registroNuevos.put("Auditivo",auditivo);
-            registroNuevos.put("Lenguaje",lenguaje);
-            long i = db.insert("Usuarios",null,registroNuevos);
-            if(i>0){
-                Toast.makeText(this,"registro ya porfin",Toast.LENGTH_SHORT).show();
+
+            UsuariosHelper usuariosHelper = new UsuariosHelper(this, "Psicologia4", null, 1);
+            SQLiteDatabase db = usuariosHelper.getWritableDatabase();
+        try {
+            if (!nombre.equalsIgnoreCase("") && !apellidos.equalsIgnoreCase("") && !identificacion.equalsIgnoreCase("") && !edad.equalsIgnoreCase("") && !fecha.equalsIgnoreCase("") && !estrato.equalsIgnoreCase("") && !curso.equalsIgnoreCase("") && !genero.equalsIgnoreCase("") && !aditamientos.equalsIgnoreCase("") && !lateralidad.equalsIgnoreCase("")) {
+                if (db != null) {
+                    ContentValues registroNuevos = new ContentValues();
+                    registroNuevos.put("Nombre", nombre);
+                    registroNuevos.put("Apellidos", apellidos);
+                    registroNuevos.put("Identificacion", identificacion);
+                    registroNuevos.put("Edad", edad);
+                    registroNuevos.put("Fecha", fecha);
+                    registroNuevos.put("Estrato", estrato);
+                    registroNuevos.put("Curso", curso);
+                    registroNuevos.put("Genero", genero);
+                    registroNuevos.put("Aditamentos", aditamientos);
+                    registroNuevos.put("Lateralidad", lateralidad);
+                    registroNuevos.put("Atencion", atencion);
+                    registroNuevos.put("Memoria", memoria);
+                    registroNuevos.put("Auditivo", auditivo);
+                    registroNuevos.put("Lenguaje", lenguaje);
+                    long i = db.insert("Usuarios", null, registroNuevos);
+                    if (i > 0) {
+                        Toast.makeText(this, "usuario resgistrado", Toast.LENGTH_SHORT).show();
+                        Intent data = new Intent(this, memoriaActivity.class);
+                        data.putExtra("VMemoria",Vmemoria);
+                        data.putExtra("VAuditivo",Vauditivo);
+                        data.putExtra("VLenguaje",Vlenguaje);
+                        data.putExtra("VAtencion",Vatencion);
+                        startActivity(data);
+                    }
+                }
+            }
+            if(nombre.equalsIgnoreCase("") && apellidos.equalsIgnoreCase("") && identificacion.equalsIgnoreCase("") && edad.equalsIgnoreCase("") && fecha.equalsIgnoreCase("") && estrato.equalsIgnoreCase("") && curso.equalsIgnoreCase("") && genero.equalsIgnoreCase("") && aditamientos.equalsIgnoreCase("") && lateralidad.equalsIgnoreCase("")){
+                Toast.makeText(this,"Error: ingrese todos los datos",Toast.LENGTH_SHORT).show();
             }
         }
+        catch(Exception e){
+
+            }
     }
 
 
