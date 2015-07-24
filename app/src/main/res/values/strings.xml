@@ -15,13 +15,6 @@
     <string name="lb_tipoaplicacion">Tipo de Aplicacion: </string>
     <string name="lb_Genero">Genero: </string>
     <string name="btn_siguiente">Siguiente</string>
-    <string name="masculino">Masculino</string>
-    <string name="femenino">Femenino</string>
-    <string name="oculares">Oculares</string>
-    <string name="auditivos">Auditivos</string>
-    <string name="diestro">Diestro</string>
-    <string name="zurdo">Zurdo</string>
-    <string name="indefinido">Indefinido</string>
     <string name="completa">Completa</string>
     <string name="memoria">Memoria</string>
     <string name="atencion">Atencion</string>

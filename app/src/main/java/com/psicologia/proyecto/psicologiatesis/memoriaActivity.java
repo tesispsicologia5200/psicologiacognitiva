@@ -21,7 +21,7 @@ public class memoriaActivity extends ActionBarActivity {
         super.onCreate(savedInstanceState);
         if(b!=null){
             String Vmemoria=b.getString("VMemoria");
-            String Vauditivo=b.getString("VAuditivo");
+            String Vfunciones=b.getString("VFunciones");
             String Vlenguaje=b.getString("VLenguaje");
             String Vatencion=b.getString("VAtencion");
             if(Vmemoria.equals("1")){
@@ -30,7 +30,7 @@ public class memoriaActivity extends ActionBarActivity {
             }
             if(Vmemoria.equals("0")){
                 Intent data = new Intent(this, lenguajeActivity.class);
-                data.putExtra("VAuditivo",Vauditivo);
+                data.putExtra("VFunciones",Vfunciones);
                 data.putExtra("VLenguaje",Vlenguaje);
                 data.putExtra("VAtencion",Vatencion);
                 startActivity(data);

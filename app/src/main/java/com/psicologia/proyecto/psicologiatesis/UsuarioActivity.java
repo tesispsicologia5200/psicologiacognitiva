@@ -39,8 +39,8 @@ public class UsuarioActivity extends ActionBarActivity {
     CheckBox chb_Lenguaje;
     String Vlenguaje="0";
 
-    CheckBox chb_Auditivo;
-    String Vauditivo="0";
+    CheckBox chb_Funciones;
+    String VFunciones="0";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -90,17 +90,17 @@ public class UsuarioActivity extends ActionBarActivity {
                 }
             }
         });
-        chb_Auditivo=(CheckBox) findViewById(R.id.chb_Auditivo);
-        chb_Auditivo.setOnClickListener(new View.OnClickListener() {
+        chb_Funciones=(CheckBox) findViewById(R.id.chb_Auditivo);
+        chb_Funciones.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 boolean isChecked = ((CheckBox)view).isChecked();
 
                 if (isChecked) {
-                    Vauditivo="1";
+                    VFunciones="1";
                 }
                 else {
-                    Vauditivo="0";
+                    VFunciones="0";
                 }
             }
         });
@@ -161,7 +161,7 @@ public class UsuarioActivity extends ActionBarActivity {
         String lateralidad=spLateralidad.getSelectedItem().toString();
         String atencion=Vatencion;
         String memoria=Vmemoria;
-        String auditivo=Vauditivo;
+        String funciones=VFunciones;
         String lenguaje=Vlenguaje;
 
             UsuariosHelper usuariosHelper = new UsuariosHelper(this, "Psicologia4", null, 1);
@@ -182,14 +182,14 @@ public class UsuarioActivity extends ActionBarActivity {
                     registroNuevos.put("Lateralidad", lateralidad);
                     registroNuevos.put("Atencion", atencion);
                     registroNuevos.put("Memoria", memoria);
-                    registroNuevos.put("Auditivo", auditivo);
+                    registroNuevos.put("Auditivo", funciones);
                     registroNuevos.put("Lenguaje", lenguaje);
                     long i = db.insert("Usuarios", null, registroNuevos);
                     if (i > 0) {
                         Toast.makeText(this, "usuario resgistrado", Toast.LENGTH_SHORT).show();
                         Intent data = new Intent(this, memoriaActivity.class);
                         data.putExtra("VMemoria",Vmemoria);
-                        data.putExtra("VAuditivo",Vauditivo);
+                        data.putExtra("VFunciones",VFunciones);
                         data.putExtra("VLenguaje",Vlenguaje);
                         data.putExtra("VAtencion",Vatencion);
                         startActivity(data);
