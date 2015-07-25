@@ -215,10 +215,6 @@ public class UsuarioActivity extends ActionBarActivity {
         return true;
     }
 
-    public void siguienteOnClick(View v){
-
-    }
-
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         // Handle action bar item clicks here. The action bar will

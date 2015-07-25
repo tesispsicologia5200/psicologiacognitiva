@@ -21,6 +21,10 @@
             android:label="@string/app_name" >
         </activity>
         <activity
+            android:name=".memoria2Activity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
             android:name=".lenguajeActivity"
             android:label="@string/app_name" >
         </activity>
