@@ -24,4 +24,59 @@ public class memoriaResultadoActivity extends ActionBarActivity {
             setContentView(R.layout.memoria_resultado);
         }
     }
+
+    public void imagenElefanteOnClick(){
+
+    }
+    public void imagenConejoOnClick(){
+
+    }
+    public void imagenPatoOnClick(){
+
+    }
+    public void imagenMariposaOnClick(){
+
+    }
+    public void imagenSartenOnClick(){
+
+    }
+    public void imagenEstufaOnClick(){
+
+    }
+    public void imagenTenedorOnClick(){
+
+    }
+    public void imagenJarraOnClick(){
+
+    }
+    public void imagenGuanteOnClick(){
+
+    }
+    public void imagenZapatoOnClick(){
+
+    }
+    public void imagenSombreroOnClick(){
+
+    }
+    public void imagenPanueloOnClick(){
+
+    }
+    public void imagenBananoOnClick(){
+
+    }
+    public void imagenUvasOnClick(){
+
+    }
+    public void imagenFresaOnClick(){
+
+    }
+    public void imagenPiniaOnClick(){
+
+    }
+    public void btnIntrucionOnClick(){
+
+    }
+    public void btnPerseveracionOnClick(){
+
+    }
 }

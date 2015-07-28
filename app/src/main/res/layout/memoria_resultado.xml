@@ -13,7 +13,8 @@
         android:layout_alignParentStart="true"
         android:src="@drawable/conejo"
         android:layout_marginTop="20dp"
-        android:layout_marginLeft="220dp" />
+        android:layout_marginLeft="220dp"
+        android:onClick="imagenConejoOnClick"/>
 
     <ImageView
         android:layout_width="200dp"
@@ -24,7 +25,8 @@
         android:layout_alignParentStart="true"
         android:src="@drawable/sarten"
         android:layout_marginTop="20dp"
-        android:layout_marginLeft="420dp" />
+        android:layout_marginLeft="420dp"
+        android:onClick="imagenSartenOnClick"/>
 
     <ImageView
         android:layout_width="200dp"
@@ -35,7 +37,8 @@
         android:layout_alignParentStart="true"
         android:src="@drawable/estufa"
         android:layout_marginTop="20dp"
-        android:layout_marginLeft="620dp" />
+        android:layout_marginLeft="620dp"
+        android:onClick="imagenEstufaOnClick"/>
 
     <ImageView
         android:layout_width="200dp"
@@ -46,7 +49,8 @@
         android:layout_alignParentStart="true"
         android:src="@drawable/elefante"
         android:layout_marginTop="20dp"
-        android:layout_marginLeft="20dp" />
+        android:layout_marginLeft="20dp"
+        android:onClick="imagenElefanteOnClick"/>
 
     <ImageView
         android:layout_width="200dp"
@@ -57,7 +61,8 @@
         android:layout_alignParentStart="true"
         android:src="@drawable/guante"
         android:layout_marginLeft="820dp"
-        android:layout_marginTop="20dp" />
+        android:layout_marginTop="20dp"
+        android:onClick="imagenGuanteOnClick"/>
 
     <ImageView
         android:layout_width="200dp"
@@ -68,7 +73,8 @@
         android:layout_alignParentStart="true"
         android:src="@drawable/zapato"
         android:layout_marginTop="20dp"
-        android:layout_marginLeft="1020dp" />
+        android:layout_marginLeft="1020dp"
+        android:onClick="imagenZapatoOnClick"/>
 
     <ImageView
         android:layout_width="200dp"
@@ -79,7 +85,8 @@
         android:layout_alignParentStart="true"
         android:src="@drawable/pato"
         android:layout_marginTop="220dp"
-        android:layout_marginLeft="20dp" />
+        android:layout_marginLeft="20dp"
+        android:onClick="imagenPatoOnClick"/>
 
     <ImageView
         android:layout_width="200dp"
@@ -90,7 +97,8 @@
         android:layout_alignParentStart="true"
         android:src="@drawable/mariposa"
         android:layout_marginTop="220dp"
-        android:layout_marginLeft="220dp" />
+        android:layout_marginLeft="220dp"
+        android:onClick="imagenMariposaOnClick"/>
 
     <ImageView
         android:layout_width="200dp"
@@ -101,7 +109,8 @@
         android:layout_alignParentStart="true"
         android:src="@drawable/tenedor"
         android:layout_marginTop="220dp"
-        android:layout_marginLeft="420dp" />
+        android:layout_marginLeft="420dp"
+        android:onClick="imagenTenedorOnClick"/>
 
     <ImageView
         android:layout_width="200dp"
@@ -112,7 +121,8 @@
         android:layout_alignParentStart="true"
         android:src="@drawable/jarra"
         android:layout_marginTop="220dp"
-        android:layout_marginLeft="620dp" />
+        android:layout_marginLeft="620dp"
+        android:onClick="imagenJarraOnClick"/>
 
     <ImageView
         android:layout_width="200dp"
@@ -123,7 +133,8 @@
         android:layout_alignParentStart="true"
         android:src="@drawable/sombrero"
         android:layout_marginTop="220dp"
-        android:layout_marginLeft="820dp" />
+        android:layout_marginLeft="820dp"
+        android:onClick="imagenSombreroOnClick"/>
 
     <ImageView
         android:layout_width="200dp"
@@ -134,7 +145,8 @@
         android:layout_alignParentStart="true"
         android:src="@drawable/panuelo"
         android:layout_marginTop="220dp"
-        android:layout_marginLeft="1020dp" />
+        android:layout_marginLeft="1020dp"
+        android:onClick="imagenPanueloOnClick"/>
 
     <ImageView
         android:layout_width="200dp"
@@ -145,7 +157,8 @@
         android:layout_alignParentStart="true"
         android:src="@drawable/banano"
         android:layout_marginLeft="20dp"
-        android:layout_marginTop="420dp" />
+        android:layout_marginTop="420dp"
+        android:onClick="imagenBananoOnClick"/>
 
     <ImageView
         android:layout_width="200dp"
@@ -156,7 +169,8 @@
         android:layout_alignParentStart="true"
         android:src="@drawable/uvas"
         android:layout_marginLeft="220dp"
-        android:layout_marginTop="420dp" />
+        android:layout_marginTop="420dp"
+        android:onClick="imagenUvasOnClick"/>
 
     <ImageView
         android:layout_width="200dp"
@@ -167,7 +181,8 @@
         android:layout_alignParentStart="true"
         android:src="@drawable/fresa"
         android:layout_marginLeft="420dp"
-        android:layout_marginTop="420dp" />
+        android:layout_marginTop="420dp"
+        android:onClick="imagenFresaOnClick"/>
 
     <ImageView
         android:layout_width="200dp"
@@ -178,7 +193,8 @@
         android:layout_alignParentStart="true"
         android:src="@drawable/pinia"
         android:layout_marginLeft="620dp"
-        android:layout_marginTop="420dp" />
+        android:layout_marginTop="420dp"
+        android:onClick="imagenPiniaOnClick"/>
 
     <Button
         android:layout_width="wrap_content"
@@ -189,7 +205,8 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_marginLeft="1050dp"
-        android:layout_marginTop="510dp" />
+        android:layout_marginTop="510dp"
+        android:onClick="btnPerseveracionOnClick"/>
 
     <Button
         android:layout_width="wrap_content"
@@ -200,6 +217,7 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_marginLeft="890dp"
-        android:layout_marginTop="510dp" />
+        android:layout_marginTop="510dp"
+        android:onClick="btnIntrucionOnClick"/>
 
 </RelativeLayout>
