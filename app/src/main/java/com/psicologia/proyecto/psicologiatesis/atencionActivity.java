@@ -16,8 +16,10 @@ import android.view.View;
  */
 public class atencionActivity extends ActionBarActivity implements View.OnTouchListener {
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
         Bundle b=this.getIntent().getExtras();
         super.onCreate(savedInstanceState);
         if(b!=null){
@@ -94,5 +96,6 @@ public class atencionActivity extends ActionBarActivity implements View.OnTouchL
         return e;
     }
 }
+
 
 

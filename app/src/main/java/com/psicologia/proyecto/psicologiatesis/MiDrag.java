@@ -5,6 +5,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.LinearLayout;
 
+import static android.view.View.VISIBLE;
+
 /**
  * Created by Henry Jaramillo on 24/07/2015.
  */
@@ -25,7 +27,7 @@ final class MiDrag implements View.OnDragListener{
                 LinearLayout contenedor_nuevo2 = (LinearLayout) contenedor_nuevo;
                 contenedor_nuevo2.addView(objeto);
 
-                objeto.setVisibility(View.VISIBLE);
+                objeto.setVisibility(VISIBLE);
                 break;
             default:
                 break;
