@@ -8,6 +8,28 @@ import android.support.v7.app.ActionBarActivity;
  */
 public class memoriaResultadoActivity extends ActionBarActivity {
 
+    String id;
+    String banano="0";
+    String conejo="0";
+    String elefante="0";
+    String estufa="0";
+    String fresa="0";
+    String guante="0";
+    String jarra="0";
+    String mariposa="0";
+    String panuelo="0";
+    String pato="0";
+    String pinia="0";
+    String sarten="0";
+    String sombrero="0";
+    String tenedor="0";
+    String uvas="0";
+    String zapato="0";
+    int perseveracion=0;
+    int intrucion=0;
+    String primerarecordada="";
+    String ultimaRecordad="";
+
     String Vfunciones;
     String Vlenguaje;
     String Vatencion;
