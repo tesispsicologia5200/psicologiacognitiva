@@ -2,6 +2,9 @@ package com.psicologia.proyecto.psicologiatesis;
 
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
+import android.view.Menu;
+import android.view.MenuItem;
+import android.view.View;
 
 /**
  * Created by Henry Jaramillo on 27/07/2015.
@@ -49,59 +52,81 @@ public class memoriaResultadoActivity extends ActionBarActivity {
         }
     }
 
-    public void imagenElefanteOnClick(){
+    public void imagenElefanteOnClick(View view){
         elefante="1";
     }
-    public void imagenConejoOnClick(){
+    public void imagenConejoOnClick(View view){
         conejo="1";
     }
-    public void imagenPatoOnClick(){
+    public void imagenPatoOnClick(View view){
         pato="1";
     }
-    public void imagenMariposaOnClick(){
+    public void imagenMariposaOnClick(View view){
         mariposa="1";
     }
-    public void imagenSartenOnClick(){
+    public void imagenSartenOnClick(View view){
         sarten="1";
     }
-    public void imagenEstufaOnClick(){
+    public void imagenEstufaOnClick(View view){
         estufa="1";
     }
-    public void imagenTenedorOnClick(){
+    public void imagenTenedorOnClick(View view){
         tenedor="1";
     }
-    public void imagenJarraOnClick(){
+    public void imagenJarraOnClick(View view){
         jarra="1";
     }
-    public void imagenGuanteOnClick(){
+    public void imagenGuanteOnClick(View view){
         guante="1";
     }
-    public void imagenZapatoOnClick(){
+    public void imagenZapatoOnClick(View view){
         zapato="1";
     }
-    public void imagenSombreroOnClick(){
+    public void imagenSombreroOnClick(View view){
         sombrero="1";
     }
-    public void imagenPanueloOnClick(){
+    public void imagenPanueloOnClick(View view){
         panuelo="1";
     }
-    public void imagenBananoOnClick(){
+    public void imagenBananoOnClick(View view){
         banano="1";
     }
-    public void imagenUvasOnClick(){
+    public void imagenUvasOnClick(View view){
         uvas="1";
     }
-    public void imagenFresaOnClick(){
+    public void imagenFresaOnClick(View view){
         fresa="1";
     }
-    public void imagenPiniaOnClick(){
+    public void imagenPiniaOnClick(View view){
         pinia="1";
     }
-    public void btnIntrucionOnClick(){
+    public void btnIntrucionOnClick(View view){
         intrucion++;
     }
-    public void btnPerseveracionOnClick(){
+    public void btnPerseveracionOnClick(View view){
         perseveracion++;
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        // Inflate the menu; this adds items to the action bar if it is present.
+        getMenuInflater().inflate(R.menu.menu_usuario, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        // Handle action bar item clicks here. The action bar will
+        // automatically handle clicks on the Home/Up button, so long
+        // as you specify a parent activity in AndroidManifest.xml.
+        int id = item.getItemId();
+
+        //noinspection SimplifiableIfStatement
+        if (id == R.id.action_settings) {
+            return true;
+        }
+
+        return super.onOptionsItemSelected(item);
     }
 
 
