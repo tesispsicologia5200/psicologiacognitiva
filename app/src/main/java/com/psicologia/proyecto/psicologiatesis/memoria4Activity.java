@@ -28,7 +28,7 @@ public class memoria4Activity extends ActionBarActivity {
             Vatencion = b.getString("VAtencion");
 
             setContentView(R.layout.memoria4);
-            final CounterClass timer = new CounterClass(8000, 1000);
+            final CounterClass timer = new CounterClass(10000, 1000);
             timer.start();
         }
 
