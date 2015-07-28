@@ -34,7 +34,7 @@ public class memoria4Activity extends ActionBarActivity {
 
     }
     public void enviarDatos(){
-        Intent data = new Intent(this,memoriaResultadoActivity.class);
+        Intent data = new Intent(this,memoriaBlanco.class);
         data.putExtra("VFunciones",Vfunciones);
         data.putExtra("VLenguaje",Vlenguaje);
         data.putExtra("VAtencion",Vatencion);

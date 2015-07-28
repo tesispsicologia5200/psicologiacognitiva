@@ -10,6 +10,7 @@ import android.view.View;
  */
 public class memoriaBlanco extends ActionBarActivity {
 
+
     String Vfunciones;
     String Vlenguaje;
     String Vatencion;
