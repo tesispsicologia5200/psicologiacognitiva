@@ -10,7 +10,7 @@ import android.view.View;
  */
 public class memoriaBlanco extends ActionBarActivity {
 
-
+    String id;
     String Vfunciones;
     String Vlenguaje;
     String Vatencion;
@@ -19,6 +19,7 @@ public class memoriaBlanco extends ActionBarActivity {
         Bundle b = this.getIntent().getExtras();
         super.onCreate(savedInstanceState);
         if (b != null) {
+            id=b.getString("ID");
             Vfunciones = b.getString("VFunciones");
             Vlenguaje = b.getString("VLenguaje");
             Vatencion = b.getString("VAtencion");
@@ -29,6 +30,7 @@ public class memoriaBlanco extends ActionBarActivity {
 
     public void siguienteOnclick(View v){
         Intent data = new Intent(this,memoriaResultadoActivity.class);
+        data.putExtra("ID",id);
         data.putExtra("VFunciones",Vfunciones);
         data.putExtra("VLenguaje",Vlenguaje);
         data.putExtra("VAtencion",Vatencion);

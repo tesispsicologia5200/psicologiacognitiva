@@ -188,6 +188,7 @@ public class UsuarioActivity extends ActionBarActivity {
                     if (i > 0) {
                         Toast.makeText(this, "usuario resgistrado", Toast.LENGTH_SHORT).show();
                         Intent data = new Intent(this, memoriaActivity.class);
+                        data.putExtra("ID",identificacion);
                         data.putExtra("VMemoria",Vmemoria);
                         data.putExtra("VFunciones",VFunciones);
                         data.putExtra("VLenguaje",Vlenguaje);

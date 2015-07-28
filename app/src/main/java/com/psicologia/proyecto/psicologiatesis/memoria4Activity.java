@@ -14,6 +14,8 @@ import java.util.concurrent.TimeUnit;
  */
 
 public class memoria4Activity extends ActionBarActivity {
+
+    String id;
     String Vfunciones;
     String Vlenguaje;
     String Vatencion;
@@ -23,6 +25,7 @@ public class memoria4Activity extends ActionBarActivity {
         Bundle b = this.getIntent().getExtras();
         super.onCreate(savedInstanceState);
         if (b != null) {
+            id=b.getString("ID");
             Vfunciones = b.getString("VFunciones");
             Vlenguaje = b.getString("VLenguaje");
             Vatencion = b.getString("VAtencion");
@@ -35,6 +38,7 @@ public class memoria4Activity extends ActionBarActivity {
     }
     public void enviarDatos(){
         Intent data = new Intent(this,memoriaBlanco.class);
+        data.putExtra("ID",id);
         data.putExtra("VFunciones",Vfunciones);
         data.putExtra("VLenguaje",Vlenguaje);
         data.putExtra("VAtencion",Vatencion);
