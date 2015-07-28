@@ -10,10 +10,9 @@ import android.view.MenuItem;
 import java.util.concurrent.TimeUnit;
 
 /**
- * Created by Henry Jaramillo on 24/07/2015.
+ * Created by jairo on 27/07/2015.
  */
-public class memoria2Activity extends ActionBarActivity {
-
+public class memoria3Activity extends ActionBarActivity {
 
     String Vfunciones;
     String Vlenguaje;
@@ -21,36 +20,36 @@ public class memoria2Activity extends ActionBarActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        Bundle b=this.getIntent().getExtras();
+        Bundle b = this.getIntent().getExtras();
         super.onCreate(savedInstanceState);
-        if(b!=null){
-            Vfunciones=b.getString("VFunciones");
-            Vlenguaje=b.getString("VLenguaje");
-            Vatencion=b.getString("VAtencion");
+        if (b != null) {
+            Vfunciones = b.getString("VFunciones");
+            Vlenguaje = b.getString("VLenguaje");
+            Vatencion = b.getString("VAtencion");
 
-        setContentView(R.layout.memoria2);
+            setContentView(R.layout.memoria3);
             final CounterClass timer = new CounterClass(8000, 1000);
             timer.start();
+        }
     }
-}
 
     public void enviarDatos(){
-        Intent data = new Intent(this,memoria3Activity.class);
+        Intent data = new Intent(this,memoria4Activity.class);
         data.putExtra("VFunciones",Vfunciones);
         data.putExtra("VLenguaje",Vlenguaje);
         data.putExtra("VAtencion",Vatencion);
         startActivity(data);
     }
 
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        return super.onOptionsItemSelected(item);
-    }
+        @Override
+        public boolean onOptionsItemSelected (MenuItem item){
+            return super.onOptionsItemSelected(item);
+        }
 
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        return super.onCreateOptionsMenu(menu);
-    }
+        @Override
+        public boolean onCreateOptionsMenu (Menu menu){
+            return super.onCreateOptionsMenu(menu);
+        }
 
     public class CounterClass extends CountDownTimer {
 
@@ -81,9 +80,5 @@ public class memoria2Activity extends ActionBarActivity {
             enviarDatos();
         }
 
-
-
-    }
 }
-
-
+}

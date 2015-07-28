@@ -39,6 +39,7 @@ public class memoriaActivity extends ActionBarActivity {
                 setContentView(R.layout.memoria1);
                 final CounterClass timer = new CounterClass(8000, 1000);
                 timer.start();
+
             }
             if(Vmemoria.equals("0")){
                 Intent data = new Intent(this, lenguajeActivity.class);
@@ -48,6 +49,8 @@ public class memoriaActivity extends ActionBarActivity {
                 startActivity(data);
             }
         }
+
+
     }
 
 
@@ -99,8 +102,7 @@ public class memoriaActivity extends ActionBarActivity {
         @Override
         public void onFinish() {
             // TODO Auto-generated method stub
-            final memoriaActivity esto=new memoriaActivity();
-            esto.enviarDatos();
+            enviarDatos();
         }
 
 
