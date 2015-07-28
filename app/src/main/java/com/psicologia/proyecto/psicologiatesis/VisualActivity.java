@@ -34,6 +34,8 @@ public class VisualActivity extends ActionBarActivity {
         if(id.equalsIgnoreCase("lb_5_1")||id.equalsIgnoreCase("lb_7_2")||id.equalsIgnoreCase("lb_1_3")||id.equalsIgnoreCase("lb_8_4")||id.equalsIgnoreCase("lb_3_6")||id.equalsIgnoreCase("lb_7_8")||id.equalsIgnoreCase("lb_1_11")||id.equalsIgnoreCase("lb_3_12")||id.equalsIgnoreCase("lb_4_13")||id.equalsIgnoreCase("lb_3_15")||id.equalsIgnoreCase("lb_2_16")||id.equalsIgnoreCase("lb_7_16")||id.equalsIgnoreCase("lb_4_17")||id.equalsIgnoreCase("lb_7_19")||id.equalsIgnoreCase("lb_1_19")||id.equalsIgnoreCase("lb_5_8")){
             contadorA++;
         }
+        String idester = "R.id."+id;
+        validar =(TextView) findViewById(Integer.parseInt(idester));
         validar.setText("");
     }
 
