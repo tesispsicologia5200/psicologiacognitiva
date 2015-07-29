@@ -12,6 +12,7 @@ import android.widget.TextView;
 public class VisualActivity extends ActionBarActivity {
 
     int contadorA = 0;
+    int comision=0;
     TextView validar;
 
     @Override
@@ -30,13 +31,17 @@ public class VisualActivity extends ActionBarActivity {
         return super.onCreateOptionsMenu(menu);
     }
 
-    public void labelOnClick(String id){
-        if(id.equalsIgnoreCase("lb_5_1")||id.equalsIgnoreCase("lb_7_2")||id.equalsIgnoreCase("lb_1_3")||id.equalsIgnoreCase("lb_8_4")||id.equalsIgnoreCase("lb_3_6")||id.equalsIgnoreCase("lb_7_8")||id.equalsIgnoreCase("lb_1_11")||id.equalsIgnoreCase("lb_3_12")||id.equalsIgnoreCase("lb_4_13")||id.equalsIgnoreCase("lb_3_15")||id.equalsIgnoreCase("lb_2_16")||id.equalsIgnoreCase("lb_7_16")||id.equalsIgnoreCase("lb_4_17")||id.equalsIgnoreCase("lb_7_19")||id.equalsIgnoreCase("lb_1_19")||id.equalsIgnoreCase("lb_5_8")){
+
+
+    public void labelOnClick(TextView id){
+        System.out.println(id.getText().toString());
+        if(id.getText().toString().equalsIgnoreCase("lb_5_1")||id.getText().toString().equalsIgnoreCase("lb_7_2")||id.getText().toString().equalsIgnoreCase("lb_1_3")||id.getText().toString().equalsIgnoreCase("lb_8_4")||id.getText().toString().equalsIgnoreCase("lb_3_6")||id.getText().toString().equalsIgnoreCase("lb_7_8")||id.getText().toString().equalsIgnoreCase("lb_1_11")||id.getText().toString().equalsIgnoreCase("lb_3_12")||id.getText().toString().equalsIgnoreCase("lb_4_13")||id.getText().toString().equalsIgnoreCase("lb_3_15")||id.getText().toString().equalsIgnoreCase("lb_2_16")||id.getText().toString().equalsIgnoreCase("lb_7_16")||id.getText().toString().equalsIgnoreCase("lb_4_17")||id.getText().toString().equalsIgnoreCase("lb_7_19")||id.getText().toString().equalsIgnoreCase("lb_1_19")||id.getText().toString().equalsIgnoreCase("lb_5_8")){
             contadorA++;
         }
-        String idester = "R.id."+id;
-        validar =(TextView) findViewById(Integer.parseInt(idester));
-        validar.setText("");
+        if(id.getText().toString().equalsIgnoreCase("lb_7_4")||id.getText().toString().equalsIgnoreCase("lb_4_6")||id.getText().toString().equalsIgnoreCase("lb_5_7")||id.getText().toString().equalsIgnoreCase("lb_4_7")||id.getText().toString().equalsIgnoreCase("lb_8_9")||id.getText().toString().equalsIgnoreCase("lb_2_11")||id.getText().toString().equalsIgnoreCase("lb_5_12")||id.getText().toString().equalsIgnoreCase("lb_5_13")||id.getText().toString().equalsIgnoreCase("lb_2_15")||id.getText().toString().equalsIgnoreCase("lb_6_16")||id.getText().toString().equalsIgnoreCase("lb_7_17")||id.getText().toString().equalsIgnoreCase("lb_6_18")){
+            comision++;
+        }
+        id.setText("");
     }
 
 }

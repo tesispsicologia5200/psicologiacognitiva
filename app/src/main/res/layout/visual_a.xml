@@ -42,7 +42,8 @@
         android:layout_alignParentStart="true"
         android:textSize="12pt"
         android:layout_marginTop="243.75dp"
-        android:layout_marginLeft="50dp" />
+        android:layout_marginLeft="50dp"
+        android:onClick="labelOnClick"/>
 
     <TextView
         android:layout_width="wrap_content"
