@@ -55,6 +55,8 @@
     <string name="lb_aciertos">Aciertos: </string>
     <string name="lb_errores">Errores: </string>
 
+    <string name="lb_siguiente">Siguiente</string>
+
 
 
 </resources>

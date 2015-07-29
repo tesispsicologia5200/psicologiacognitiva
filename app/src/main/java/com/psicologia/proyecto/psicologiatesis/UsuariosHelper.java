@@ -11,6 +11,7 @@ public class UsuariosHelper extends SQLiteOpenHelper {
 
     String tabla="CREATE TABLE Usuarios(Nombre text,Apellidos text,Identificacion text,Edad text,Fecha text,Estrato text,Curso text,Genero text,Aditamentos text,Lateralidad text,Atencion text,Memoria text,Auditivo text,Lenguaje text)";
 
+
     public UsuariosHelper(Context context, String name, SQLiteDatabase.CursorFactory factory, int version) {
         super(context, name, factory, version);
     }
