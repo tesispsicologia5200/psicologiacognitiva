@@ -24,6 +24,7 @@ public class memoriaActivity extends ActionBarActivity {
     String Vfunciones;
     String Vlenguaje;
     String Vatencion;
+    String ronda;
 
 
     @Override
@@ -31,6 +32,7 @@ public class memoriaActivity extends ActionBarActivity {
         Bundle b=this.getIntent().getExtras();
         super.onCreate(savedInstanceState);
         if(b!=null){
+            ronda=b.getString("Ronda");
             id=b.getString("ID");
             Vmemoria=b.getString("VMemoria");
             Vfunciones=b.getString("VFunciones");
@@ -58,6 +60,7 @@ public class memoriaActivity extends ActionBarActivity {
 
     public void enviarDatos(){
         Intent data = new Intent(this,memoria2Activity.class);
+        data.putExtra("Ronda",ronda);
         data.putExtra("ID",id);
         data.putExtra("VFunciones",Vfunciones);
         data.putExtra("VLenguaje",Vlenguaje);

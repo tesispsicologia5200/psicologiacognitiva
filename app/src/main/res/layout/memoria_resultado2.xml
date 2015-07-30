@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent" tools:context=".memoriaResultadoActivity2" >
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:id="@+id/img_conejo"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:src="@drawable/conejo"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="220dp"
+        android:onClick="imagenConejoOnClick"/>
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:id="@+id/img_sarten"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:src="@drawable/sarten"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="420dp"
+        android:onClick="imagenSartenOnClick"/>
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:id="@+id/img_estufa"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:src="@drawable/estufa"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="620dp"
+        android:onClick="imagenEstufaOnClick"/>
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:id="@+id/img_elefante"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:src="@drawable/elefante"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:onClick="imagenElefanteOnClick"/>
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:id="@+id/img_guante"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:src="@drawable/guante"
+        android:layout_marginLeft="820dp"
+        android:layout_marginTop="20dp"
+        android:onClick="imagenGuanteOnClick"/>
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:id="@+id/img_zapato"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:src="@drawable/zapato"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="1020dp"
+        android:onClick="imagenZapatoOnClick"/>
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:id="@+id/img_pato"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:src="@drawable/pato"
+        android:layout_marginTop="220dp"
+        android:layout_marginLeft="20dp"
+        android:onClick="imagenPatoOnClick"/>
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:id="@+id/img_mariposa"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:src="@drawable/mariposa"
+        android:layout_marginTop="220dp"
+        android:layout_marginLeft="220dp"
+        android:onClick="imagenMariposaOnClick"/>
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:id="@+id/img_tenedor"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:src="@drawable/tenedor"
+        android:layout_marginTop="220dp"
+        android:layout_marginLeft="420dp"
+        android:onClick="imagenTenedorOnClick"/>
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:id="@+id/img_jarra"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:src="@drawable/jarra"
+        android:layout_marginTop="220dp"
+        android:layout_marginLeft="620dp"
+        android:onClick="imagenJarraOnClick"/>
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:id="@+id/img_sombrero"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:src="@drawable/sombrero"
+        android:layout_marginTop="220dp"
+        android:layout_marginLeft="820dp"
+        android:onClick="imagenSombreroOnClick"/>
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:id="@+id/img_pañuelo"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:src="@drawable/panuelo"
+        android:layout_marginTop="220dp"
+        android:layout_marginLeft="1020dp"
+        android:onClick="imagenPanueloOnClick"/>
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:id="@+id/img_banano"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:src="@drawable/banano"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="420dp"
+        android:onClick="imagenBananoOnClick"/>
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:id="@+id/img_uvas"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:src="@drawable/uvas"
+        android:layout_marginLeft="220dp"
+        android:layout_marginTop="420dp"
+        android:onClick="imagenUvasOnClick"/>
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:id="@+id/img_fresa"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:src="@drawable/fresa"
+        android:layout_marginLeft="420dp"
+        android:layout_marginTop="420dp"
+        android:onClick="imagenFresaOnClick"/>
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:id="@+id/img_piña"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:src="@drawable/pinia"
+        android:layout_marginLeft="620dp"
+        android:layout_marginTop="420dp"
+        android:onClick="imagenPiniaOnClick"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/lb_persevacion"
+        android:id="@+id/btn_perseveracion"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="1050dp"
+        android:layout_marginTop="510dp"
+        android:onClick="btnPerseveracionOnClick"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/lb_intrucion"
+        android:id="@+id/btn_intrucion"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="890dp"
+        android:layout_marginTop="510dp"
+        android:onClick="btnIntrucionOnClick"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/lb_siguiente"
+        android:id="@+id/btn_siguiente"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="1050dp"
+        android:layout_marginTop="580dp"
+        android:onClick="btnSiguienteOnclick"/>
+
+</RelativeLayout>

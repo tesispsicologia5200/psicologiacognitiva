@@ -11,9 +11,9 @@ import android.view.View;
 import android.widget.Toast;
 
 /**
- * Created by Henry Jaramillo on 27/07/2015.
+ * Created by jairo on 29/07/2015.
  */
-public class memoriaResultadoActivity extends ActionBarActivity {
+public class memoriaResultadoActivity2 extends ActionBarActivity {
 
     String id;
     String banano="0";
@@ -37,7 +37,6 @@ public class memoriaResultadoActivity extends ActionBarActivity {
     String primerarecordada="";
     String ultimaRecordad="";
     int bandera=0;
-    String ronda="2";
 
     String Vfunciones;
     String Vlenguaje;
@@ -53,7 +52,7 @@ public class memoriaResultadoActivity extends ActionBarActivity {
             Vlenguaje = b.getString("VLenguaje");
             Vatencion = b.getString("VAtencion");
 
-            setContentView(R.layout.memoria_resultado);
+            setContentView(R.layout.memoria_resultado2);
         }
     }
 
@@ -240,11 +239,10 @@ public class memoriaResultadoActivity extends ActionBarActivity {
             registroNuevos.put("Ultima_recordada",ultimaRecordad);
             registroNuevos.put("Intrucion",intrucion);
             registroNuevos.put("Perseveracion",perseveracion);
-            long i = db.insert("MemoriaUno", null, registroNuevos);
+            long i = db.insert("MemoriaDos", null, registroNuevos);
             if (i > 0) {
                 Toast.makeText(this, "prueba memoria resgistrada", Toast.LENGTH_SHORT).show();
-                Intent data = new Intent(this, pausaMemoria.class);
-                data.putExtra("Ronda",ronda);
+                Intent data = new Intent(this, lenguajeActivity.class);
                 data.putExtra("ID", id);
                 data.putExtra("VFunciones", Vfunciones);
                 data.putExtra("VLenguaje", Vlenguaje);

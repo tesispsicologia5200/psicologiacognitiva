@@ -14,11 +14,13 @@ public class memoriaBlanco extends ActionBarActivity {
     String Vfunciones;
     String Vlenguaje;
     String Vatencion;
+    String ronda;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         Bundle b = this.getIntent().getExtras();
         super.onCreate(savedInstanceState);
         if (b != null) {
+            ronda=b.getString("Ronda");
             id=b.getString("ID");
             Vfunciones = b.getString("VFunciones");
             Vlenguaje = b.getString("VLenguaje");
@@ -29,12 +31,22 @@ public class memoriaBlanco extends ActionBarActivity {
     }
 
     public void siguienteOnclick(View v){
-        Intent data = new Intent(this,memoriaResultadoActivity.class);
-        data.putExtra("ID",id);
-        data.putExtra("VFunciones",Vfunciones);
-        data.putExtra("VLenguaje",Vlenguaje);
-        data.putExtra("VAtencion",Vatencion);
-        startActivity(data);
+        if(ronda==null) {
+            Intent data = new Intent(this, memoriaResultadoActivity.class);
+            data.putExtra("ID", id);
+            data.putExtra("VFunciones", Vfunciones);
+            data.putExtra("VLenguaje", Vlenguaje);
+            data.putExtra("VAtencion", Vatencion);
+            startActivity(data);
+        }
+        else if(ronda.equalsIgnoreCase("2")){
+            Intent data = new Intent(this, memoriaResultadoActivity2.class);
+            data.putExtra("ID", id);
+            data.putExtra("VFunciones", Vfunciones);
+            data.putExtra("VLenguaje", Vlenguaje);
+            data.putExtra("VAtencion", Vatencion);
+            startActivity(data);
+        }
 
     }
 }
