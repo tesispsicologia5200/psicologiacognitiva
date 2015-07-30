@@ -13,7 +13,7 @@
         android:layout_alignParentStart="true"
         android:src="@drawable/boton"
         android:layout_marginLeft="700dp"
-        android:layout_marginTop="80dp" />
+        android:layout_marginTop="50dp" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -79,5 +79,27 @@
         android:textSize="35dp"
         android:layout_marginTop="600dp"
         android:layout_marginLeft="340dp" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Play"
+        android:id="@+id/btn_reproducir"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="480dp"
+        android:layout_marginLeft="600dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/lb_siguiente"
+        android:id="@+id/btn_siguiente"
+        android:layout_alignTop="@+id/textView32"
+        android:layout_alignRight="@+id/imageView"
+        android:layout_alignEnd="@+id/imageView"
+        android:onClick="siguienteOnClick" />
 
 </RelativeLayout>

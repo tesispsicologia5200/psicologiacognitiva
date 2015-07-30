@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 
 /**
  * Created by jairo on 23/07/2015.
@@ -30,6 +31,11 @@ public class lenguajeActivity extends ActionBarActivity {
                 startActivity(data);
             }
         }
+    }
+
+    public void siguienteOnClick(View view){
+        Intent data = new Intent(this, VisualActivity.class);
+        startActivity(data);
     }
 
     @Override
