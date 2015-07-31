@@ -1,6 +1,7 @@
 package com.psicologia.proyecto.psicologiatesis;
 
 import android.content.ClipData;
+import android.content.Intent;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
@@ -13,7 +14,11 @@ import android.widget.RelativeLayout;
  * Created by jairo on 23/07/2015.
  */
 public class atencionActivity extends ActionBarActivity implements View.OnTouchListener {
-
+    @Override
+    public void finish() {
+        Intent data = new Intent(this,UsuarioActivity.class);
+        startActivity(data);
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
