@@ -9,6 +9,11 @@ import android.view.View;
  * Created by Henry Jaramillo on 27/07/2015.
  */
 public class memoriaBlanco extends ActionBarActivity {
+    @Override
+    public void finish() {
+        Intent data = new Intent(this,UsuarioActivity.class);
+        startActivity(data);
+    }
 
     String id;
     String Vfunciones;

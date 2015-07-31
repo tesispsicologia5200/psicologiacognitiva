@@ -11,7 +11,11 @@ import android.view.View;
  * Created by jairo on 23/07/2015.
  */
 public class lenguajeActivity extends ActionBarActivity {
-
+    @Override
+    public void finish() {
+        Intent data = new Intent(this,UsuarioActivity.class);
+        startActivity(data);
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
