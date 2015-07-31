@@ -217,10 +217,10 @@ public class VisualActivity extends ActionBarActivity implements DialogInterface
 
     public void labelOnClick(TextView id){
 
-        if(id.getText().toString().equalsIgnoreCase("lb_5_1")||id.getText().toString().equalsIgnoreCase("lb_7_2")||id.getText().toString().equalsIgnoreCase("lb_1_3")||id.getText().toString().equalsIgnoreCase("lb_8_4")||id.getText().toString().equalsIgnoreCase("lb_3_6")||id.getText().toString().equalsIgnoreCase("lb_7_8")||id.getText().toString().equalsIgnoreCase("lb_1_11")||id.getText().toString().equalsIgnoreCase("lb_3_12")||id.getText().toString().equalsIgnoreCase("lb_4_13")||id.getText().toString().equalsIgnoreCase("lb_3_15")||id.getText().toString().equalsIgnoreCase("lb_2_16")||id.getText().toString().equalsIgnoreCase("lb_7_16")||id.getText().toString().equalsIgnoreCase("lb_4_17")||id.getText().toString().equalsIgnoreCase("lb_7_19")||id.getText().toString().equalsIgnoreCase("lb_1_19")||id.getText().toString().equalsIgnoreCase("lb_5_8")){
+        if(id.getText().toString().equalsIgnoreCase("a")) {
             contadorA++;
         }
-        else if(id.getText().toString().equalsIgnoreCase("lb_7_4")||id.getText().toString().equalsIgnoreCase("lb_4_6")||id.getText().toString().equalsIgnoreCase("lb_5_7")||id.getText().toString().equalsIgnoreCase("lb_4_7")||id.getText().toString().equalsIgnoreCase("lb_8_9")||id.getText().toString().equalsIgnoreCase("lb_2_11")||id.getText().toString().equalsIgnoreCase("lb_5_12")||id.getText().toString().equalsIgnoreCase("lb_5_13")||id.getText().toString().equalsIgnoreCase("lb_2_15")||id.getText().toString().equalsIgnoreCase("lb_6_16")||id.getText().toString().equalsIgnoreCase("lb_7_17")||id.getText().toString().equalsIgnoreCase("lb_6_18")){
+        else if(id.getText().toString().equalsIgnoreCase("r")||id.getText().toString().equalsIgnoreCase("h")){
             comision++;
         }
         else{
