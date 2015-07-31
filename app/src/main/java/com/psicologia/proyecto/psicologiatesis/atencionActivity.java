@@ -45,6 +45,26 @@ public class atencionActivity extends ActionBarActivity implements View.OnTouchL
                 findViewById(R.id.img_cuadradopequeniorojo).setOnTouchListener(new imgTouchListener());
                 findViewById(R.id.img_cuadradopequenioazul).setOnTouchListener(new imgTouchListener());
                 findViewById(R.id.img_cuadradopequenioblanco).setOnTouchListener(new imgTouchListener());
+                findViewById(R.id.img_circulogradeazul).setOnDragListener(new ContainerDragListener());
+                findViewById(R.id.img_circulogranderojo).setOnDragListener(new ContainerDragListener());
+                findViewById(R.id.img_circulograndeamarillo).setOnDragListener(new ContainerDragListener());
+                findViewById(R.id.img_circulograndeblanco).setOnDragListener(new ContainerDragListener());
+                findViewById(R.id.img_circulograndeverde).setOnDragListener(new ContainerDragListener());
+                findViewById(R.id.img_circulopequenioblanco).setOnDragListener(new ContainerDragListener());
+                findViewById(R.id.img_circulopequenioazul).setOnDragListener(new ContainerDragListener());
+                findViewById(R.id.img_circulopequenioamarillo).setOnDragListener(new ContainerDragListener());
+                findViewById(R.id.img_circulopequeniorojo).setOnDragListener(new ContainerDragListener());
+                findViewById(R.id.img_circulopequenioverde).setOnDragListener(new ContainerDragListener());
+                findViewById(R.id.img_cuadradograndeazul).setOnDragListener(new ContainerDragListener());
+                findViewById(R.id.img_cuadradogranderojo).setOnDragListener(new ContainerDragListener());
+                findViewById(R.id.img_cuadradograndeblanco).setOnDragListener(new ContainerDragListener());
+                findViewById(R.id.img_cuadradograndeverde).setOnDragListener(new ContainerDragListener());
+                findViewById(R.id.img_cuadradograndeamarillo).setOnDragListener(new ContainerDragListener());
+                findViewById(R.id.img_cuadradopequenioamarillo).setOnDragListener(new ContainerDragListener());
+                findViewById(R.id.img_cuadradopequenioverde).setOnDragListener(new ContainerDragListener());
+                findViewById(R.id.img_cuadradopequeniorojo).setOnDragListener(new ContainerDragListener());
+                findViewById(R.id.img_cuadradopequenioazul).setOnDragListener(new ContainerDragListener());
+                findViewById(R.id.img_cuadradopequenioblanco).setOnDragListener(new ContainerDragListener());
             }
         }
     }
@@ -54,7 +74,7 @@ public class atencionActivity extends ActionBarActivity implements View.OnTouchL
         return false;
     }
 
-    private class imgTouchListener implements View.OnTouchListener {
+    private final class imgTouchListener implements View.OnTouchListener {
         public boolean onTouch(View view, MotionEvent motionEvent) {
 
     	/*ACTION_DOWN -> A pressed gesture has started, the motion contains the initial position*/
