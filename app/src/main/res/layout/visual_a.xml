@@ -3,7 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:id="@+id/layoutvisual" tools:context=".VisualActivity">
+    android:id="@+id/layoutvisual" tools:context=".VisualActivity"
+    android:background="@color/abc_primary_text_disable_only_material_dark">
 
     <TextView
         android:layout_width="wrap_content"
