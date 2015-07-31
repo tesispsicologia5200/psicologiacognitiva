@@ -6,6 +6,15 @@
     android:id="@+id/layout" tools:context=".atencionActivity">
 
     <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/imagenFondo"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:src="#ffffffff" />
+
+    <ImageView
         android:layout_width="150dp"
         android:layout_height="150dp"
         android:id="@+id/img_circulograndeverde"
@@ -223,4 +232,5 @@
         android:src="@drawable/cuadrado_pequenio_amarillo"
         android:layout_marginLeft="145dp"
         android:layout_marginTop="500dp" />
+
 </RelativeLayout>
