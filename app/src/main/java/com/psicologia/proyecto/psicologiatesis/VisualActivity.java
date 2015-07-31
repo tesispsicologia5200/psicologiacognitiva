@@ -1,6 +1,9 @@
 package com.psicologia.proyecto.psicologiatesis;
 
+import android.content.ContentValues;
 import android.content.DialogInterface;
+import android.content.Intent;
+import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.os.CountDownTimer;
 import android.support.v7.app.ActionBarActivity;
@@ -8,6 +11,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.concurrent.TimeUnit;
 
@@ -17,6 +21,9 @@ import java.util.concurrent.TimeUnit;
 public class VisualActivity extends ActionBarActivity implements DialogInterface.OnClickListener {
 
 
+    String id;
+    String Vfunciones;
+    String Vatencion;
     int contadorA = 0;
     int comision=0;
     int error=0;
@@ -25,8 +32,14 @@ public class VisualActivity extends ActionBarActivity implements DialogInterface
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        Bundle b=this.getIntent().getExtras();
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.visual_a);
+        if(b!=null) {
+            id = b.getString("ID");
+            Vfunciones = b.getString("VFunciones");
+            Vatencion = b.getString("VAtencion");
+            setContentView(R.layout.visual_a);
+        }
 
 
         final CounterClass timer = new CounterClass(180000, 1000);
@@ -1226,13 +1239,34 @@ public class VisualActivity extends ActionBarActivity implements DialogInterface
 
 
 
+
         @Override
         public void onFinish() {
             // TODO Auto-generated method stub
-
+            enviarPruebaA();
         }
 
 
 
+    }
+    public void enviarPruebaA(){
+        UsuariosHelper memoria1Helper= new UsuariosHelper(this,"Psicologia13",null,1);
+        SQLiteDatabase db = memoria1Helper.getWritableDatabase();
+        if (db != null) {
+            ContentValues registroNuevos = new ContentValues();
+            registroNuevos.put("Id",id);
+            registroNuevos.put("Contadora",contadorA);
+            registroNuevos.put("Omision",comision);
+            registroNuevos.put("Error",error);
+            long i = db.insert("VisualPruebaA", null, registroNuevos);
+            if (i > 0) {
+                Toast.makeText(this, "prueba visal A resgistrada", Toast.LENGTH_SHORT).show();
+                Intent data = new Intent(this, atencionActivity.class);
+                data.putExtra("ID", id);
+                data.putExtra("VFunciones", Vfunciones);
+                data.putExtra("VAtencion", Vatencion);
+                startActivity(data);
+            }
+        }
     }
 }

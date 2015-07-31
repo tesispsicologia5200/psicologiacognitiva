@@ -13,14 +13,20 @@ import android.view.View;
 public class lenguajeActivity extends ActionBarActivity {
 
 
+    String id;
+    String Vfunciones;
+    String Vlenguaje;
+    String Vatencion;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         Bundle b=this.getIntent().getExtras();
         super.onCreate(savedInstanceState);
         if(b!=null){
-            String Vfunciones=b.getString("VFunciones");
-            String Vlenguaje=b.getString("VLenguaje");
-            String Vatencion=b.getString("VAtencion");
+            id=b.getString("ID");
+            Vfunciones=b.getString("VFunciones");
+            Vlenguaje=b.getString("VLenguaje");
+            Vatencion=b.getString("VAtencion");
             if(Vlenguaje.equals("1")){
                 setContentView(R.layout.auditiva_a);
             }
@@ -35,6 +41,9 @@ public class lenguajeActivity extends ActionBarActivity {
 
     public void siguienteOnClick(View view){
         Intent data = new Intent(this, VisualActivity.class);
+        data.putExtra("ID", id);
+        data.putExtra("VFunciones", Vfunciones);
+        data.putExtra("VAtencion", Vatencion);
         startActivity(data);
     }
 

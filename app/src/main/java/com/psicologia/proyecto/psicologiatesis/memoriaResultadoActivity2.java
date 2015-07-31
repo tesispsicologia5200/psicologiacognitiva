@@ -214,7 +214,7 @@ public class memoriaResultadoActivity2 extends ActionBarActivity {
     }
 
     public void btnSiguienteOnclick(View view){
-        UsuariosHelper memoria1Helper= new UsuariosHelper(this,"Psicologia12",null,1);
+        UsuariosHelper memoria1Helper= new UsuariosHelper(this,"Psicologia13",null,1);
         SQLiteDatabase db = memoria1Helper.getWritableDatabase();
         if (db != null) {
             ContentValues registroNuevos = new ContentValues();
