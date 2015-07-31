@@ -15,12 +15,6 @@ import android.widget.Toast;
  */
 public class memoriaResultadoActivity extends ActionBarActivity {
 
-    @Override
-    public void finish() {
-        Intent data = new Intent(this,UsuarioActivity.class);
-        startActivity(data);
-    }
-
     String id;
     String banano="0";
     String conejo="0";

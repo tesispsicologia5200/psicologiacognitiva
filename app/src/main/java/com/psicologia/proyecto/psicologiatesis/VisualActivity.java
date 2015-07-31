@@ -1,7 +1,6 @@
 package com.psicologia.proyecto.psicologiatesis;
 
 import android.content.DialogInterface;
-import android.content.Intent;
 import android.os.Bundle;
 import android.os.CountDownTimer;
 import android.support.v7.app.ActionBarActivity;
@@ -17,11 +16,6 @@ import java.util.concurrent.TimeUnit;
  */
 public class VisualActivity extends ActionBarActivity implements DialogInterface.OnClickListener {
 
-    @Override
-    public void finish() {
-        Intent data = new Intent(this,UsuarioActivity.class);
-        startActivity(data);
-    }
 
     int contadorA = 0;
     int comision=0;

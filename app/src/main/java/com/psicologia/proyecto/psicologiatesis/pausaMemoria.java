@@ -10,12 +10,6 @@ import android.view.View;
  */
 public class pausaMemoria extends ActionBarActivity {
 
-    @Override
-    public void finish() {
-        Intent data = new Intent(this,UsuarioActivity.class);
-        startActivity(data);
-    }
-
     String id;
     String Vfunciones;
     String Vlenguaje;
