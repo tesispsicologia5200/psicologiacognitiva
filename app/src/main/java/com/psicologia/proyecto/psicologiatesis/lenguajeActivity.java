@@ -1,6 +1,7 @@
 package com.psicologia.proyecto.psicologiatesis;
 
 import android.content.Intent;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
@@ -40,6 +41,11 @@ public class lenguajeActivity extends ActionBarActivity {
     public void siguienteOnClick(View view){
         Intent data = new Intent(this, VisualActivity.class);
         startActivity(data);
+    }
+
+    public void playOnClick(View v){
+        MediaPlayer mp = MediaPlayer.create(this, R.raw.prueba);
+        mp.start();
     }
 
     @Override
