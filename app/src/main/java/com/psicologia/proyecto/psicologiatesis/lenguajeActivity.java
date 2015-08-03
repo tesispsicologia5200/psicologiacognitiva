@@ -8,6 +8,7 @@ import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.TextView;
 
 import java.util.concurrent.TimeUnit;
 
@@ -16,6 +17,8 @@ import java.util.concurrent.TimeUnit;
  */
 public class lenguajeActivity extends ActionBarActivity {
 
+    int aciertos=0;
+    int errores=0;
     String tiempo;
 
     @Override
@@ -26,6 +29,8 @@ public class lenguajeActivity extends ActionBarActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        TextView aciertos=(TextView)findViewById(R.id.lb_aciertos);
+        TextView errores=(TextView)findViewById(R.id.lb_errores);
         Bundle b=this.getIntent().getExtras();
         super.onCreate(savedInstanceState);
         if(b!=null){
@@ -34,6 +39,8 @@ public class lenguajeActivity extends ActionBarActivity {
             String Vatencion=b.getString("VAtencion");
             if(Vlenguaje.equals("1")){
                 setContentView(R.layout.auditiva_a);
+                aciertos.setText(String.valueOf(aciertos));
+                errores.setText(String.valueOf(errores));
             }
             if(Vlenguaje.equals("0")){
                 Intent data = new Intent(this, atencionActivity.class);
@@ -57,6 +64,12 @@ public class lenguajeActivity extends ActionBarActivity {
     }
 
     public void botonOnClick(View v){
+        if(tiempo.equalsIgnoreCase("00:02:38")||tiempo.equalsIgnoreCase("00:02:30")||tiempo.equalsIgnoreCase("00:02:22")||tiempo.equalsIgnoreCase("00:02:05")||tiempo.equalsIgnoreCase("00:01:55")||tiempo.equalsIgnoreCase("00:01:49")||tiempo.equalsIgnoreCase("00:01:46")||tiempo.equalsIgnoreCase("00:01:18")||tiempo.equalsIgnoreCase("00:01:14")||tiempo.equalsIgnoreCase("00:01:10")||tiempo.equalsIgnoreCase("00:01:03")||tiempo.equalsIgnoreCase("00:00:29")||tiempo.equalsIgnoreCase("00:00:23")||tiempo.equalsIgnoreCase("00:00:15")||tiempo.equalsIgnoreCase("00:00:12")||tiempo.equalsIgnoreCase("00:00:07")){
+            aciertos++;
+        }
+        else{
+            errores++;
+        }
 
     }
 
