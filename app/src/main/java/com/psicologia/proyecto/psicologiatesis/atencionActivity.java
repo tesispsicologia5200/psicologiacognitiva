@@ -14,9 +14,27 @@ import android.widget.RelativeLayout;
  * Created by jairo on 23/07/2015.
  */
 public class atencionActivity extends ActionBarActivity implements View.OnTouchListener {
+
     @Override
     public void finish() {
         Intent data = new Intent(this,UsuarioActivity.class);
+        startActivity(data);
+    }
+
+    String id;
+    String Vfunciones;
+    String Vlenguaje;
+    String Vatencion;
+    String Vmemoria;
+
+
+    public void btnSiguienteOnclickF(View v) {
+        Intent data = new Intent(this,memoriaResultadoActivity3.class);
+        data.putExtra("Id", id);
+        data.putExtra("VMemoria",Vmemoria);
+        data.putExtra("VFunciones", Vfunciones);
+        data.putExtra("VLenguaje", Vlenguaje);
+        data.putExtra("VAtencion", Vatencion);
         startActivity(data);
     }
 
@@ -26,8 +44,11 @@ public class atencionActivity extends ActionBarActivity implements View.OnTouchL
         Bundle b=this.getIntent().getExtras();
         super.onCreate(savedInstanceState);
         if(b!=null){
-            String Vfunciones=b.getString("VFunciones");
-            String Vatencion=b.getString("VAtencion");
+            id=b.getString("Id");
+            Vmemoria=b.getString("VMemoria");
+            Vfunciones = b.getString("VFunciones");
+            Vlenguaje = b.getString("VLenguaje");
+            Vatencion = b.getString("VAtencion");
             if(Vatencion.equals("1")){
                 setContentView(R.layout.token_test);
                 findViewById(R.id.img_circulogradeazul).setOnTouchListener(new imgTouchListener());
@@ -130,6 +151,8 @@ public class atencionActivity extends ActionBarActivity implements View.OnTouchL
             return true;
         }
     }
+
+
 }
 
 

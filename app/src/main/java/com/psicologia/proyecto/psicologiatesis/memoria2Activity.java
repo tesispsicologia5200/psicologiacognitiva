@@ -14,11 +14,17 @@ import java.util.concurrent.TimeUnit;
  */
 public class memoria2Activity extends ActionBarActivity {
 
+    @Override
+    public void finish() {
+        Intent data = new Intent(this,UsuarioActivity.class);
+        startActivity(data);
+    }
 
     String id;
     String Vfunciones;
     String Vlenguaje;
     String Vatencion;
+    String Vmemoria;
     String ronda;
 
     @Override
@@ -27,7 +33,8 @@ public class memoria2Activity extends ActionBarActivity {
         super.onCreate(savedInstanceState);
         if(b!=null){
             ronda=b.getString("Ronda");
-            id=b.getString("ID");
+            id=b.getString("Id");
+            Vmemoria=b.getString("VMemoria");
             Vfunciones=b.getString("VFunciones");
             Vlenguaje=b.getString("VLenguaje");
             Vatencion=b.getString("VAtencion");
@@ -41,7 +48,8 @@ public class memoria2Activity extends ActionBarActivity {
     public void enviarDatos(){
         Intent data = new Intent(this,memoria3Activity.class);
         data.putExtra("Ronda",ronda);
-        data.putExtra("ID",id);
+        data.putExtra("Id",id);
+        data.putExtra("VMemoria",Vmemoria);
         data.putExtra("VFunciones",Vfunciones);
         data.putExtra("VLenguaje",Vlenguaje);
         data.putExtra("VAtencion",Vatencion);

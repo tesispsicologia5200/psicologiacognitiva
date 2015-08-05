@@ -164,7 +164,7 @@ public class UsuarioActivity extends ActionBarActivity {
         String funciones=VFunciones;
         String lenguaje=Vlenguaje;
 
-            UsuariosHelper usuariosHelper = new UsuariosHelper(this, "Psicologia12", null, 1);
+            UsuariosHelper usuariosHelper = new UsuariosHelper(this, "Psicologia20", null, 1);
             SQLiteDatabase db = usuariosHelper.getWritableDatabase();
         try {
             if (!nombre.equalsIgnoreCase("") && !apellidos.equalsIgnoreCase("") && !identificacion.equalsIgnoreCase("") && !edad.equalsIgnoreCase("") && !fecha.equalsIgnoreCase("") && !estrato.equalsIgnoreCase("") && !curso.equalsIgnoreCase("") && !genero.equalsIgnoreCase("") && !aditamientos.equalsIgnoreCase("") && !lateralidad.equalsIgnoreCase("")) {
@@ -188,7 +188,7 @@ public class UsuarioActivity extends ActionBarActivity {
                     if (i > 0) {
                         Toast.makeText(this, "usuario resgistrado", Toast.LENGTH_SHORT).show();
                         Intent data = new Intent(this, memoriaActivity.class);
-                        data.putExtra("ID",identificacion);
+                        data.putExtra("Id",identificacion);
                         data.putExtra("VMemoria",Vmemoria);
                         data.putExtra("VFunciones",VFunciones);
                         data.putExtra("VLenguaje",Vlenguaje);

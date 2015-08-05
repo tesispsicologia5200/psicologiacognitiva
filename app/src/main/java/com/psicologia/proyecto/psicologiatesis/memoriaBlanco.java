@@ -20,6 +20,7 @@ public class memoriaBlanco extends ActionBarActivity {
     String Vfunciones;
     String Vlenguaje;
     String Vatencion;
+    String Vmemoria;
     String ronda;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,7 +28,8 @@ public class memoriaBlanco extends ActionBarActivity {
         super.onCreate(savedInstanceState);
         if (b != null) {
             ronda=b.getString("Ronda");
-            id=b.getString("ID");
+            id=b.getString("Id");
+            Vmemoria=b.getString("VMemoria");
             Vfunciones = b.getString("VFunciones");
             Vlenguaje = b.getString("VLenguaje");
             Vatencion = b.getString("VAtencion");
@@ -39,7 +41,8 @@ public class memoriaBlanco extends ActionBarActivity {
     public void siguienteOnclick(View v){
         if(ronda==null) {
             Intent data = new Intent(this, memoriaResultadoActivity.class);
-            data.putExtra("ID", id);
+            data.putExtra("Id", id);
+            data.putExtra("VMemoria",Vmemoria);
             data.putExtra("VFunciones", Vfunciones);
             data.putExtra("VLenguaje", Vlenguaje);
             data.putExtra("VAtencion", Vatencion);
@@ -47,12 +50,12 @@ public class memoriaBlanco extends ActionBarActivity {
         }
         else if(ronda.equalsIgnoreCase("2")){
             Intent data = new Intent(this, memoriaResultadoActivity2.class);
-            data.putExtra("ID", id);
+            data.putExtra("Id", id);
+            data.putExtra("VMemoria",Vmemoria);
             data.putExtra("VFunciones", Vfunciones);
             data.putExtra("VLenguaje", Vlenguaje);
             data.putExtra("VAtencion", Vatencion);
             startActivity(data);
         }
-
     }
 }

@@ -11,10 +11,9 @@ import android.view.View;
 import android.widget.Toast;
 
 /**
- * Created by Henry Jaramillo on 27/07/2015.
+ * Created by jairo on 04/08/2015.
  */
-public class memoriaResultadoActivity extends ActionBarActivity {
-
+public class memoriaResultadoActivity3 extends ActionBarActivity {
     @Override
     public void finish() {
         Intent data = new Intent(this,UsuarioActivity.class);
@@ -43,7 +42,6 @@ public class memoriaResultadoActivity extends ActionBarActivity {
     String primerarecordada="";
     String ultimaRecordad="";
     int bandera=0;
-    String ronda="2";
 
     String Vfunciones;
     String Vlenguaje;
@@ -60,8 +58,12 @@ public class memoriaResultadoActivity extends ActionBarActivity {
             Vfunciones = b.getString("VFunciones");
             Vlenguaje = b.getString("VLenguaje");
             Vatencion = b.getString("VAtencion");
+            if(Vmemoria.equals("1")){
+                setContentView(R.layout.memoria_resultado3);
+            }
+            else{
 
-            setContentView(R.layout.memoria_resultado);
+            }
         }
     }
 
@@ -222,7 +224,7 @@ public class memoriaResultadoActivity extends ActionBarActivity {
         return super.onOptionsItemSelected(item);
     }
 
-    public void btnSiguienteOnclick(View view){
+    public void btnSiguienteOnclick3(View view){
         UsuariosHelper memoria1Helper= new UsuariosHelper(this,"Psicologia20",null,1);
         SQLiteDatabase db = memoria1Helper.getWritableDatabase();
         if (db != null) {
@@ -248,17 +250,16 @@ public class memoriaResultadoActivity extends ActionBarActivity {
             registroNuevos.put("Ultima_recordada",ultimaRecordad);
             registroNuevos.put("Intrucion",intrucion);
             registroNuevos.put("Perseveracion",perseveracion);
-            long i = db.insert("MemoriaUno", null, registroNuevos);
+            long i = db.insert("MemoriaTres", null, registroNuevos);
             if (i > 0) {
                 Toast.makeText(this, "prueba de memoria resgistrada", Toast.LENGTH_SHORT).show();
-                Intent data = new Intent(this, pausaMemoria.class);
-                data.putExtra("Ronda",ronda);
-                data.putExtra("Id", id);
+                /*Intent data = new Intent(this,);
+                data.putExtra("ID", id);
                 data.putExtra("VMemoria",Vmemoria);
                 data.putExtra("VFunciones", Vfunciones);
                 data.putExtra("VLenguaje", Vlenguaje);
                 data.putExtra("VAtencion", Vatencion);
-                startActivity(data);
+                startActivity(data);*/
             }
         }
     }

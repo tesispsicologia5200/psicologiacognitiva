@@ -1,6 +1,8 @@
 package com.psicologia.proyecto.psicologiatesis;
 
+import android.content.ContentValues;
 import android.content.Intent;
+import android.database.sqlite.SQLiteDatabase;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.os.CountDownTimer;
@@ -9,6 +11,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.concurrent.TimeUnit;
 
@@ -20,6 +23,16 @@ public class lenguajeActivity extends ActionBarActivity {
     int aciertos=0;
     int errores=0;
     String tiempo;
+    String id;
+    String Vfunciones;
+    String Vlenguaje;
+    String Vatencion;
+    String Vmemoria;
+
+    TextView aciertoss;
+    TextView erroress;
+
+    MediaPlayer mp = MediaPlayer.create(this, R.raw.prueba_auditiva_a_mezcla);
 
     @Override
     public void finish() {
@@ -29,18 +42,20 @@ public class lenguajeActivity extends ActionBarActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        TextView aciertos=(TextView)findViewById(R.id.lb_aciertos);
-        TextView errores=(TextView)findViewById(R.id.lb_errores);
         Bundle b=this.getIntent().getExtras();
         super.onCreate(savedInstanceState);
         if(b!=null){
-            String Vfunciones=b.getString("VFunciones");
-            String Vlenguaje=b.getString("VLenguaje");
-            String Vatencion=b.getString("VAtencion");
+            id=b.getString("Id");
+            Vmemoria=b.getString("VMemoria");
+            Vfunciones = b.getString("VFunciones");
+            Vlenguaje = b.getString("VLenguaje");
+            Vatencion = b.getString("VAtencion");
             if(Vlenguaje.equals("1")){
                 setContentView(R.layout.auditiva_a);
-                aciertos.setText(String.valueOf(aciertos));
-                errores.setText(String.valueOf(errores));
+                aciertoss=(TextView)findViewById(R.id.lb_aciertos);
+                erroress=(TextView)findViewById(R.id.lb_errores);
+                aciertoss.setText("0");
+                erroress.setText("0");
             }
             if(Vlenguaje.equals("0")){
                 Intent data = new Intent(this, atencionActivity.class);
@@ -52,8 +67,27 @@ public class lenguajeActivity extends ActionBarActivity {
     }
 
     public void siguienteOnClick(View view){
-        Intent data = new Intent(this, VisualActivity.class);
-        startActivity(data);
+        mp.stop();
+        UsuariosHelper memoria1Helper= new UsuariosHelper(this,"Psicologia20",null,1);
+        SQLiteDatabase db = memoria1Helper.getWritableDatabase();
+        if (db != null) {
+            ContentValues registroNuevos = new ContentValues();
+            registroNuevos.put("Id",id);
+            registroNuevos.put("Aciertos",aciertos);
+            registroNuevos.put("Errores",errores);
+            long i = db.insert("LenguajeAuditivo", null, registroNuevos);
+            if (i > 0) {
+                Toast.makeText(this, "prueba de lenguaje auditivo resgistrada", Toast.LENGTH_SHORT).show();
+                Intent data = new Intent(this, VisualActivity.class);
+                data.putExtra("Id", id);
+                data.putExtra("VMemoria",Vmemoria);
+                data.putExtra("VFunciones", Vfunciones);
+                data.putExtra("VLenguaje", Vlenguaje);
+                data.putExtra("VAtencion", Vatencion);
+                startActivity(data);
+            }
+        }
+
     }
 
     public void playOnClick(View v){
@@ -103,6 +137,8 @@ public class lenguajeActivity extends ActionBarActivity {
                     TimeUnit.MILLISECONDS.toSeconds(millis) - TimeUnit.MINUTES.toSeconds(TimeUnit.MILLISECONDS.toMinutes(millis)));
             System.out.println(hms);
             tiempo=hms;
+            aciertoss.setText(String.valueOf(aciertos));
+            erroress.setText(String.valueOf(errores));
 
         }
 

@@ -15,6 +15,12 @@ public class UsuariosHelper extends SQLiteOpenHelper {
 
     String tabla3="CREATE TABLE MemoriaDos(Id text,Elefante text,Conejo text,Pato text,Mariposa text,Sarten text,Estufa text,Tenedor text,Jarra text,Guante text,Zapato text,Sombrero text,Panuelo text,Banano text,Uvas text,Fresa text,Pinia text,Primera_recordada text,Ultima_recordada text,Intrucion INTEGER,Perseveracion INTEGER)";
 
+    String tabla4="CREATE TABLE MemoriaTres(Id text,Elefante text,Conejo text,Pato text,Mariposa text,Sarten text,Estufa text,Tenedor text,Jarra text,Guante text,Zapato text,Sombrero text,Panuelo text,Banano text,Uvas text,Fresa text,Pinia text,Primera_recordada text,Ultima_recordada text,Intrucion INTEGER,Perseveracion INTEGER)";
+
+    String tabla5="CREATE TABLE LenguajeAuditivo(Id text,Aciertos INTEGER,Errores INTEGER)";
+
+    String tabla6="CREATE TABLE LenguajeVisual(Id text,Contador_a INTEGER,Contador_omision INTEGER,Errores INTEGER)";
+
 
     public UsuariosHelper(Context context, String name, SQLiteDatabase.CursorFactory factory, int version) {
         super(context, name, factory, version);
@@ -25,6 +31,9 @@ public class UsuariosHelper extends SQLiteOpenHelper {
         db.execSQL(tabla);
         db.execSQL(tabla2);
         db.execSQL(tabla3);
+        db.execSQL(tabla4);
+        db.execSQL(tabla5);
+        db.execSQL(tabla6);
     }
 
     @Override

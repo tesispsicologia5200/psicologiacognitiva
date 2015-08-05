@@ -47,17 +47,18 @@ public class memoriaResultadoActivity2 extends ActionBarActivity {
     String Vfunciones;
     String Vlenguaje;
     String Vatencion;
+    String Vmemoria;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         Bundle b = this.getIntent().getExtras();
         super.onCreate(savedInstanceState);
         if (b != null) {
-            id=b.getString("ID");
+            id=b.getString("Id");
+            Vmemoria=b.getString("VMemoria");
             Vfunciones = b.getString("VFunciones");
             Vlenguaje = b.getString("VLenguaje");
             Vatencion = b.getString("VAtencion");
-
             setContentView(R.layout.memoria_resultado2);
         }
     }
@@ -219,8 +220,8 @@ public class memoriaResultadoActivity2 extends ActionBarActivity {
         return super.onOptionsItemSelected(item);
     }
 
-    public void btnSiguienteOnclick(View view){
-        UsuariosHelper memoria1Helper= new UsuariosHelper(this,"Psicologia12",null,1);
+    public void btnSiguienteOnclick2(View view){
+        UsuariosHelper memoria1Helper= new UsuariosHelper(this,"Psicologia20",null,1);
         SQLiteDatabase db = memoria1Helper.getWritableDatabase();
         if (db != null) {
             ContentValues registroNuevos = new ContentValues();
@@ -247,9 +248,10 @@ public class memoriaResultadoActivity2 extends ActionBarActivity {
             registroNuevos.put("Perseveracion",perseveracion);
             long i = db.insert("MemoriaDos", null, registroNuevos);
             if (i > 0) {
-                Toast.makeText(this, "prueba memoria resgistrada", Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, "prueba de memoria resgistrada", Toast.LENGTH_SHORT).show();
                 Intent data = new Intent(this, lenguajeActivity.class);
-                data.putExtra("ID", id);
+                data.putExtra("Id", id);
+                data.putExtra("VMemoria",Vmemoria);
                 data.putExtra("VFunciones", Vfunciones);
                 data.putExtra("VLenguaje", Vlenguaje);
                 data.putExtra("VAtencion", Vatencion);
