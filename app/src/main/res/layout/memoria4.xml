@@ -5,6 +5,15 @@
     android:layout_height="match_parent" tools:context=".memoria4Activity">
 
     <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/imageView7"
+        android:layout_alignTop="@+id/img_conejo"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:src="#ffffffff" />
+
+    <ImageView
         android:layout_width="320dp"
         android:layout_height="320dp"
         android:id="@+id/img_conejo"
