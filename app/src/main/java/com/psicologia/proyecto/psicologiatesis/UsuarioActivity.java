@@ -164,7 +164,7 @@ public class UsuarioActivity extends ActionBarActivity {
         String funciones=VFunciones;
         String lenguaje=Vlenguaje;
 
-            UsuariosHelper usuariosHelper = new UsuariosHelper(this, "Psicologia20", null, 1);
+            UsuariosHelper usuariosHelper = new UsuariosHelper(this, "Psicologia21", null, 1);
             SQLiteDatabase db = usuariosHelper.getWritableDatabase();
         try {
             if (!nombre.equalsIgnoreCase("") && !apellidos.equalsIgnoreCase("") && !identificacion.equalsIgnoreCase("") && !edad.equalsIgnoreCase("") && !fecha.equalsIgnoreCase("") && !estrato.equalsIgnoreCase("") && !curso.equalsIgnoreCase("") && !genero.equalsIgnoreCase("") && !aditamientos.equalsIgnoreCase("") && !lateralidad.equalsIgnoreCase("")) {

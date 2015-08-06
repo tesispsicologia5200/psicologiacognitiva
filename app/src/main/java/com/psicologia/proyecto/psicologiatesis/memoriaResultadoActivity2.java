@@ -221,7 +221,7 @@ public class memoriaResultadoActivity2 extends ActionBarActivity {
     }
 
     public void btnSiguienteOnclick2(View view){
-        UsuariosHelper memoria1Helper= new UsuariosHelper(this,"Psicologia20",null,1);
+        UsuariosHelper memoria1Helper= new UsuariosHelper(this,"Psicologia21",null,1);
         SQLiteDatabase db = memoria1Helper.getWritableDatabase();
         if (db != null) {
             ContentValues registroNuevos = new ContentValues();
@@ -249,7 +249,7 @@ public class memoriaResultadoActivity2 extends ActionBarActivity {
             long i = db.insert("MemoriaDos", null, registroNuevos);
             if (i > 0) {
                 Toast.makeText(this, "prueba de memoria resgistrada", Toast.LENGTH_SHORT).show();
-                Intent data = new Intent(this, lenguajeActivity.class);
+                Intent data = new Intent(this, memoriaResultadoActivity2M.class);
                 data.putExtra("Id", id);
                 data.putExtra("VMemoria",Vmemoria);
                 data.putExtra("VFunciones", Vfunciones);

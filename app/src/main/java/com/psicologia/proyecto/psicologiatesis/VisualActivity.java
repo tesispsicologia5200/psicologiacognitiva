@@ -1252,7 +1252,7 @@ public class VisualActivity extends ActionBarActivity implements DialogInterface
     }
 
     public void enviarDatos(){
-        UsuariosHelper memoria1Helper= new UsuariosHelper(this,"Psicologia20",null,1);
+        UsuariosHelper memoria1Helper= new UsuariosHelper(this,"Psicologia21",null,1);
         SQLiteDatabase db = memoria1Helper.getWritableDatabase();
         if (db != null) {
             ContentValues registroNuevos = new ContentValues();

@@ -11,9 +11,10 @@ import android.view.View;
 import android.widget.Toast;
 
 /**
- * Created by jairo on 04/08/2015.
+ * Created by jairo on 05/08/2015.
  */
-public class memoriaResultadoActivity3 extends ActionBarActivity {
+public class memoriaResultadoActivity2M extends ActionBarActivity {
+
     @Override
     public void finish() {
         Intent data = new Intent(this,UsuarioActivity.class);
@@ -58,13 +59,7 @@ public class memoriaResultadoActivity3 extends ActionBarActivity {
             Vfunciones = b.getString("VFunciones");
             Vlenguaje = b.getString("VLenguaje");
             Vatencion = b.getString("VAtencion");
-            if(Vmemoria.equals("1")){
-                setContentView(R.layout.memoria_resultado3);
-            }
-            else{
-                Intent data = new Intent(this,UsuarioActivity.class);
-                startActivity(data);
-            }
+            setContentView(R.layout.memoria_resultado2m);
         }
     }
 
@@ -225,7 +220,7 @@ public class memoriaResultadoActivity3 extends ActionBarActivity {
         return super.onOptionsItemSelected(item);
     }
 
-    public void btnSiguienteOnclick3(View view){
+    public void btnSiguienteOnclickM(View view){
         UsuariosHelper memoria1Helper= new UsuariosHelper(this,"Psicologia21",null,1);
         SQLiteDatabase db = memoria1Helper.getWritableDatabase();
         if (db != null) {
@@ -251,16 +246,16 @@ public class memoriaResultadoActivity3 extends ActionBarActivity {
             registroNuevos.put("Ultima_recordada",ultimaRecordad);
             registroNuevos.put("Intrucion",intrucion);
             registroNuevos.put("Perseveracion",perseveracion);
-            long i = db.insert("MemoriaTres", null, registroNuevos);
+            long i = db.insert("MemoriaDosM", null, registroNuevos);
             if (i > 0) {
                 Toast.makeText(this, "prueba de memoria resgistrada", Toast.LENGTH_SHORT).show();
-                /*Intent data = new Intent(this,);
-                data.putExtra("ID", id);
+                Intent data = new Intent(this, lenguajeActivity.class);
+                data.putExtra("Id", id);
                 data.putExtra("VMemoria",Vmemoria);
                 data.putExtra("VFunciones", Vfunciones);
                 data.putExtra("VLenguaje", Vlenguaje);
                 data.putExtra("VAtencion", Vatencion);
-                startActivity(data);*/
+                startActivity(data);
             }
         }
     }
