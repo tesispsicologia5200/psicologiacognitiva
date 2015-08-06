@@ -59,7 +59,10 @@ public class lenguajeActivity extends ActionBarActivity {
             }
             if(Vlenguaje.equals("0")){
                 Intent data = new Intent(this, atencionActivity.class);
+                data.putExtra("Id",id);
+                data.putExtra("VMemoria",Vmemoria);
                 data.putExtra("VFunciones",Vfunciones);
+                data.putExtra("VLenguaje",Vlenguaje);
                 data.putExtra("VAtencion",Vatencion);
                 startActivity(data);
             }
@@ -104,7 +107,6 @@ public class lenguajeActivity extends ActionBarActivity {
         else{
             errores++;
         }
-
     }
 
 
@@ -139,6 +141,7 @@ public class lenguajeActivity extends ActionBarActivity {
             tiempo=hms;
             aciertoss.setText(String.valueOf(aciertos));
             erroress.setText(String.valueOf(errores));
+
 
         }
 

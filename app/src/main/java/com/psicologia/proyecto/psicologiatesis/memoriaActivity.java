@@ -53,6 +53,8 @@ public class memoriaActivity extends ActionBarActivity {
             }
             if(Vmemoria.equals("0")){
                 Intent data = new Intent(this, lenguajeActivity.class);
+                data.putExtra("Id",id);
+                data.putExtra("VMemoria",Vmemoria);
                 data.putExtra("VFunciones",Vfunciones);
                 data.putExtra("VLenguaje",Vlenguaje);
                 data.putExtra("VAtencion",Vatencion);

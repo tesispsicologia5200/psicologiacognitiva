@@ -93,6 +93,15 @@ public class atencionActivity extends ActionBarActivity implements View.OnTouchL
                 findViewById(R.id.img_cuadradopequenioblanco).setOnDragListener(new ContainerDragListener());
                 findViewById(R.id.imagenFondo).setOnDragListener(new ContainerDragListener());
             }
+            else{
+                Intent data = new Intent(this,memoriaResultadoActivity3.class);
+                data.putExtra("Id", id);
+                data.putExtra("VMemoria",Vmemoria);
+                data.putExtra("VFunciones", Vfunciones);
+                data.putExtra("VLenguaje", Vlenguaje);
+                data.putExtra("VAtencion", Vatencion);
+                startActivity(data);
+            }
         }
     }
 

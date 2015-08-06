@@ -62,7 +62,8 @@ public class memoriaResultadoActivity3 extends ActionBarActivity {
                 setContentView(R.layout.memoria_resultado3);
             }
             else{
-
+                Intent data = new Intent(this,UsuarioActivity.class);
+                startActivity(data);
             }
         }
     }
