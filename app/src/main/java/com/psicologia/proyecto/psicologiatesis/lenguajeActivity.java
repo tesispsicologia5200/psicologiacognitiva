@@ -22,6 +22,8 @@ public class lenguajeActivity extends ActionBarActivity {
 
     int aciertos=0;
     int errores=0;
+    int intrusion=0;
+    int omision=0;
     String tiempo;
     String id;
     String Vfunciones;
@@ -69,8 +71,21 @@ public class lenguajeActivity extends ActionBarActivity {
         }
     }
 
+    public void error(){
+        mp.stop();
+        Intent data = new Intent(this, lenguajeActivity.class);
+        data.putExtra("Id", id);
+        data.putExtra("VMemoria",Vmemoria);
+        data.putExtra("VFunciones", Vfunciones);
+        data.putExtra("VLenguaje", Vlenguaje);
+        data.putExtra("VAtencion", Vatencion);
+        startActivity(data);
+    }
+
     public void siguienteOnClick(View view){
         mp.stop();
+        omision=16 - aciertos;
+
         UsuariosHelper memoria1Helper= new UsuariosHelper(this,"Psicologia20",null,1);
         SQLiteDatabase db = memoria1Helper.getWritableDatabase();
         if (db != null) {
@@ -78,6 +93,8 @@ public class lenguajeActivity extends ActionBarActivity {
             registroNuevos.put("Id",id);
             registroNuevos.put("Aciertos",aciertos);
             registroNuevos.put("Errores",errores);
+            registroNuevos.put("Omisiones",omision);
+            registroNuevos.put("Intrusion",intrusion);
             long i = db.insert("LenguajeAuditivo", null, registroNuevos);
             if (i > 0) {
                 Toast.makeText(this, "prueba de lenguaje auditivo resgistrada", Toast.LENGTH_SHORT).show();
@@ -103,6 +120,9 @@ public class lenguajeActivity extends ActionBarActivity {
     public void botonOnClick(View v){
         if(tiempo.equalsIgnoreCase("00:02:38")||tiempo.equalsIgnoreCase("00:02:30")||tiempo.equalsIgnoreCase("00:02:22")||tiempo.equalsIgnoreCase("00:02:05")||tiempo.equalsIgnoreCase("00:01:55")||tiempo.equalsIgnoreCase("00:01:49")||tiempo.equalsIgnoreCase("00:01:46")||tiempo.equalsIgnoreCase("00:01:18")||tiempo.equalsIgnoreCase("00:01:14")||tiempo.equalsIgnoreCase("00:01:10")||tiempo.equalsIgnoreCase("00:01:03")||tiempo.equalsIgnoreCase("00:00:29")||tiempo.equalsIgnoreCase("00:00:23")||tiempo.equalsIgnoreCase("00:00:15")||tiempo.equalsIgnoreCase("00:00:12")||tiempo.equalsIgnoreCase("00:00:07")){
             aciertos++;
+        }
+        else if(tiempo.equalsIgnoreCase("00:02:24")||tiempo.equalsIgnoreCase("00:02:10")||tiempo.equalsIgnoreCase("00:01:48")||tiempo.equalsIgnoreCase("00:01:35")||tiempo.equalsIgnoreCase("00:01:09")||tiempo.equalsIgnoreCase("00:00:51")||tiempo.equalsIgnoreCase("00:00:45")||tiempo.equalsIgnoreCase("00:00:43")||tiempo.equalsIgnoreCase("00:00:12")||tiempo.equalsIgnoreCase("00:00:02")||tiempo.equalsIgnoreCase("00:02:00")||tiempo.equalsIgnoreCase("00:01:37")||tiempo.equalsIgnoreCase("00:01:33")||tiempo.equalsIgnoreCase("00:01:25")||tiempo.equalsIgnoreCase("00:00:48")||tiempo.equalsIgnoreCase("00:00:23")||tiempo.equalsIgnoreCase("00:00:13")){
+            intrusion++;
         }
         else{
             errores++;
@@ -141,6 +161,9 @@ public class lenguajeActivity extends ActionBarActivity {
             tiempo=hms;
             aciertoss.setText(String.valueOf(aciertos));
             erroress.setText(String.valueOf(errores));
+            if(aciertos==0&&errores==0&&intrusion==0&&hms.equalsIgnoreCase("00:02:20")){
+                error();
+            }
 
 
         }
