@@ -23,6 +23,7 @@ public class lenguajeActivity extends ActionBarActivity {
     int aciertos=0;
     int errores=0;
     int intrusion=0;
+    int omision=0;
     String tiempo;
     String id;
     String Vfunciones;
@@ -80,6 +81,8 @@ public class lenguajeActivity extends ActionBarActivity {
 
     public void siguienteOnClick(View view){
         mp.stop();
+        omision=16 - aciertos;
+
         UsuariosHelper memoria1Helper= new UsuariosHelper(this,"Psicologia20",null,1);
         SQLiteDatabase db = memoria1Helper.getWritableDatabase();
         if (db != null) {
@@ -87,6 +90,8 @@ public class lenguajeActivity extends ActionBarActivity {
             registroNuevos.put("Id",id);
             registroNuevos.put("Aciertos",aciertos);
             registroNuevos.put("Errores",errores);
+            registroNuevos.put("Omisiones",omision);
+            registroNuevos.put("Intrusion",intrusion);
             long i = db.insert("LenguajeAuditivo", null, registroNuevos);
             if (i > 0) {
                 Toast.makeText(this, "prueba de lenguaje auditivo resgistrada", Toast.LENGTH_SHORT).show();
