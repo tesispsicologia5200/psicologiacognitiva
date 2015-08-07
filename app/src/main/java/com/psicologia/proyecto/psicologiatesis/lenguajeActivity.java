@@ -34,6 +34,7 @@ public class lenguajeActivity extends ActionBarActivity {
     TextView aciertoss;
     TextView erroress;
 
+
     MediaPlayer mp = MediaPlayer.create(this, R.raw.prueba_auditiva_a_mezcla);
 
     @Override

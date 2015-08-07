@@ -209,6 +209,7 @@ public class UsuarioActivity extends ActionBarActivity {
 
     public void buscarOnClickk(View v){
         Intent data = new Intent(this, EstadisticaActivity.class);
+        startActivity(data);
     }
 
 
