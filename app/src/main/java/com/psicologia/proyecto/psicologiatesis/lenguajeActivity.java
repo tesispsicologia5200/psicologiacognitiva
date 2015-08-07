@@ -30,12 +30,9 @@ public class lenguajeActivity extends ActionBarActivity {
     String Vlenguaje;
     String Vatencion;
     String Vmemoria;
-
     TextView aciertoss;
     TextView erroress;
-
-
-    MediaPlayer mp = MediaPlayer.create(this, R.raw.prueba_auditiva_a_mezcla);
+    MediaPlayer mp ;
 
     @Override
     public void finish() {
@@ -59,6 +56,7 @@ public class lenguajeActivity extends ActionBarActivity {
                 erroress=(TextView)findViewById(R.id.lb_errores);
                 aciertoss.setText("0");
                 erroress.setText("0");
+                mp = MediaPlayer.create(this, R.raw.prueba_auditiva_a_mezcla);
             }
             if(Vlenguaje.equals("0")){
                 Intent data = new Intent(this, atencionActivity.class);

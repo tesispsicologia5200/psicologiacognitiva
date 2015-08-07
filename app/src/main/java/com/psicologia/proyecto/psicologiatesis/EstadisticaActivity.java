@@ -5,13 +5,20 @@ import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
 import android.view.View;
+import android.widget.EditText;
 
 /**
  * Created by Henry Jaramillo on 06/08/2015.
  */
 public class EstadisticaActivity extends ActionBarActivity {
 
-    String id="11";
+    EditText txt_identificacion=(EditText) findViewById(R.id.id);
+
+    Number[] serieLenguajeAuditivo;
+    Number[] serieLenguajeVisual;
+    Number[] series1Numbers;
+
+    String id=txt_identificacion.getText().toString();
     String banano;
     String conejo;
     String elefante;
@@ -79,7 +86,6 @@ public class EstadisticaActivity extends ActionBarActivity {
     String tenedor4;
     String uvas4;
     String zapato4;
-
 
 
     @Override
@@ -206,7 +212,7 @@ public class EstadisticaActivity extends ActionBarActivity {
 
             int test3=i3elefante+i3conejo+i3pato+i3mariposa+i3sarten+i3estufa+i3tenedor+i3jarra+i3guante+i3zapato+i3sombrero+i3panuelo+i3banano+i3uvas+i3fresa+i3pinia;
 
-            Cursor r = db.rawQuery("SELECT Elefante ,Conejo ,Pato ,Mariposa ,Sarten ,Estufa ,Tenedor ,Jarra ,Guante ,Zapato ,Sombrero ,Panuelo ,Banano ,Uvas ,Fresa ,Pinia FROM MemoriaTres where Id='"+id+"'",null);
+            Cursor r = db.rawQuery("SELECT Elefante ,Conejo ,Pato ,Mariposa ,Sarten ,Estufa ,Tenedor ,Jarra ,Guante ,Zapato ,Sombrero ,Panuelo ,Banano ,Uvas ,Fresa ,Pinia FROM MemoriaTres where Id='" + id + "'", null);
             if(r.moveToFirst()){
                 elefante4=c.getString(0);
                 conejo4=c.getString(1);
@@ -244,7 +250,35 @@ public class EstadisticaActivity extends ActionBarActivity {
 
             int test4=i4elefante+i4conejo+i4pato+i4mariposa+i4sarten+i4estufa+i4tenedor+i4jarra+i4guante+i4zapato+i4sombrero+i4panuelo+i4banano+i4uvas+i4fresa+i4pinia;
 
-            Number[] series1Numbers = {test1, test2, test3, test4};
+            series1Numbers = new Number[]{test1, test2, test3, test4};
+
+            int aciertos=0;
+            int errores=0;
+            int omisiones=0;
+            int intrusiones=0;
+
+            Cursor t=db.rawQuery("SELECT Aciertos ,Errores ,Omisiones ,Intrusion FROM LenguajeAuditivo WHERE Id='"+id+"'",null);
+            if(t.moveToFirst()){
+                aciertos=t.getInt(1);
+                errores=t.getInt(2);
+                omisiones=t.getInt(3);
+                intrusiones=t.getInt(4);
+            }
+            serieLenguajeAuditivo= new Number[]{aciertos, errores, omisiones, intrusiones};
+
+            int contador=0;
+            int omision=0;
+            int erroresvisual=0;
+
+            Cursor p=db.rawQuery("SELECT Contador_a ,Contador_omision ,Errores  FROM LenguajeVisual WHERE Id='"+id+"'",null);
+            if(t.moveToFirst()){
+                contador=p.getInt(1);
+                omision=p.getInt(2);
+                erroresvisual=t.getInt(3);
+            }
+            serieLenguajeVisual= new Number[]{contador, omision, erroresvisual};
         }
     }
+
+
 }
