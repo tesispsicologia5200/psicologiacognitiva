@@ -66,6 +66,10 @@
             android:name=".VisualActivity"
             android:label="@string/app_name" >
         </activity>
+        <activity
+            android:name=".EstadisticaActivity"
+            android:label="@string/app_name" >
+        </activity>
     </application>
 
 </manifest>
