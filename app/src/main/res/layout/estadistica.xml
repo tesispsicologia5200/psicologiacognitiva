@@ -9,7 +9,8 @@
         android:layout_height="wrap_content"
         android:text="New Button"
         android:id="@+id/buscar"
-        android:layout_gravity="center_horizontal" />
+        android:layout_gravity="center_horizontal"
+        android:onClick="buscarOnClickk"/>
 
     <EditText
         android:layout_width="match_parent"
