@@ -10,11 +10,24 @@ import android.widget.TextView;
  * Created by Henry Jaramillo on 05/08/2015.
  */
 public class ExplicacionVisualActivity extends ActionBarActivity {
+
+    String id;
+    String Vfunciones;
+    String Vlenguaje;
+    String Vatencion;
+    String Vmemoria;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-
+        Bundle b=this.getIntent().getExtras();
+        id=b.getString("Id");
+        Vmemoria=b.getString("VMemoria");
+        Vfunciones = b.getString("VFunciones");
+        Vlenguaje = b.getString("VLenguaje");
+        Vatencion = b.getString("VAtencion");
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.explicacion_visual);
 
 
         final TextView lb1 = (TextView) findViewById(R.id.lba);
@@ -131,6 +144,16 @@ public class ExplicacionVisualActivity extends ActionBarActivity {
 
     }
 
+
+    public void btnSiguienteOnclickE(View v){
+        Intent data = new Intent(this, VisualActivity.class);
+        data.putExtra("Id", id);
+        data.putExtra("VMemoria",Vmemoria);
+        data.putExtra("VFunciones", Vfunciones);
+        data.putExtra("VLenguaje", Vlenguaje);
+        data.putExtra("VAtencion", Vatencion);
+        startActivity(data);
+    }
 
     public void labelOnClick(TextView id){
         id.setText("");
