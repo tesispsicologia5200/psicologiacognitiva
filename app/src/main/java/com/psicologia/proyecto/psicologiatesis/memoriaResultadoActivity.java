@@ -2,6 +2,7 @@ package com.psicologia.proyecto.psicologiatesis;
 
 import android.content.ContentValues;
 import android.content.Intent;
+import android.content.pm.ActivityInfo;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
@@ -54,6 +55,7 @@ public class memoriaResultadoActivity extends ActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
         Bundle b = this.getIntent().getExtras();
         super.onCreate(savedInstanceState);
+
         if (b != null) {
             id=b.getString("Id");
             Vmemoria=b.getString("VMemoria");

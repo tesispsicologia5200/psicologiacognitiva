@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:id="@+id/layout" tools:context=".atencionActivity">
+    android:id="@+id/layout" tools:context=".atencionGrandeActivity">
 
     <ImageView
         android:layout_width="fill_parent"
@@ -69,61 +69,6 @@
         android:layout_marginLeft="120dp" />
 
     <ImageView
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:id="@+id/img_circulopequenioblanco"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:src="@drawable/circulo_pequenio_blanco"
-        android:layout_marginTop="200dp"
-        android:layout_marginLeft="145dp" />
-
-    <ImageView
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:id="@+id/img_circulopequenioazul"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:src="@drawable/circulo_pequenio_azul"
-        android:layout_marginTop="200dp"
-        android:layout_marginLeft="365dp" />
-
-    <ImageView
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:id="@+id/img_circulopequenioverde"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:src="@drawable/circulo_pequenio_verde"
-        android:layout_marginTop="200dp"
-        android:layout_marginLeft="1025dp" />
-
-    <ImageView
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:id="@+id/img_circulopequeniorojo"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:src="@drawable/circulo_pequenio_rojo"
-        android:layout_marginTop="200dp"
-        android:layout_marginLeft="805dp" />
-
-    <ImageView
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:id="@+id/img_circulopequenioamarillo"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:src="@drawable/circulo_pequenio_amarillo"
-        android:layout_marginTop="200dp"
-        android:layout_marginLeft="585dp" />
-
-    <ImageView
         android:layout_width="150dp"
         android:layout_height="150dp"
         android:id="@+id/img_cuadradograndeamarillo"
@@ -178,61 +123,6 @@
         android:layout_marginLeft="120dp"
         android:layout_marginTop="320dp" />
 
-    <ImageView
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:id="@+id/img_cuadradopequenioblanco"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:src="@drawable/cuadrado_pequenio_blanco"
-        android:layout_marginTop="500dp"
-        android:layout_marginLeft="1025dp" />
-
-    <ImageView
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:id="@+id/img_cuadradopequenioazul"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:src="@drawable/cuadrado_pequenio_azul"
-        android:layout_marginTop="500dp"
-        android:layout_marginLeft="805dp" />
-
-    <ImageView
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:id="@+id/img_cuadradopequeniorojo"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:src="@drawable/cuadrado_pequenio_rojo"
-        android:layout_marginTop="500dp"
-        android:layout_marginLeft="585dp" />
-
-    <ImageView
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:id="@+id/img_cuadradopequenioverde"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:src="@drawable/cuadrado_pequenio_verde"
-        android:layout_marginTop="500dp"
-        android:layout_marginLeft="365dp" />
-
-    <ImageView
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:id="@+id/img_cuadradopequenioamarillo"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:src="@drawable/cuadrado_pequenio_amarillo"
-        android:layout_marginLeft="145dp"
-        android:layout_marginTop="500dp" />
-
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -243,7 +133,7 @@
         android:layout_alignParentStart="true"
         android:layout_marginLeft="1150dp"
         android:layout_marginTop="610dp"
-        android:onClick="btnSiguienteOnclickF"
+        android:onClick="btnSiguienteOnclickFG"
         android:visibility="invisible" />
 
     <Button
@@ -257,6 +147,6 @@
         android:layout_marginTop="600dp"
         android:layout_marginLeft="40dp"
         android:visibility="invisible"
-        android:onClick="btnCambiarBotoness"/>
+        android:onClick="btnCambiarBotones"/>
 
 </RelativeLayout>

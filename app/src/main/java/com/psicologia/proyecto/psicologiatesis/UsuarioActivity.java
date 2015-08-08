@@ -2,6 +2,7 @@ package com.psicologia.proyecto.psicologiatesis;
 
 import android.content.ContentValues;
 import android.content.Intent;
+import android.content.pm.ActivityInfo;
 import android.database.sqlite.SQLiteDatabase;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
@@ -45,6 +46,7 @@ public class UsuarioActivity extends ActionBarActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
         setContentView(R.layout.index);
         spEstrato= (Spinner)findViewById(R.id.sp_Estrato);
         cargaEstrato();

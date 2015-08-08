@@ -1,6 +1,7 @@
 package com.psicologia.proyecto.psicologiatesis;
 
 import android.content.Intent;
+import android.content.pm.ActivityInfo;
 import android.os.Bundle;
 import android.os.CountDownTimer;
 import android.support.v7.app.ActionBarActivity;
@@ -32,6 +33,7 @@ public class memoria4Activity extends ActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
         Bundle b = this.getIntent().getExtras();
         super.onCreate(savedInstanceState);
+
         if (b != null) {
             ronda=b.getString("Ronda");
             id=b.getString("Id");

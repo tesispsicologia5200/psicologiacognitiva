@@ -12,7 +12,7 @@ import android.widget.RelativeLayout;
 /**
  * Created by jairo on 23/07/2015.
  */
-public class atencionActivity extends ActionBarActivity implements View.OnTouchListener {
+public class atencionGrandeActivity extends ActionBarActivity implements View.OnTouchListener {
 
     @Override
     public void finish() {
@@ -27,7 +27,7 @@ public class atencionActivity extends ActionBarActivity implements View.OnTouchL
     String Vmemoria;
 
 
-    public void btnSiguienteOnclickF(View v) {
+    public void btnSiguienteOnclickFG(View v) {
         Intent data = new Intent(this,memoriaResultadoActivity3.class);
         data.putExtra("Id", id);
         data.putExtra("VMemoria",Vmemoria);
@@ -37,8 +37,8 @@ public class atencionActivity extends ActionBarActivity implements View.OnTouchL
         startActivity(data);
     }
 
-    public void btnCambiarBotoness(View v){
-        Intent data = new Intent(this,atencionGrandeActivity.class);
+    public void btnCambiarBotones(View v){
+        Intent data = new Intent(this,atencionActivity.class);
         data.putExtra("Id", id);
         data.putExtra("VMemoria",Vmemoria);
         data.putExtra("VFunciones", Vfunciones);
@@ -61,47 +61,31 @@ public class atencionActivity extends ActionBarActivity implements View.OnTouchL
             Vlenguaje = b.getString("VLenguaje");
             Vatencion = b.getString("VAtencion");
             if(Vatencion.equals("1")){
-                setContentView(R.layout.token_test);
+                setContentView(R.layout.token_test_grandes);
                 findViewById(R.id.img_circulogradeazul).setOnTouchListener(new imgTouchListener());
                 findViewById(R.id.img_circulogranderojo).setOnTouchListener(new imgTouchListener());
                 findViewById(R.id.img_circulograndeamarillo).setOnTouchListener(new imgTouchListener());
                 findViewById(R.id.img_circulograndeblanco).setOnTouchListener(new imgTouchListener());
                 findViewById(R.id.img_circulograndeverde).setOnTouchListener(new imgTouchListener());
-                findViewById(R.id.img_circulopequenioblanco).setOnTouchListener(new imgTouchListener());
-                findViewById(R.id.img_circulopequenioazul).setOnTouchListener(new imgTouchListener());
-                findViewById(R.id.img_circulopequenioamarillo).setOnTouchListener(new imgTouchListener());
-                findViewById(R.id.img_circulopequeniorojo).setOnTouchListener(new imgTouchListener());
-                findViewById(R.id.img_circulopequenioverde).setOnTouchListener(new imgTouchListener());
+
                 findViewById(R.id.img_cuadradograndeazul).setOnTouchListener(new imgTouchListener());
                 findViewById(R.id.img_cuadradogranderojo).setOnTouchListener(new imgTouchListener());
                 findViewById(R.id.img_cuadradograndeblanco).setOnTouchListener(new imgTouchListener());
                 findViewById(R.id.img_cuadradograndeverde).setOnTouchListener(new imgTouchListener());
                 findViewById(R.id.img_cuadradograndeamarillo).setOnTouchListener(new imgTouchListener());
-                findViewById(R.id.img_cuadradopequenioamarillo).setOnTouchListener(new imgTouchListener());
-                findViewById(R.id.img_cuadradopequenioverde).setOnTouchListener(new imgTouchListener());
-                findViewById(R.id.img_cuadradopequeniorojo).setOnTouchListener(new imgTouchListener());
-                findViewById(R.id.img_cuadradopequenioazul).setOnTouchListener(new imgTouchListener());
-                findViewById(R.id.img_cuadradopequenioblanco).setOnTouchListener(new imgTouchListener());
+
                 findViewById(R.id.img_circulogradeazul).setOnDragListener(new ContainerDragListener());
                 findViewById(R.id.img_circulogranderojo).setOnDragListener(new ContainerDragListener());
                 findViewById(R.id.img_circulograndeamarillo).setOnDragListener(new ContainerDragListener());
                 findViewById(R.id.img_circulograndeblanco).setOnDragListener(new ContainerDragListener());
                 findViewById(R.id.img_circulograndeverde).setOnDragListener(new ContainerDragListener());
-                findViewById(R.id.img_circulopequenioblanco).setOnDragListener(new ContainerDragListener());
-                findViewById(R.id.img_circulopequenioazul).setOnDragListener(new ContainerDragListener());
-                findViewById(R.id.img_circulopequenioamarillo).setOnDragListener(new ContainerDragListener());
-                findViewById(R.id.img_circulopequeniorojo).setOnDragListener(new ContainerDragListener());
-                findViewById(R.id.img_circulopequenioverde).setOnDragListener(new ContainerDragListener());
+
                 findViewById(R.id.img_cuadradograndeazul).setOnDragListener(new ContainerDragListener());
                 findViewById(R.id.img_cuadradogranderojo).setOnDragListener(new ContainerDragListener());
                 findViewById(R.id.img_cuadradograndeblanco).setOnDragListener(new ContainerDragListener());
                 findViewById(R.id.img_cuadradograndeverde).setOnDragListener(new ContainerDragListener());
                 findViewById(R.id.img_cuadradograndeamarillo).setOnDragListener(new ContainerDragListener());
-                findViewById(R.id.img_cuadradopequenioamarillo).setOnDragListener(new ContainerDragListener());
-                findViewById(R.id.img_cuadradopequenioverde).setOnDragListener(new ContainerDragListener());
-                findViewById(R.id.img_cuadradopequeniorojo).setOnDragListener(new ContainerDragListener());
-                findViewById(R.id.img_cuadradopequenioazul).setOnDragListener(new ContainerDragListener());
-                findViewById(R.id.img_cuadradopequenioblanco).setOnDragListener(new ContainerDragListener());
+
                 findViewById(R.id.imagenFondo).setOnDragListener(new ContainerDragListener());
             }
             else{

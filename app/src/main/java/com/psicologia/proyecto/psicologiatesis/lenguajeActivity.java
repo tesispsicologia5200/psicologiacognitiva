@@ -2,6 +2,7 @@ package com.psicologia.proyecto.psicologiatesis;
 
 import android.content.ContentValues;
 import android.content.Intent;
+import android.content.pm.ActivityInfo;
 import android.database.sqlite.SQLiteDatabase;
 import android.media.MediaPlayer;
 import android.os.Bundle;
@@ -18,6 +19,7 @@ import java.util.concurrent.TimeUnit;
 /**
  * Created by jairo on 23/07/2015.
  */
+
 public class lenguajeActivity extends ActionBarActivity {
 
     int aciertos=0;
@@ -30,8 +32,7 @@ public class lenguajeActivity extends ActionBarActivity {
     String Vlenguaje;
     String Vatencion;
     String Vmemoria;
-    TextView aciertoss;
-    TextView erroress;
+
     MediaPlayer mp ;
 
     @Override
@@ -44,6 +45,7 @@ public class lenguajeActivity extends ActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
         Bundle b=this.getIntent().getExtras();
         super.onCreate(savedInstanceState);
+
         if(b!=null){
             id=b.getString("Id");
             Vmemoria=b.getString("VMemoria");
@@ -52,10 +54,8 @@ public class lenguajeActivity extends ActionBarActivity {
             Vatencion = b.getString("VAtencion");
             if(Vlenguaje.equals("1")){
                 setContentView(R.layout.auditiva_a);
-                aciertoss=(TextView)findViewById(R.id.lb_aciertos);
-                erroress=(TextView)findViewById(R.id.lb_errores);
-                aciertoss.setText("0");
-                erroress.setText("0");
+
+
                 mp = MediaPlayer.create(this, R.raw.prueba_auditiva_a_mezcla);
             }
             if(Vlenguaje.equals("0")){
@@ -84,7 +84,6 @@ public class lenguajeActivity extends ActionBarActivity {
     public void siguienteOnClick(View view){
         mp.stop();
         omision=16 - aciertos;
-
         UsuariosHelper memoria1Helper= new UsuariosHelper(this,"Psicologia21",null,1);
         SQLiteDatabase db = memoria1Helper.getWritableDatabase();
         if (db != null) {
@@ -117,6 +116,7 @@ public class lenguajeActivity extends ActionBarActivity {
     }
 
     public void botonOnClick(View v){
+
         if(tiempo.equalsIgnoreCase("00:02:38")||tiempo.equalsIgnoreCase("00:02:30")||tiempo.equalsIgnoreCase("00:02:22")||tiempo.equalsIgnoreCase("00:02:05")||tiempo.equalsIgnoreCase("00:01:55")||tiempo.equalsIgnoreCase("00:01:49")||tiempo.equalsIgnoreCase("00:01:46")||tiempo.equalsIgnoreCase("00:01:18")||tiempo.equalsIgnoreCase("00:01:14")||tiempo.equalsIgnoreCase("00:01:10")||tiempo.equalsIgnoreCase("00:01:03")||tiempo.equalsIgnoreCase("00:00:29")||tiempo.equalsIgnoreCase("00:00:23")||tiempo.equalsIgnoreCase("00:00:15")||tiempo.equalsIgnoreCase("00:00:12")||tiempo.equalsIgnoreCase("00:00:07")){
             aciertos++;
         }
@@ -158,8 +158,6 @@ public class lenguajeActivity extends ActionBarActivity {
                     TimeUnit.MILLISECONDS.toSeconds(millis) - TimeUnit.MINUTES.toSeconds(TimeUnit.MILLISECONDS.toMinutes(millis)));
             System.out.println(hms);
             tiempo=hms;
-            aciertoss.setText(String.valueOf(aciertos));
-            erroress.setText(String.valueOf(errores));
             if(aciertos==0&&errores==0&&intrusion==0&&hms.equalsIgnoreCase("00:02:20")){
                 error();
             }

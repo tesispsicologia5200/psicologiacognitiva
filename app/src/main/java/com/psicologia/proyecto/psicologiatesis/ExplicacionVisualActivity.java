@@ -1,6 +1,7 @@
 package com.psicologia.proyecto.psicologiatesis;
 
 import android.content.Intent;
+import android.content.pm.ActivityInfo;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
 import android.view.View;
@@ -19,17 +20,15 @@ public class ExplicacionVisualActivity extends ActionBarActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
         Bundle b=this.getIntent().getExtras();
+
         id=b.getString("Id");
         Vmemoria=b.getString("VMemoria");
         Vfunciones = b.getString("VFunciones");
         Vlenguaje = b.getString("VLenguaje");
         Vatencion = b.getString("VAtencion");
-        super.onCreate(savedInstanceState);
+
         setContentView(R.layout.explicacion_visual);
-
-
         final TextView lb1 = (TextView) findViewById(R.id.lba);
         lb1.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -113,7 +112,8 @@ public class ExplicacionVisualActivity extends ActionBarActivity {
             public void onClick(View v) {
                 labelOnClick(lb12);
             }
-        });final TextView lb13 = (TextView) findViewById(R.id.lbl);
+        });
+        final TextView lb13 = (TextView) findViewById(R.id.lbl);
         lb13.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

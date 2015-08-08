@@ -3,6 +3,7 @@ package com.psicologia.proyecto.psicologiatesis;
 import android.content.ContentValues;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.pm.ActivityInfo;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.os.CountDownTimer;
@@ -46,6 +47,7 @@ public class VisualActivity extends ActionBarActivity implements DialogInterface
         Vlenguaje = b.getString("VLenguaje");
         Vatencion = b.getString("VAtencion");
         super.onCreate(savedInstanceState);
+
         setContentView(R.layout.visual_a);
         final CounterClass timer = new CounterClass(180000, 1000);
         timer.start();
@@ -197,7 +199,6 @@ public class VisualActivity extends ActionBarActivity implements DialogInterface
                 labelOnClick(uno_20);
             }
         });
-
         final TextView dos_1 = (TextView) findViewById(R.id.lb_2_1);
         dos_1.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -478,7 +479,6 @@ public class VisualActivity extends ActionBarActivity implements DialogInterface
                 labelOnClick(tres_20);
             }
         });
-
         final TextView cuatro_1 = (TextView) findViewById(R.id.lb_4_1);
         cuatro_1.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -1179,20 +1179,19 @@ public class VisualActivity extends ActionBarActivity implements DialogInterface
                 labelOnClick(ocho_20);
             }
         });
-
-
     }
+
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         return super.onOptionsItemSelected(item);
     }
 
+
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         return super.onCreateOptionsMenu(menu);
     }
-
 
 
     public void labelOnClick(TextView id){
@@ -1216,7 +1215,6 @@ public class VisualActivity extends ActionBarActivity implements DialogInterface
     public void onClick(DialogInterface dialog, int which) {
 
     }
-
 
 
     public class CounterClass extends CountDownTimer {
@@ -1250,6 +1248,7 @@ public class VisualActivity extends ActionBarActivity implements DialogInterface
 
 
     }
+
 
     public void enviarDatos(){
         UsuariosHelper memoria1Helper= new UsuariosHelper(this,"Psicologia21",null,1);

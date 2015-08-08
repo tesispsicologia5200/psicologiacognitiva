@@ -1,5 +1,6 @@
 package com.psicologia.proyecto.psicologiatesis;
 
+import android.content.pm.ActivityInfo;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
@@ -91,6 +92,7 @@ public class EstadisticaActivity extends ActionBarActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
         setContentView(R.layout.estadistica);
     }
 

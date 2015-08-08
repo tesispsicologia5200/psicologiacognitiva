@@ -25,71 +25,6 @@
         android:layout_marginTop="50dp"
         android:onClick="botonOnClick"/>
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="@string/lb_auditiva"
-        android:id="@+id/textView17"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:textSize="35dp"
-        android:layout_marginTop="200dp"
-        android:layout_marginLeft="50dp" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="@string/lb_auditiva2"
-        android:id="@+id/textView18"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginLeft="50dp"
-        android:layout_marginTop="300dp"
-        android:textSize="35dp" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="@string/lb_auditiva3"
-        android:id="@+id/textView28"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginLeft="50dp"
-        android:layout_marginTop="250dp"
-        android:textSize="35dp" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="@string/lb_aciertos"
-        android:id="@+id/textView30"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:textSize="35dp"
-        android:layout_marginTop="600dp"
-        android:layout_marginLeft="50dp" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="@string/lb_errores"
-        android:id="@+id/textView32"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:textSize="35dp"
-        android:layout_marginTop="600dp"
-        android:layout_marginLeft="340dp" />
-
     <Button
         style="?android:attr/buttonStyleSmall"
         android:layout_width="wrap_content"
@@ -99,43 +34,20 @@
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_marginTop="480dp"
-        android:layout_marginLeft="600dp"
-        android:onClick="playOnClick"/>
+        android:layout_marginTop="600dp"
+        android:layout_marginLeft="50dp"
+        android:onClick="playOnClick"
+        android:visibility="invisible" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/lb_siguiente"
         android:id="@+id/btn_siguiente"
-        android:layout_alignTop="@+id/textView32"
         android:layout_alignRight="@+id/imageView"
         android:layout_alignEnd="@+id/imageView"
-        android:onClick="siguienteOnClick" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="0"
-        android:id="@+id/lb_aciertos"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginTop="595dp"
-        android:layout_marginLeft="250dp"
-        android:textSize="40dp" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="0"
-        android:id="@+id/lb_errores"
-        android:textSize="40dp"
-        android:layout_alignTop="@+id/textView32"
-        android:layout_alignRight="@+id/textView17"
-        android:layout_alignEnd="@+id/textView17"
-        android:layout_marginTop="-5dp" />
+        android:onClick="siguienteOnClick"
+        android:visibility="invisible"
+        android:layout_marginTop="600dp" />
 
 </RelativeLayout>

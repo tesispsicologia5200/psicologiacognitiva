@@ -6,23 +6,26 @@
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
-        android:theme="@style/AppTheme" >
+        android:theme="@style/AppTheme">
+
         <activity
             android:name=".UsuarioActivity"
-            android:label="@string/app_name" >
+            android:label="@string/app_name"
+            android:screenOrientation="landscape">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
         <activity
             android:name=".pausaMemoria"
-            android:label="@string/app_name" >
+            android:label="@string/app_name"
+            android:screenOrientation="landscape">
         </activity>
         <activity
             android:name=".memoriaActivity"
-            android:label="@string/app_name" >
+            android:label="@string/app_name"
+            android:screenOrientation="landscape">
         </activity>
         <activity
             android:name=".memoria2Activity"
@@ -30,11 +33,13 @@
         </activity>
         <activity
             android:name=".memoria3Activity"
-            android:label="@string/app_name" >
+            android:label="@string/app_name"
+            android:screenOrientation="landscape">
         </activity>
         <activity
             android:name=".memoria4Activity"
-            android:label="@string/app_name" >
+            android:label="@string/app_name"
+            android:screenOrientation="landscape">
         </activity>
         <activity
             android:name=".memoriaBlanco"
@@ -44,35 +49,53 @@
         </activity>
         <activity
             android:name=".memoriaResultadoActivity"
-            android:label="@string/app_name" >
+            android:label="@string/app_name"
+            android:screenOrientation="landscape">
         </activity>
         <activity
             android:name=".memoriaResultadoActivity2"
-            android:label="@string/app_name" >
+            android:label="@string/app_name"
+            android:screenOrientation="landscape">
         </activity>
         <activity
             android:name=".memoriaResultadoActivity2M"
-            android:label="@string/app_name" >
+            android:label="@string/app_name"
+            android:screenOrientation="landscape">
         </activity>
         <activity
             android:name=".memoriaResultadoActivity3"
-            android:label="@string/app_name" >
+            android:label="@string/app_name"
+            android:screenOrientation="landscape">
         </activity>
         <activity
             android:name=".lenguajeActivity"
-            android:label="@string/app_name" >
+            android:label="@string/app_name"
+            android:screenOrientation="landscape">
         </activity>
         <activity
-            android:name=".atencionActivity"
-            android:label="@string/app_name" >
+        android:name=".atencionActivity"
+        android:label="@string/app_name"
+            android:screenOrientation="landscape">
+    </activity>
+        <activity
+            android:name=".atencionGrandeActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape">
         </activity>
         <activity
             android:name=".VisualActivity"
-            android:label="@string/app_name" >
+            android:label="@string/app_name"
+            android:screenOrientation="landscape">
         </activity>
         <activity
             android:name=".EstadisticaActivity"
-            android:label="@string/app_name" >
+            android:label="@string/app_name"
+            android:screenOrientation="landscape">
+        </activity>
+        <activity
+            android:name=".ExplicacionVisualActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape">
         </activity>
     </application>
 
