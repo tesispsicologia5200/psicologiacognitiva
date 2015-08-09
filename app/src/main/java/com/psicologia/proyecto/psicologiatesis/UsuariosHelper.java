@@ -23,6 +23,8 @@ public class UsuariosHelper extends SQLiteOpenHelper {
 
     String tabla7="CREATE TABLE LenguajeVisual(Id text,Contador_a INTEGER,Contador_omision INTEGER,Errores INTEGER)";
 
+    String tabla8="CREATE TABLE TokenTest(Id text,Nivel INTEGER,Aciertos INTEGER,Puntaje INTEGER)";
+
 
     public UsuariosHelper(Context context, String name, SQLiteDatabase.CursorFactory factory, int version) {
         super(context, name, factory, version);
@@ -37,6 +39,7 @@ public class UsuariosHelper extends SQLiteOpenHelper {
         db.execSQL(tabla5);
         db.execSQL(tabla6);
         db.execSQL(tabla7);
+        db.execSQL(tabla8);
     }
 
     @Override

@@ -28,7 +28,7 @@ public class atencionActivity extends ActionBarActivity implements View.OnTouchL
 
 
     public void btnSiguienteOnclickF(View v) {
-        Intent data = new Intent(this,memoriaResultadoActivity3.class);
+        Intent data = new Intent(this,ResultadosTokenTestActivity.class);
         data.putExtra("Id", id);
         data.putExtra("VMemoria",Vmemoria);
         data.putExtra("VFunciones", Vfunciones);

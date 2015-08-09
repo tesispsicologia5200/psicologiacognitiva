@@ -97,7 +97,7 @@ public class EstadisticaActivity extends ActionBarActivity {
     }
 
     public void buscarOnClick(View v){
-        UsuariosHelper usuariosHelper = new UsuariosHelper(this, "Psicologia21", null, 1);
+        UsuariosHelper usuariosHelper = new UsuariosHelper(this, "Psicologia22", null, 1);
         SQLiteDatabase db = usuariosHelper.getReadableDatabase();
         if(db!=null){
             Cursor c = db.rawQuery("SELECT Elefante ,Conejo ,Pato ,Mariposa ,Sarten ,Estufa ,Tenedor ,Jarra ,Guante ,Zapato ,Sombrero ,Panuelo ,Banano ,Uvas ,Fresa ,Pinia FROM MemoriaUno where Id='" + id + "'", null);
