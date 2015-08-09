@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent" tools:context=".ExplicacionVisualActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/lb_datostoken"
+        android:id="@+id/textView17"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="110dp"
+        android:textSize="50dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/lb_nivel"
+        android:id="@+id/textView18"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/textView17"
+        android:layout_toStartOf="@+id/textView17" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/lb_frases"
+        android:id="@+id/textView19"
+        android:layout_marginTop="59dp"
+        android:layout_below="@+id/textView18"
+        android:layout_alignLeft="@+id/textView18"
+        android:layout_alignStart="@+id/textView18" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/lb_puntaje"
+        android:id="@+id/textView20"
+        android:layout_marginTop="59dp"
+        android:layout_below="@+id/textView19"
+        android:layout_alignLeft="@+id/textView19"
+        android:layout_alignStart="@+id/textView19" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/nivel_alcance"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/textView19"
+        android:layout_marginLeft="68dp"
+        android:layout_marginStart="68dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/frases_acertadas"
+        android:layout_above="@+id/textView20"
+        android:layout_alignLeft="@+id/nivel_alcance"
+        android:layout_alignStart="@+id/nivel_alcance"
+        android:layout_alignRight="@+id/nivel_alcance"
+        android:layout_alignEnd="@+id/nivel_alcance" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/puntaje"
+        android:layout_alignBottom="@+id/textView20"
+        android:layout_alignRight="@+id/frases_acertadas"
+        android:layout_alignEnd="@+id/frases_acertadas" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/lb_siguiente"
+        android:id="@+id/button2"
+        android:layout_marginRight="79dp"
+        android:layout_marginEnd="79dp"
+        android:layout_below="@+id/puntaje"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="45dp" />
+
+
+</RelativeLayout>

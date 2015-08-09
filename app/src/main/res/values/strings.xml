@@ -57,6 +57,12 @@
 
     <string name="lb_siguiente">Siguiente</string>
 
+    <string name="lb_datostoken">Ingrese los datos del TokenTest</string>
+    <string name="lb_nivel">Nivel de alcance</string>
+    <string name="lb_frases">Numero de frases acertadas</string>
+    <string name="lb_puntaje">Puntaje total</string>
+
+
 
 
 </resources>
