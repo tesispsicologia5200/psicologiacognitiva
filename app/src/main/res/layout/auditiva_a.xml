@@ -37,9 +37,6 @@
         android:layout_marginTop="600dp"
         android:layout_marginLeft="1000dp"
         android:onClick="siguienteOnClick"
-<<<<<<< HEAD
-        android:layout_marginTop="600dp" />
-=======
         android:src="#ffffffff" />
 
     <ImageView
@@ -52,6 +49,6 @@
         android:layout_marginTop="600dp"
         android:onClick="playOnClick"
         android:src="#ffffffff" />
->>>>>>> origin/master
+
 
 </RelativeLayout>
