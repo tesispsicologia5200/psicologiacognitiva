@@ -2,7 +2,6 @@ package com.psicologia.proyecto.psicologiatesis;
 
 import android.content.ContentValues;
 import android.content.Intent;
-import android.content.pm.ActivityInfo;
 import android.database.sqlite.SQLiteDatabase;
 import android.media.MediaPlayer;
 import android.os.Bundle;
@@ -11,8 +10,7 @@ import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.Button;
-import android.widget.TextView;
+
 import android.widget.Toast;
 
 import java.util.concurrent.TimeUnit;
@@ -27,7 +25,7 @@ public class lenguajeActivity extends ActionBarActivity {
     int errores=0;
     int intrusion=0;
     int omision=0;
-    String tiempo;
+    String tiempo="00:02:41";
     String id;
     String Vfunciones;
     String Vlenguaje;
@@ -55,8 +53,6 @@ public class lenguajeActivity extends ActionBarActivity {
             Vatencion = b.getString("VAtencion");
             if(Vlenguaje.equals("1")){
                 setContentView(R.layout.auditiva_a);
-
-
                 mp = MediaPlayer.create(this, R.raw.prueba_auditiva_a_mezcla);
             }
             if(Vlenguaje.equals("0")){
@@ -118,10 +114,10 @@ public class lenguajeActivity extends ActionBarActivity {
 
     public void botonOnClick(View v){
 
-        if(tiempo.equalsIgnoreCase("00:02:38")||tiempo.equalsIgnoreCase("00:02:30")||tiempo.equalsIgnoreCase("00:02:22")||tiempo.equalsIgnoreCase("00:02:05")||tiempo.equalsIgnoreCase("00:01:55")||tiempo.equalsIgnoreCase("00:01:49")||tiempo.equalsIgnoreCase("00:01:46")||tiempo.equalsIgnoreCase("00:01:18")||tiempo.equalsIgnoreCase("00:01:14")||tiempo.equalsIgnoreCase("00:01:10")||tiempo.equalsIgnoreCase("00:01:03")||tiempo.equalsIgnoreCase("00:00:29")||tiempo.equalsIgnoreCase("00:00:23")||tiempo.equalsIgnoreCase("00:00:15")||tiempo.equalsIgnoreCase("00:00:12")||tiempo.equalsIgnoreCase("00:00:07")){
+        if(tiempo.equalsIgnoreCase("00:02:37")||tiempo.equalsIgnoreCase("00:02:29")||tiempo.equalsIgnoreCase("00:02:21")||tiempo.equalsIgnoreCase("00:02:04")||tiempo.equalsIgnoreCase("00:01:54")||tiempo.equalsIgnoreCase("00:01:48")||tiempo.equalsIgnoreCase("00:01:45")||tiempo.equalsIgnoreCase("00:01:19")||tiempo.equalsIgnoreCase("00:01:13")||tiempo.equalsIgnoreCase("00:01:09")||tiempo.equalsIgnoreCase("00:01:02")||tiempo.equalsIgnoreCase("00:00:28")||tiempo.equalsIgnoreCase("00:00:22")||tiempo.equalsIgnoreCase("00:00:14")||tiempo.equalsIgnoreCase("00:00:11")||tiempo.equalsIgnoreCase("00:00:06")){
             aciertos++;
         }
-        else if(tiempo.equalsIgnoreCase("00:02:24")||tiempo.equalsIgnoreCase("00:02:10")||tiempo.equalsIgnoreCase("00:01:48")||tiempo.equalsIgnoreCase("00:01:35")||tiempo.equalsIgnoreCase("00:01:09")||tiempo.equalsIgnoreCase("00:00:51")||tiempo.equalsIgnoreCase("00:00:45")||tiempo.equalsIgnoreCase("00:00:43")||tiempo.equalsIgnoreCase("00:00:12")||tiempo.equalsIgnoreCase("00:00:02")||tiempo.equalsIgnoreCase("00:02:00")||tiempo.equalsIgnoreCase("00:01:37")||tiempo.equalsIgnoreCase("00:01:33")||tiempo.equalsIgnoreCase("00:01:25")||tiempo.equalsIgnoreCase("00:00:48")||tiempo.equalsIgnoreCase("00:00:23")||tiempo.equalsIgnoreCase("00:00:13")){
+        else if(tiempo.equalsIgnoreCase("00:02:23")||tiempo.equalsIgnoreCase("00:02:09")||tiempo.equalsIgnoreCase("00:01:47")||tiempo.equalsIgnoreCase("00:01:34")||tiempo.equalsIgnoreCase("00:01:08")||tiempo.equalsIgnoreCase("00:00:50")||tiempo.equalsIgnoreCase("00:00:44")||tiempo.equalsIgnoreCase("00:00:42")||tiempo.equalsIgnoreCase("00:00:11")||tiempo.equalsIgnoreCase("00:00:01")||tiempo.equalsIgnoreCase("00:01:59")||tiempo.equalsIgnoreCase("00:01:36")||tiempo.equalsIgnoreCase("00:01:32")||tiempo.equalsIgnoreCase("00:01:24")||tiempo.equalsIgnoreCase("00:00:47")||tiempo.equalsIgnoreCase("00:00:22")||tiempo.equalsIgnoreCase("00:00:12")){
             intrusion++;
         }
         else{

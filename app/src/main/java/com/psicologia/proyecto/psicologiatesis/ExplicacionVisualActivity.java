@@ -21,7 +21,6 @@ public class ExplicacionVisualActivity extends ActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         Bundle b=this.getIntent().getExtras();
-
         id=b.getString("Id");
         Vmemoria=b.getString("VMemoria");
         Vfunciones = b.getString("VFunciones");

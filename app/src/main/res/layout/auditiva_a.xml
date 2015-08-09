@@ -25,28 +25,33 @@
         android:layout_marginTop="50dp"
         android:onClick="botonOnClick"/>
 
-    <Button
-        style="?android:attr/buttonStyleSmall"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Play"
-        android:id="@+id/btn_reproducir"
+
+
+    <ImageView
+        android:layout_width="500dp"
+        android:layout_height="300dp"
+        android:id="@+id/imageView12"
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_marginTop="600dp"
-        android:layout_marginLeft="50dp"
-        android:onClick="playOnClick"
-        android:visibility="invisible" />
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/lb_siguiente"
-        android:id="@+id/btn_siguiente"
-        android:layout_alignRight="@+id/imageView"
-        android:layout_alignEnd="@+id/imageView"
+        android:layout_marginLeft="1000dp"
         android:onClick="siguienteOnClick"
+<<<<<<< HEAD
         android:layout_marginTop="600dp" />
+=======
+        android:src="#ffffffff" />
+
+    <ImageView
+        android:layout_width="500dp"
+        android:layout_height="300dp"
+        android:id="@+id/imageView13"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="600dp"
+        android:onClick="playOnClick"
+        android:src="#ffffffff" />
+>>>>>>> origin/master
 
 </RelativeLayout>
