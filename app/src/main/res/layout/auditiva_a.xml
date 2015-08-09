@@ -47,7 +47,6 @@
         android:layout_alignRight="@+id/imageView"
         android:layout_alignEnd="@+id/imageView"
         android:onClick="siguienteOnClick"
-        android:visibility="invisible"
         android:layout_marginTop="600dp" />
 
 </RelativeLayout>
