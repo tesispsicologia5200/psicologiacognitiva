@@ -2,7 +2,6 @@ package com.psicologia.proyecto.psicologiatesis;
 
 import android.content.ContentValues;
 import android.content.Intent;
-import android.content.pm.ActivityInfo;
 import android.database.sqlite.SQLiteDatabase;
 import android.media.MediaPlayer;
 import android.os.Bundle;
@@ -11,7 +10,7 @@ import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.TextView;
+import android.widget.Button;
 import android.widget.Toast;
 
 import java.util.concurrent.TimeUnit;
@@ -26,7 +25,7 @@ public class lenguajeActivity extends ActionBarActivity {
     int errores=0;
     int intrusion=0;
     int omision=0;
-    String tiempo;
+    String tiempo="00:02:41";
     String id;
     String Vfunciones;
     String Vlenguaje;
@@ -54,8 +53,6 @@ public class lenguajeActivity extends ActionBarActivity {
             Vatencion = b.getString("VAtencion");
             if(Vlenguaje.equals("1")){
                 setContentView(R.layout.auditiva_a);
-
-
                 mp = MediaPlayer.create(this, R.raw.prueba_auditiva_a_mezcla);
             }
             if(Vlenguaje.equals("0")){

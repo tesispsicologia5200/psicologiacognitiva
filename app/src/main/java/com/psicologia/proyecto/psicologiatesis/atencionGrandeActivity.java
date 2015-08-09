@@ -60,43 +60,32 @@ public class atencionGrandeActivity extends ActionBarActivity implements View.On
             Vfunciones = b.getString("VFunciones");
             Vlenguaje = b.getString("VLenguaje");
             Vatencion = b.getString("VAtencion");
-            if(Vatencion.equals("1")){
-                setContentView(R.layout.token_test_grandes);
-                findViewById(R.id.img_circulogradeazul).setOnTouchListener(new imgTouchListener());
-                findViewById(R.id.img_circulogranderojo).setOnTouchListener(new imgTouchListener());
-                findViewById(R.id.img_circulograndeamarillo).setOnTouchListener(new imgTouchListener());
-                findViewById(R.id.img_circulograndeblanco).setOnTouchListener(new imgTouchListener());
-                findViewById(R.id.img_circulograndeverde).setOnTouchListener(new imgTouchListener());
+            setContentView(R.layout.token_test_grandes);
+            findViewById(R.id.img_circulogradeazul).setOnTouchListener(new imgTouchListener());
+            findViewById(R.id.img_circulogranderojo).setOnTouchListener(new imgTouchListener());
+            findViewById(R.id.img_circulograndeamarillo).setOnTouchListener(new imgTouchListener());
+            findViewById(R.id.img_circulograndeblanco).setOnTouchListener(new imgTouchListener());
+            findViewById(R.id.img_circulograndeverde).setOnTouchListener(new imgTouchListener());
 
-                findViewById(R.id.img_cuadradograndeazul).setOnTouchListener(new imgTouchListener());
-                findViewById(R.id.img_cuadradogranderojo).setOnTouchListener(new imgTouchListener());
-                findViewById(R.id.img_cuadradograndeblanco).setOnTouchListener(new imgTouchListener());
-                findViewById(R.id.img_cuadradograndeverde).setOnTouchListener(new imgTouchListener());
-                findViewById(R.id.img_cuadradograndeamarillo).setOnTouchListener(new imgTouchListener());
+            findViewById(R.id.img_cuadradograndeazul).setOnTouchListener(new imgTouchListener());
+            findViewById(R.id.img_cuadradogranderojo).setOnTouchListener(new imgTouchListener());
+            findViewById(R.id.img_cuadradograndeblanco).setOnTouchListener(new imgTouchListener());
+            findViewById(R.id.img_cuadradograndeverde).setOnTouchListener(new imgTouchListener());
+            findViewById(R.id.img_cuadradograndeamarillo).setOnTouchListener(new imgTouchListener());
 
-                findViewById(R.id.img_circulogradeazul).setOnDragListener(new ContainerDragListener());
-                findViewById(R.id.img_circulogranderojo).setOnDragListener(new ContainerDragListener());
-                findViewById(R.id.img_circulograndeamarillo).setOnDragListener(new ContainerDragListener());
-                findViewById(R.id.img_circulograndeblanco).setOnDragListener(new ContainerDragListener());
-                findViewById(R.id.img_circulograndeverde).setOnDragListener(new ContainerDragListener());
+            findViewById(R.id.img_circulogradeazul).setOnDragListener(new ContainerDragListener());
+            findViewById(R.id.img_circulogranderojo).setOnDragListener(new ContainerDragListener());
+            findViewById(R.id.img_circulograndeamarillo).setOnDragListener(new ContainerDragListener());
+            findViewById(R.id.img_circulograndeblanco).setOnDragListener(new ContainerDragListener());
+            findViewById(R.id.img_circulograndeverde).setOnDragListener(new ContainerDragListener());
 
-                findViewById(R.id.img_cuadradograndeazul).setOnDragListener(new ContainerDragListener());
-                findViewById(R.id.img_cuadradogranderojo).setOnDragListener(new ContainerDragListener());
-                findViewById(R.id.img_cuadradograndeblanco).setOnDragListener(new ContainerDragListener());
-                findViewById(R.id.img_cuadradograndeverde).setOnDragListener(new ContainerDragListener());
-                findViewById(R.id.img_cuadradograndeamarillo).setOnDragListener(new ContainerDragListener());
+            findViewById(R.id.img_cuadradograndeazul).setOnDragListener(new ContainerDragListener());
+            findViewById(R.id.img_cuadradogranderojo).setOnDragListener(new ContainerDragListener());
+            findViewById(R.id.img_cuadradograndeblanco).setOnDragListener(new ContainerDragListener());
+            findViewById(R.id.img_cuadradograndeverde).setOnDragListener(new ContainerDragListener());
+            findViewById(R.id.img_cuadradograndeamarillo).setOnDragListener(new ContainerDragListener());
+            findViewById(R.id.imagenFondo).setOnDragListener(new ContainerDragListener());
 
-                findViewById(R.id.imagenFondo).setOnDragListener(new ContainerDragListener());
-            }
-            else{
-                Intent data = new Intent(this,memoriaResultadoActivity3.class);
-                data.putExtra("Id", id);
-                data.putExtra("VMemoria",Vmemoria);
-                data.putExtra("VFunciones", Vfunciones);
-                data.putExtra("VLenguaje", Vlenguaje);
-                data.putExtra("VAtencion", Vatencion);
-                startActivity(data);
-            }
         }
     }
 
