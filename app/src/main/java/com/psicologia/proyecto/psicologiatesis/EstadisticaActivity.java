@@ -13,96 +13,19 @@ import android.widget.TextView;
  */
 public class EstadisticaActivity extends ActionBarActivity {
 
+
+    //variables
     EditText txt_identificacion=(EditText) findViewById(R.id.txt_identificacionestadistica);
-
-    Number[] serieLenguajeAuditivo;
-    Number[] serieLenguajeVisual;
-    Number[] series1Numbers;
-
+    Number[] serieLenguajeAuditivo,serieLenguajeVisual,series1Numbers,serieTokenTest;
     String id=txt_identificacion.getText().toString();
-    String banano;
-    String conejo;
-    String elefante;
-    String estufa;
-    String fresa;
-    String guante;
-    String jarra;
-    String mariposa;
-    String panuelo;
-    String pato;
-    String pinia;
-    String sarten;
-    String sombrero;
-    String tenedor;
-    String uvas;
-    String zapato;
-
-    String banano2;
-    String conejo2;
-    String elefante2;
-    String estufa2;
-    String fresa2;
-    String guante2;
-    String jarra2;
-    String mariposa2;
-    String panuelo2;
-    String pato2;
-    String pinia2;
-    String sarten2;
-    String sombrero2;
-    String tenedor2;
-    String uvas2;
-    String zapato2;
-
-    String banano3;
-    String conejo3;
-    String elefante3;
-    String estufa3;
-    String fresa3;
-    String guante3;
-    String jarra3;
-    String mariposa3;
-    String panuelo3;
-    String pato3;
-    String pinia3;
-    String sarten3;
-    String sombrero3;
-    String tenedor3;
-    String uvas3;
-    String zapato3;
-
-    String banano4;
-    String conejo4;
-    String elefante4;
-    String estufa4;
-    String fresa4;
-    String guante4;
-    String jarra4;
-    String mariposa4;
-    String panuelo4;
-    String pato4;
-    String pinia4;
-    String sarten4;
-    String sombrero4;
-    String tenedor4;
-    String uvas4;
-    String zapato4;
-
-    String test1s;
-    String test2s;
-    String test3s;
-    String test4s;
-
-    int aciertos=0;
-    int errores=0;
-    int omisiones=0;
-    int intrusiones=0;
-
-    int contador=0;
-    int omision=0;
-    int erroresvisual=0;
-
-
+    String banano,conejo,elefante,estufa,fresa,guante,jarra,mariposa,panuelo,pato,pinia,sarten,sombrero,tenedor,uvas,zapato;
+    String banano2,conejo2,elefante2,estufa2,fresa2,guante2,jarra2,mariposa2,panuelo2,pato2,pinia2,sarten2,sombrero2,tenedor2,uvas2,zapato2;
+    String banano3,conejo3,elefante3,estufa3,fresa3,guante3,jarra3,mariposa3,panuelo3,pato3,pinia3,sarten3,sombrero3,tenedor3,uvas3,zapato3;
+    String banano4,conejo4,elefante4,estufa4,fresa4,guante4,jarra4,mariposa4,panuelo4,pato4,pinia4,sarten4,sombrero4,tenedor4,uvas4,zapato4;
+    String test1s,test2s,test3s,test4s;
+    int aciertos=0,errores=0,omisiones=0,intrusiones=0;
+    int contador=0,omision=0,erroresvisual=0;
+    int nivel=0,aciertostoken=0,puntaje=0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -111,6 +34,7 @@ public class EstadisticaActivity extends ActionBarActivity {
         setContentView(R.layout.estadistica);
     }
 
+    //busca los datos segun el id y los muestra
     public void buscarOnClick(View v){
         UsuariosHelper usuariosHelper = new UsuariosHelper(this, "Psicologia22", null, 1);
         SQLiteDatabase db = usuariosHelper.getReadableDatabase();
@@ -294,9 +218,20 @@ public class EstadisticaActivity extends ActionBarActivity {
                 erroresvisual=t.getInt(3);
             }
             serieLenguajeVisual= new Number[]{contador, omision, erroresvisual};
+
+
+            Cursor o=db.rawQuery("SELECT Nivel,Aciertos,Puntaje FROM TokenTest WHERE Id='"+id+"'",null);
+            if(t.moveToFirst()){
+                nivel=p.getInt(1);
+                aciertostoken=p.getInt(2);
+                puntaje=t.getInt(3);
+            }
+            serieTokenTest= new Number[]{nivel, aciertostoken, puntaje};
+
+
         }
 
-        //fijar textviews
+        //fijar textviews, definir texto y visibles
         TextView memoria = (TextView) findViewById(R.id.lb_memoriamemoria);
         memoria.setVisibility(View.VISIBLE);
         TextView visual = (TextView) findViewById(R.id.lb_auditivaaaaaa);
@@ -306,17 +241,15 @@ public class EstadisticaActivity extends ActionBarActivity {
         TextView token = (TextView) findViewById(R.id.lb_tokentest);
         token.setVisibility(View.VISIBLE);
 
-
-
         TextView test1ya = (TextView) findViewById(R.id.lb_test1);
         test1ya.setVisibility(View.VISIBLE);
-        test1ya.setText("Recobro 1: "+test1s);
+        test1ya.setText("Recobro 1: " + test1s);
         TextView test2ya = (TextView) findViewById(R.id.lb_test2);
         test2ya.setVisibility(View.VISIBLE);
-        test2ya.setText("Recobro 2: "+test2s);
+        test2ya.setText("Recobro 2: " + test2s);
         TextView test3ya = (TextView) findViewById(R.id.lb_test3);
         test3ya.setVisibility(View.VISIBLE);
-        test3ya.setText("Recobro 3: "+test3s);
+        test3ya.setText("Recobro 3: " + test3s);
         TextView test4ya = (TextView) findViewById(R.id.lb_test4);
         test4ya.setVisibility(View.VISIBLE);
         test4ya.setText("Recobro 4: "+test4s);
@@ -334,7 +267,25 @@ public class EstadisticaActivity extends ActionBarActivity {
         omisioness.setVisibility(View.VISIBLE);
         omisioness.setText("Omisiones: "+String.valueOf(omisiones));
 
+        TextView aciertosvisuales = (TextView) findViewById(R.id.lb_corractasvisual);
+        aciertosvisuales.setVisibility(View.VISIBLE);
+        aciertosvisuales.setText("Aciertos: "+String.valueOf(contador));
+        TextView erroresvisuales = (TextView) findViewById(R.id.lb_erroresvisual);
+        erroresvisuales.setVisibility(View.VISIBLE);
+        erroresvisuales.setText("Errores: " + String.valueOf(erroresvisuales));
+        TextView comision = (TextView) findViewById(R.id.lb_comision);
+        comision.setVisibility(View.VISIBLE);
+        comision.setText("Comisiones: " + String.valueOf(comision));
 
+        TextView aciertostokenn = (TextView) findViewById(R.id.lb_aciertostoken);
+        aciertostokenn.setVisibility(View.VISIBLE);
+        aciertostokenn.setText("Aciertos: "+String.valueOf(aciertostoken));
+        TextView nivel = (TextView) findViewById(R.id.lb_comisiontoken);
+        nivel.setVisibility(View.VISIBLE);
+        nivel.setText("Nivel: " + String.valueOf(nivel));
+        TextView puntaje = (TextView) findViewById(R.id.lb_errorestoken);
+        puntaje.setVisibility(View.VISIBLE);
+        puntaje.setText("Puntaje: " + String.valueOf(puntaje));
     }
 
 

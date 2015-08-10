@@ -54,7 +54,7 @@
         android:layout_marginTop="300dp"
         android:layout_marginLeft="100dp"
         android:textSize="24dp"
-        android:visibility="visible" />
+        android:visibility="invisible" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -68,7 +68,7 @@
         android:layout_marginTop="300dp"
         android:layout_marginLeft="480dp"
         android:textSize="24dp"
-        android:visibility="visible" />
+        android:visibility="invisible" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -82,7 +82,7 @@
         android:layout_marginTop="300dp"
         android:layout_marginLeft="750dp"
         android:textSize="24dp"
-        android:visibility="visible" />
+        android:visibility="invisible" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -96,7 +96,7 @@
         android:textSize="24dp"
         android:layout_marginTop="300dp"
         android:layout_marginLeft="1000dp"
-        android:visibility="visible" />
+        android:visibility="invisible" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -108,7 +108,7 @@
         android:layout_alignParentStart="true"
         android:layout_marginLeft="150dp"
         android:layout_marginTop="500dp"
-        android:visibility="visible" />
+        android:visibility="invisible" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -120,7 +120,7 @@
         android:layout_alignParentStart="true"
         android:layout_marginLeft="150dp"
         android:layout_marginTop="450dp"
-        android:visibility="visible" />
+        android:visibility="invisible" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -132,7 +132,7 @@
         android:layout_alignParentStart="true"
         android:layout_marginLeft="150dp"
         android:layout_marginTop="400dp"
-        android:visibility="visible" />
+        android:visibility="invisible" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -144,7 +144,7 @@
         android:layout_alignParentStart="true"
         android:layout_marginLeft="150dp"
         android:layout_marginTop="350dp"
-        android:visibility="visible" />
+        android:visibility="invisible" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -155,7 +155,8 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_marginLeft="475dp"
-        android:layout_marginTop="500dp" />
+        android:layout_marginTop="500dp"
+        android:visibility="invisible" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -166,7 +167,8 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_marginLeft="475dp"
-        android:layout_marginTop="450dp" />
+        android:layout_marginTop="450dp"
+        android:visibility="invisible" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -177,7 +179,8 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_marginLeft="475dp"
-        android:layout_marginTop="400dp" />
+        android:layout_marginTop="400dp"
+        android:visibility="invisible" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -188,7 +191,80 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_marginLeft="475dp"
-        android:layout_marginTop="350dp" />
+        android:layout_marginTop="350dp"
+        android:visibility="invisible" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/lb_erroresvisual"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="735dp"
+        android:layout_marginTop="450dp"
+        android:visibility="invisible" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/lb_comision"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="735dp"
+        android:layout_marginTop="400dp"
+        android:visibility="invisible" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/lb_corractasvisual"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="350dp"
+        android:layout_marginLeft="735dp"
+        android:visibility="invisible" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/lb_aciertostoken"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="350dp"
+        android:layout_marginLeft="1010dp"
+        android:visibility="invisible" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/lb_errorestoken"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="1010dp"
+        android:layout_marginTop="450dp"
+        android:visibility="invisible" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/lb_comisiontoken"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="1010dp"
+        android:layout_marginTop="400dp"
+        android:visibility="invisible" />
 
 
 </RelativeLayout>

@@ -79,7 +79,7 @@ public class lenguajeActivity extends ActionBarActivity {
     }
 
     public void siguienteOnClick(View view){
-        mp.stop();
+        mp.pause();
         omision=16 - aciertos;
         UsuariosHelper memoria1Helper= new UsuariosHelper(this,"Psicologia22",null,1);
         SQLiteDatabase db = memoria1Helper.getWritableDatabase();
