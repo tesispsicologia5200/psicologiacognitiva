@@ -56,11 +56,18 @@
     <string name="lb_errores">Errores: </string>
 
     <string name="lb_siguiente">Siguiente</string>
+    <string name="lb_buscar">Buscar</string>
+    <string name="lb_memoria">Memoria semántica</string>
+    <string name="lb_auditivaa">Auditiva</string>
+    <string name="lb_visual">Visual</string>
+    <string name="lb_Token">TokenTest</string>
 
     <string name="lb_datostoken">Ingrese los datos del TokenTest</string>
     <string name="lb_nivel">Nivel de alcance</string>
     <string name="lb_frases">Numero de frases acertadas</string>
     <string name="lb_puntaje">Puntaje total</string>
+    <string name="lb_ingreseid">Ingrese la identificacion a buscar: </string>
+
 
 
 

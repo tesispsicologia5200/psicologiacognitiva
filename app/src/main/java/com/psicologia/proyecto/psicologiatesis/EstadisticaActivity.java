@@ -1,19 +1,19 @@
 package com.psicologia.proyecto.psicologiatesis;
 
-import android.content.pm.ActivityInfo;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.TextView;
 
 /**
  * Created by Henry Jaramillo on 06/08/2015.
  */
 public class EstadisticaActivity extends ActionBarActivity {
 
-    EditText txt_identificacion=(EditText) findViewById(R.id.id);
+    EditText txt_identificacion=(EditText) findViewById(R.id.txt_identificacionestadistica);
 
     Number[] serieLenguajeAuditivo;
     Number[] serieLenguajeVisual;
@@ -88,6 +88,21 @@ public class EstadisticaActivity extends ActionBarActivity {
     String uvas4;
     String zapato4;
 
+    String test1s;
+    String test2s;
+    String test3s;
+    String test4s;
+
+    int aciertos=0;
+    int errores=0;
+    int omisiones=0;
+    int intrusiones=0;
+
+    int contador=0;
+    int omision=0;
+    int erroresvisual=0;
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -137,6 +152,7 @@ public class EstadisticaActivity extends ActionBarActivity {
             int ipinia=Integer.parseInt(pinia);
 
             int test1=ielefante+iconejo+ipato+imariposa+isarten+iestufa+itenedor+ijarra+iguante+izapato+isombrero+ipanuelo+ibanano+iuvas+ifresa+ipinia;
+            test1s=String.valueOf(test1);
 
             Cursor d = db.rawQuery("SELECT Elefante ,Conejo ,Pato ,Mariposa ,Sarten ,Estufa ,Tenedor ,Jarra ,Guante ,Zapato ,Sombrero ,Panuelo ,Banano ,Uvas ,Fresa ,Pinia FROM MemoriaDos where Id='" + id + "'", null);
             if(d.moveToFirst()){
@@ -175,6 +191,8 @@ public class EstadisticaActivity extends ActionBarActivity {
             int i2pinia=Integer.parseInt(pinia2);
 
             int test2=i2elefante+i2conejo+i2pato+i2mariposa+i2sarten+i2estufa+i2tenedor+i2jarra+i2guante+i2zapato+i2sombrero+i2panuelo+i2banano+i2uvas+i2fresa+i2pinia;
+            test2s=String.valueOf(test2);
+
 
             Cursor e = db.rawQuery("SELECT Elefante ,Conejo ,Pato ,Mariposa ,Sarten ,Estufa ,Tenedor ,Jarra ,Guante ,Zapato ,Sombrero ,Panuelo ,Banano ,Uvas ,Fresa ,Pinia FROM MemoriaDosM where Id='" + id + "'", null);
             if(e.moveToFirst()){
@@ -213,6 +231,7 @@ public class EstadisticaActivity extends ActionBarActivity {
             int i3pinia=Integer.parseInt(pinia3);
 
             int test3=i3elefante+i3conejo+i3pato+i3mariposa+i3sarten+i3estufa+i3tenedor+i3jarra+i3guante+i3zapato+i3sombrero+i3panuelo+i3banano+i3uvas+i3fresa+i3pinia;
+            test3s=String.valueOf(test3);
 
             Cursor r = db.rawQuery("SELECT Elefante ,Conejo ,Pato ,Mariposa ,Sarten ,Estufa ,Tenedor ,Jarra ,Guante ,Zapato ,Sombrero ,Panuelo ,Banano ,Uvas ,Fresa ,Pinia FROM MemoriaTres where Id='" + id + "'", null);
             if(r.moveToFirst()){
@@ -251,13 +270,11 @@ public class EstadisticaActivity extends ActionBarActivity {
             int i4pinia=Integer.parseInt(pinia4);
 
             int test4=i4elefante+i4conejo+i4pato+i4mariposa+i4sarten+i4estufa+i4tenedor+i4jarra+i4guante+i4zapato+i4sombrero+i4panuelo+i4banano+i4uvas+i4fresa+i4pinia;
+            test4s=String.valueOf(test4);
 
             series1Numbers = new Number[]{test1, test2, test3, test4};
 
-            int aciertos=0;
-            int errores=0;
-            int omisiones=0;
-            int intrusiones=0;
+
 
             Cursor t=db.rawQuery("SELECT Aciertos ,Errores ,Omisiones ,Intrusion FROM LenguajeAuditivo WHERE Id='"+id+"'",null);
             if(t.moveToFirst()){
@@ -268,9 +285,7 @@ public class EstadisticaActivity extends ActionBarActivity {
             }
             serieLenguajeAuditivo= new Number[]{aciertos, errores, omisiones, intrusiones};
 
-            int contador=0;
-            int omision=0;
-            int erroresvisual=0;
+
 
             Cursor p=db.rawQuery("SELECT Contador_a ,Contador_omision ,Errores  FROM LenguajeVisual WHERE Id='"+id+"'",null);
             if(t.moveToFirst()){
@@ -280,6 +295,46 @@ public class EstadisticaActivity extends ActionBarActivity {
             }
             serieLenguajeVisual= new Number[]{contador, omision, erroresvisual};
         }
+
+        //fijar textviews
+        TextView memoria = (TextView) findViewById(R.id.lb_memoriamemoria);
+        memoria.setVisibility(View.VISIBLE);
+        TextView visual = (TextView) findViewById(R.id.lb_auditivaaaaaa);
+        visual.setVisibility(View.VISIBLE);
+        TextView auditiva = (TextView) findViewById(R.id.lb_visualllll);
+        auditiva.setVisibility(View.VISIBLE);
+        TextView token = (TextView) findViewById(R.id.lb_tokentest);
+        token.setVisibility(View.VISIBLE);
+
+
+
+        TextView test1ya = (TextView) findViewById(R.id.lb_test1);
+        test1ya.setVisibility(View.VISIBLE);
+        test1ya.setText("Recobro 1: "+test1s);
+        TextView test2ya = (TextView) findViewById(R.id.lb_test2);
+        test2ya.setVisibility(View.VISIBLE);
+        test2ya.setText("Recobro 2: "+test2s);
+        TextView test3ya = (TextView) findViewById(R.id.lb_test3);
+        test3ya.setVisibility(View.VISIBLE);
+        test3ya.setText("Recobro 3: "+test3s);
+        TextView test4ya = (TextView) findViewById(R.id.lb_test4);
+        test4ya.setVisibility(View.VISIBLE);
+        test4ya.setText("Recobro 4: "+test4s);
+
+        TextView aciertoss = (TextView) findViewById(R.id.lb_aciertos);
+        aciertoss.setVisibility(View.VISIBLE);
+        aciertoss.setText("Aciertos: "+String.valueOf(aciertos));
+        TextView erroress = (TextView) findViewById(R.id.lb_errores);
+        erroress.setVisibility(View.VISIBLE);
+        erroress.setText("Errores: "+String.valueOf(errores));
+        TextView intrusionn = (TextView) findViewById(R.id.lb_intrusiones);
+        intrusionn.setVisibility(View.VISIBLE);
+        intrusionn.setText("Intrusiones: " + String.valueOf(intrusiones));
+        TextView omisioness = (TextView) findViewById(R.id.lb_omisiones);
+        omisioness.setVisibility(View.VISIBLE);
+        omisioness.setText("Omisiones: "+String.valueOf(omisiones));
+
+
     }
 
 
