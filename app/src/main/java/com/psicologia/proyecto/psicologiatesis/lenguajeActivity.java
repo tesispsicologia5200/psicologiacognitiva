@@ -79,7 +79,7 @@ public class lenguajeActivity extends ActionBarActivity {
     }
 
     public void siguienteOnClick(View view){
-        mp.pause();
+        onDestroy();
         omision=16 - aciertos;
         UsuariosHelper memoria1Helper= new UsuariosHelper(this,"Psicologia22",null,1);
         SQLiteDatabase db = memoria1Helper.getWritableDatabase();
@@ -110,6 +110,15 @@ public class lenguajeActivity extends ActionBarActivity {
         mp.start();
         final CounterClass timer = new CounterClass(161000, 1000);
         timer.start();
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        if(mp.isPlaying()){
+            mp.stop();
+            mp.release();
+        }
     }
 
     public void botonOnClick(View v){
