@@ -42,7 +42,7 @@ public class memoria3Activity extends ActionBarActivity {
             Vatencion = b.getString("VAtencion");
 
             setContentView(R.layout.memoria3);
-            final CounterClass timer = new CounterClass(10000, 1000);
+            final CounterClass timer = new CounterClass(8000, 1000);
             timer.start();
         }
     }

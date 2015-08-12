@@ -36,7 +36,7 @@ public class VisualActivity extends ActionBarActivity implements DialogInterface
     String Vatencion;
     String Vmemoria;
 
-
+    final CounterClass timer = new CounterClass(180000, 1000);
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -49,7 +49,6 @@ public class VisualActivity extends ActionBarActivity implements DialogInterface
         super.onCreate(savedInstanceState);
 
         setContentView(R.layout.visual_a);
-        final CounterClass timer = new CounterClass(180000, 1000);
         timer.start();
 
         final TextView cuatro_uno = (TextView) findViewById(R.id.lb_4_1);
@@ -1247,6 +1246,10 @@ public class VisualActivity extends ActionBarActivity implements DialogInterface
 
 
 
+    }
+
+    public void imagenOnClick(View v){
+        timer.onFinish();
     }
 
 

@@ -49,7 +49,7 @@ public class memoriaActivity extends ActionBarActivity {
             if(Vmemoria.equals("1")){
 
                 setContentView(R.layout.memoria1);
-                final CounterClass timer = new CounterClass(10000, 1000);
+                final CounterClass timer = new CounterClass(8000, 1000);
                 timer.start();
 
             }

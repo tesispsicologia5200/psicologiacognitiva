@@ -33,7 +33,6 @@ public class ResultadosTokenTestActivity extends ActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         Bundle b = this.getIntent().getExtras();
-        super.onCreate(savedInstanceState);
         if (b != null) {
             id = b.getString("Id");
             Vmemoria = b.getString("VMemoria");

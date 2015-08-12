@@ -16,7 +16,7 @@ public class EstadisticaActivity extends ActionBarActivity {
 
 
     //variables
-    String identi;
+
     EditText txt_identificacion;
     Number[] serieLenguajeAuditivo,serieLenguajeVisual,series1Numbers,serieTokenTest;
     String id;
@@ -43,7 +43,6 @@ public class EstadisticaActivity extends ActionBarActivity {
         SQLiteDatabase db = usuariosHelper.getReadableDatabase();
         Cursor k = db.rawQuery("SELECT Identificacion FROM Usuarios where Identificacion='" + id + "'", null);
         if (k.moveToFirst()) {
-            identi = k.getString(0);
             if (db != null) {
                 Cursor c = db.rawQuery("SELECT Elefante ,Conejo ,Pato ,Mariposa ,Sarten ,Estufa ,Tenedor ,Jarra ,Guante ,Zapato ,Sombrero ,Panuelo ,Banano ,Uvas ,Fresa ,Pinia FROM MemoriaUno where Id='" + id + "'", null);
                 if (c.moveToFirst()) {
@@ -63,27 +62,28 @@ public class EstadisticaActivity extends ActionBarActivity {
                     uvas = c.getString(13);
                     fresa = c.getString(14);
                     pinia = c.getString(15);
+                    int ielefante = Integer.parseInt(elefante);
+                    int iconejo = Integer.parseInt(conejo);
+                    int ipato = Integer.parseInt(pato);
+                    int imariposa = Integer.parseInt(mariposa);
+                    int isarten = Integer.parseInt(sarten);
+                    int iestufa = Integer.parseInt(estufa);
+                    int itenedor = Integer.parseInt(tenedor);
+                    int ijarra = Integer.parseInt(jarra);
+                    int iguante = Integer.parseInt(guante);
+                    int izapato = Integer.parseInt(zapato);
+                    int isombrero = Integer.parseInt(sombrero);
+                    int ipanuelo = Integer.parseInt(panuelo);
+                    int ibanano = Integer.parseInt(banano);
+                    int iuvas = Integer.parseInt(uvas);
+                    int ifresa = Integer.parseInt(fresa);
+                    int ipinia = Integer.parseInt(pinia);
+                    int test1 = ielefante + iconejo + ipato + imariposa + isarten + iestufa + itenedor + ijarra + iguante + izapato + isombrero + ipanuelo + ibanano + iuvas + ifresa + ipinia;
+                    test1s = String.valueOf(test1);
                 }
-                int ielefante = Integer.parseInt(elefante);
-                int iconejo = Integer.parseInt(conejo);
-                int ipato = Integer.parseInt(pato);
-                int imariposa = Integer.parseInt(mariposa);
-                int isarten = Integer.parseInt(sarten);
-                int iestufa = Integer.parseInt(estufa);
-                int itenedor = Integer.parseInt(tenedor);
-                int ijarra = Integer.parseInt(jarra);
-                int iguante = Integer.parseInt(guante);
-                int izapato = Integer.parseInt(zapato);
-                int isombrero = Integer.parseInt(sombrero);
-                int ipanuelo = Integer.parseInt(panuelo);
-                int ibanano = Integer.parseInt(banano);
-                int iuvas = Integer.parseInt(uvas);
-                int ifresa = Integer.parseInt(fresa);
-                int ipinia = Integer.parseInt(pinia);
-
-                int test1 = ielefante + iconejo + ipato + imariposa + isarten + iestufa + itenedor + ijarra + iguante + izapato + isombrero + ipanuelo + ibanano + iuvas + ifresa + ipinia;
-                test1s = String.valueOf(test1);
-
+                else{
+                    test1s="0";
+                }
                 Cursor d = db.rawQuery("SELECT Elefante ,Conejo ,Pato ,Mariposa ,Sarten ,Estufa ,Tenedor ,Jarra ,Guante ,Zapato ,Sombrero ,Panuelo ,Banano ,Uvas ,Fresa ,Pinia FROM MemoriaDos where Id='" + id + "'", null);
                 if (d.moveToFirst()) {
                     elefante2 = d.getString(0);
@@ -102,27 +102,28 @@ public class EstadisticaActivity extends ActionBarActivity {
                     uvas2 = d.getString(13);
                     fresa2 = d.getString(14);
                     pinia2 = d.getString(15);
+                    int i2elefante = Integer.parseInt(elefante2);
+                    int i2conejo = Integer.parseInt(conejo2);
+                    int i2pato = Integer.parseInt(pato2);
+                    int i2mariposa = Integer.parseInt(mariposa2);
+                    int i2sarten = Integer.parseInt(sarten2);
+                    int i2estufa = Integer.parseInt(estufa2);
+                    int i2tenedor = Integer.parseInt(tenedor2);
+                    int i2jarra = Integer.parseInt(jarra2);
+                    int i2guante = Integer.parseInt(guante2);
+                    int i2zapato = Integer.parseInt(zapato2);
+                    int i2sombrero = Integer.parseInt(sombrero2);
+                    int i2panuelo = Integer.parseInt(panuelo2);
+                    int i2banano = Integer.parseInt(banano2);
+                    int i2uvas = Integer.parseInt(uvas2);
+                    int i2fresa = Integer.parseInt(fresa2);
+                    int i2pinia = Integer.parseInt(pinia2);
+                    int test2 = i2elefante + i2conejo + i2pato + i2mariposa + i2sarten + i2estufa + i2tenedor + i2jarra + i2guante + i2zapato + i2sombrero + i2panuelo + i2banano + i2uvas + i2fresa + i2pinia;
+                    test2s = String.valueOf(test2);
                 }
-                int i2elefante = Integer.parseInt(elefante2);
-                int i2conejo = Integer.parseInt(conejo2);
-                int i2pato = Integer.parseInt(pato2);
-                int i2mariposa = Integer.parseInt(mariposa2);
-                int i2sarten = Integer.parseInt(sarten2);
-                int i2estufa = Integer.parseInt(estufa2);
-                int i2tenedor = Integer.parseInt(tenedor2);
-                int i2jarra = Integer.parseInt(jarra2);
-                int i2guante = Integer.parseInt(guante2);
-                int i2zapato = Integer.parseInt(zapato2);
-                int i2sombrero = Integer.parseInt(sombrero2);
-                int i2panuelo = Integer.parseInt(panuelo2);
-                int i2banano = Integer.parseInt(banano2);
-                int i2uvas = Integer.parseInt(uvas2);
-                int i2fresa = Integer.parseInt(fresa2);
-                int i2pinia = Integer.parseInt(pinia2);
-
-                int test2 = i2elefante + i2conejo + i2pato + i2mariposa + i2sarten + i2estufa + i2tenedor + i2jarra + i2guante + i2zapato + i2sombrero + i2panuelo + i2banano + i2uvas + i2fresa + i2pinia;
-                test2s = String.valueOf(test2);
-
+                else{
+                    test2s="0";
+                }
 
                 Cursor e = db.rawQuery("SELECT Elefante ,Conejo ,Pato ,Mariposa ,Sarten ,Estufa ,Tenedor ,Jarra ,Guante ,Zapato ,Sombrero ,Panuelo ,Banano ,Uvas ,Fresa ,Pinia FROM MemoriaDosM where Id='" + id + "'", null);
                 if (e.moveToFirst()) {
@@ -142,26 +143,28 @@ public class EstadisticaActivity extends ActionBarActivity {
                     uvas3 = e.getString(13);
                     fresa3 = e.getString(14);
                     pinia3 = e.getString(15);
+                    int i3elefante = Integer.parseInt(elefante3);
+                    int i3conejo = Integer.parseInt(conejo3);
+                    int i3pato = Integer.parseInt(pato3);
+                    int i3mariposa = Integer.parseInt(mariposa3);
+                    int i3sarten = Integer.parseInt(sarten3);
+                    int i3estufa = Integer.parseInt(estufa3);
+                    int i3tenedor = Integer.parseInt(tenedor3);
+                    int i3jarra = Integer.parseInt(jarra3);
+                    int i3guante = Integer.parseInt(guante3);
+                    int i3zapato = Integer.parseInt(zapato3);
+                    int i3sombrero = Integer.parseInt(sombrero3);
+                    int i3panuelo = Integer.parseInt(panuelo3);
+                    int i3banano = Integer.parseInt(banano3);
+                    int i3uvas = Integer.parseInt(uvas3);
+                    int i3fresa = Integer.parseInt(fresa3);
+                    int i3pinia = Integer.parseInt(pinia3);
+                    int test3 = i3elefante + i3conejo + i3pato + i3mariposa + i3sarten + i3estufa + i3tenedor + i3jarra + i3guante + i3zapato + i3sombrero + i3panuelo + i3banano + i3uvas + i3fresa + i3pinia;
+                    test3s = String.valueOf(test3);
                 }
-                int i3elefante = Integer.parseInt(elefante3);
-                int i3conejo = Integer.parseInt(conejo3);
-                int i3pato = Integer.parseInt(pato3);
-                int i3mariposa = Integer.parseInt(mariposa3);
-                int i3sarten = Integer.parseInt(sarten3);
-                int i3estufa = Integer.parseInt(estufa3);
-                int i3tenedor = Integer.parseInt(tenedor3);
-                int i3jarra = Integer.parseInt(jarra3);
-                int i3guante = Integer.parseInt(guante3);
-                int i3zapato = Integer.parseInt(zapato3);
-                int i3sombrero = Integer.parseInt(sombrero3);
-                int i3panuelo = Integer.parseInt(panuelo3);
-                int i3banano = Integer.parseInt(banano3);
-                int i3uvas = Integer.parseInt(uvas3);
-                int i3fresa = Integer.parseInt(fresa3);
-                int i3pinia = Integer.parseInt(pinia3);
-
-                int test3 = i3elefante + i3conejo + i3pato + i3mariposa + i3sarten + i3estufa + i3tenedor + i3jarra + i3guante + i3zapato + i3sombrero + i3panuelo + i3banano + i3uvas + i3fresa + i3pinia;
-                test3s = String.valueOf(test3);
+                else{
+                    test3s="0";
+                }
 
                 Cursor r = db.rawQuery("SELECT Elefante ,Conejo ,Pato ,Mariposa ,Sarten ,Estufa ,Tenedor ,Jarra ,Guante ,Zapato ,Sombrero ,Panuelo ,Banano ,Uvas ,Fresa ,Pinia FROM MemoriaTres where Id='" + id + "'", null);
                 if (r.moveToFirst()) {
@@ -181,28 +184,28 @@ public class EstadisticaActivity extends ActionBarActivity {
                     uvas4 = r.getString(13);
                     fresa4 = r.getString(14);
                     pinia4 = r.getString(15);
+                    int i4elefante = Integer.parseInt(elefante4);
+                    int i4conejo = Integer.parseInt(conejo4);
+                    int i4pato = Integer.parseInt(pato4);
+                    int i4mariposa = Integer.parseInt(mariposa4);
+                    int i4sarten = Integer.parseInt(sarten4);
+                    int i4estufa = Integer.parseInt(estufa4);
+                    int i4tenedor = Integer.parseInt(tenedor4);
+                    int i4jarra = Integer.parseInt(jarra4);
+                    int i4guante = Integer.parseInt(guante4);
+                    int i4zapato = Integer.parseInt(zapato4);
+                    int i4sombrero = Integer.parseInt(sombrero4);
+                    int i4panuelo = Integer.parseInt(panuelo4);
+                    int i4banano = Integer.parseInt(banano4);
+                    int i4uvas = Integer.parseInt(uvas4);
+                    int i4fresa = Integer.parseInt(fresa4);
+                    int i4pinia = Integer.parseInt(pinia4);
+                    int test4 = i4elefante + i4conejo + i4pato + i4mariposa + i4sarten + i4estufa + i4tenedor + i4jarra + i4guante + i4zapato + i4sombrero + i4panuelo + i4banano + i4uvas + i4fresa + i4pinia;
+                    test4s = String.valueOf(test4);
                 }
-                int i4elefante = Integer.parseInt(elefante4);
-                int i4conejo = Integer.parseInt(conejo4);
-                int i4pato = Integer.parseInt(pato4);
-                int i4mariposa = Integer.parseInt(mariposa4);
-                int i4sarten = Integer.parseInt(sarten4);
-                int i4estufa = Integer.parseInt(estufa4);
-                int i4tenedor = Integer.parseInt(tenedor4);
-                int i4jarra = Integer.parseInt(jarra4);
-                int i4guante = Integer.parseInt(guante4);
-                int i4zapato = Integer.parseInt(zapato4);
-                int i4sombrero = Integer.parseInt(sombrero4);
-                int i4panuelo = Integer.parseInt(panuelo4);
-                int i4banano = Integer.parseInt(banano4);
-                int i4uvas = Integer.parseInt(uvas4);
-                int i4fresa = Integer.parseInt(fresa4);
-                int i4pinia = Integer.parseInt(pinia4);
-
-                int test4 = i4elefante + i4conejo + i4pato + i4mariposa + i4sarten + i4estufa + i4tenedor + i4jarra + i4guante + i4zapato + i4sombrero + i4panuelo + i4banano + i4uvas + i4fresa + i4pinia;
-                test4s = String.valueOf(test4);
-
-                series1Numbers = new Number[]{test1, test2, test3, test4};
+                else{
+                    test4s="0";
+                }
 
 
                 Cursor t = db.rawQuery("SELECT Aciertos ,Errores ,Omisiones ,Intrusion FROM LenguajeAuditivo WHERE Id='" + id + "'", null);
@@ -232,15 +235,11 @@ public class EstadisticaActivity extends ActionBarActivity {
                 }
 
                 serieTokenTest = new Number[]{nivel, aciertostoken, puntaje};
-                if (test1s.equalsIgnoreCase(null)) {
-                    test1s = "0";
-                    test2s = "0";
-                    test3s = "0";
-                    test4s = "0";
-                }
-                String aciertoss = String.valueOf(aciertos);
 
-                if (aciertoss.equalsIgnoreCase(null)) {
+
+
+                String aciertoss = String.valueOf(aciertos);
+                if (aciertoss.equals(null)) {
                     aciertos = 0;
                     errores = 0;
                     omisiones = 0;
@@ -249,8 +248,9 @@ public class EstadisticaActivity extends ActionBarActivity {
                     omision = 0;
                     erroresvisual = 0;
                 }
+
                 String nivell = String.valueOf(nivel);
-                if (nivell.equalsIgnoreCase(null)) {
+                if (nivell.equals(null)) {
                     nivel = 0;
                     aciertostoken = 0;
                     puntaje = 0;
