@@ -68,7 +68,9 @@ public class lenguajeActivity extends ActionBarActivity {
     }
 
     public void error(){
-        mp.stop();
+        if(mp.isPlaying()){
+            onDestroy();
+        }
         Intent data = new Intent(this, lenguajeActivity.class);
         data.putExtra("Id", id);
         data.putExtra("VMemoria",Vmemoria);
@@ -79,7 +81,9 @@ public class lenguajeActivity extends ActionBarActivity {
     }
 
     public void siguienteOnClick(View view){
-        onDestroy();
+        if(mp.isPlaying()) {
+            onDestroy();
+        }
         omision=16 - aciertos;
         UsuariosHelper memoria1Helper= new UsuariosHelper(this,"Psicologia22",null,1);
         SQLiteDatabase db = memoria1Helper.getWritableDatabase();
@@ -88,14 +92,14 @@ public class lenguajeActivity extends ActionBarActivity {
             registroNuevos.put("Id",id);
             registroNuevos.put("Aciertos",aciertos);
             registroNuevos.put("Errores",errores);
-            registroNuevos.put("Omisiones",omision);
+            registroNuevos.put("Omisiones", omision);
             registroNuevos.put("Intrusion",intrusion);
             long i = db.insert("LenguajeAuditivo", null, registroNuevos);
             if (i > 0) {
                 Toast.makeText(this, "prueba de lenguaje auditivo resgistrada", Toast.LENGTH_SHORT).show();
                 Intent data = new Intent(this, ExplicacionVisualActivity.class);
                 data.putExtra("Id", id);
-                data.putExtra("VMemoria",Vmemoria);
+                data.putExtra("VMemoria", Vmemoria);
                 data.putExtra("VFunciones", Vfunciones);
                 data.putExtra("VLenguaje", Vlenguaje);
                 data.putExtra("VAtencion", Vatencion);

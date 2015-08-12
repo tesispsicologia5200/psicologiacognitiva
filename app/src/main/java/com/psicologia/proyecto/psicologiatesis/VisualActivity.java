@@ -35,6 +35,8 @@ public class VisualActivity extends ActionBarActivity implements DialogInterface
     String Vlenguaje;
     String Vatencion;
     String Vmemoria;
+    String tiempo;
+    int bandera=0;
 
     final CounterClass timer = new CounterClass(180000, 1000);
 
@@ -1228,11 +1230,17 @@ public class VisualActivity extends ActionBarActivity implements DialogInterface
         public void onTick(long millisUntilFinished) {
             // TODO Auto-generated method stub
 
+            if(contadorA==16 && bandera==0)
+                {
+                    bandera=1;
+                timer.onFinish();
+            }
             long millis = millisUntilFinished;
             String hms = String.format("%02d:%02d:%02d", TimeUnit.MILLISECONDS.toHours(millis),
                     TimeUnit.MILLISECONDS.toMinutes(millis) - TimeUnit.HOURS.toMinutes(TimeUnit.MILLISECONDS.toHours(millis)),
                     TimeUnit.MILLISECONDS.toSeconds(millis) - TimeUnit.MINUTES.toSeconds(TimeUnit.MILLISECONDS.toMinutes(millis)));
             System.out.println(hms);
+            tiempo=hms;
 
         }
 
@@ -1241,7 +1249,10 @@ public class VisualActivity extends ActionBarActivity implements DialogInterface
 
         @Override
         public void onFinish() {
-            enviarDatos();
+            if(bandera==0){
+                enviarDatos();
+            }
+
         }
 
 
@@ -1262,6 +1273,7 @@ public class VisualActivity extends ActionBarActivity implements DialogInterface
             registroNuevos.put("Contador_a",contadorA);
             registroNuevos.put("Contador_omision",comision);
             registroNuevos.put("Errores",error);
+            registroNuevos.put("Tiempo",tiempo);
             long i = db.insert("LenguajeVisual", null, registroNuevos);
             if (i > 0) {
                 Toast.makeText(this, "prueba de lenguaje visual resgistrada", Toast.LENGTH_SHORT).show();

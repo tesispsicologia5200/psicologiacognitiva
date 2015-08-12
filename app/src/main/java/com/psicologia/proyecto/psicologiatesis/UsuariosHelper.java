@@ -21,7 +21,7 @@ public class UsuariosHelper extends SQLiteOpenHelper {
 
     String tabla6="CREATE TABLE LenguajeAuditivo(Id text,Aciertos INTEGER,Errores INTEGER,Omisiones INTEGER,Intrusion INTEGER)";
 
-    String tabla7="CREATE TABLE LenguajeVisual(Id text,Contador_a INTEGER,Contador_omision INTEGER,Errores INTEGER)";
+    String tabla7="CREATE TABLE LenguajeVisual(Id text,Contador_a INTEGER,Contador_omision INTEGER,Errores INTEGER,Tiempo text)";
 
     String tabla8="CREATE TABLE TokenTest(Id text,Nivel INTEGER,Aciertos INTEGER,Puntaje INTEGER)";
 
