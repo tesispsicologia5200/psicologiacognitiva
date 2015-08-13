@@ -51,14 +51,11 @@ public class lenguajeActivity extends ActionBarActivity {
             Vlenguaje = b.getString("VLenguaje");
             Vatencion = b.getString("VAtencion");
             setContentView(R.layout.auditiva_a);
-            mp = MediaPlayer.create(this, R.raw.prueba_auditiva_a_mezcla);
         }
     }
 
     public void error(){
-        if(mp.isPlaying()){
-            onDestroy();
-        }
+        destruir();
         Intent data = new Intent(this, lenguajeActivity.class);
         data.putExtra("Id", id);
         data.putExtra("VMemoria",Vmemoria);
@@ -69,8 +66,8 @@ public class lenguajeActivity extends ActionBarActivity {
     }
 
     public void siguienteOnClick(View view){
-        if(mp.isPlaying()) {
-            onDestroy();
+        if(mp != null) {
+            destruir();
         }
         omision=16 - aciertos;
         UsuariosHelper memoria1Helper= new UsuariosHelper(this,"Psicologia22",null,1);
@@ -79,9 +76,9 @@ public class lenguajeActivity extends ActionBarActivity {
             ContentValues registroNuevos = new ContentValues();
             registroNuevos.put("Id",id);
             registroNuevos.put("Aciertos",aciertos);
-            registroNuevos.put("Errores",errores);
+            registroNuevos.put("Errores", errores);
             registroNuevos.put("Omisiones", omision);
-            registroNuevos.put("Intrusion",intrusion);
+            registroNuevos.put("Intrusion", intrusion);
             long i = db.insert("LenguajeAuditivo", null, registroNuevos);
             if (i > 0) {
                 Toast.makeText(this, "prueba de lenguaje auditivo resgistrada", Toast.LENGTH_SHORT).show();
@@ -98,18 +95,28 @@ public class lenguajeActivity extends ActionBarActivity {
     }
 
     public void playOnClick(View v){
-        MediaPlayer mp = MediaPlayer.create(this, R.raw.prueba_auditiva_a_mezcla);
+        if(mp == null) {
+            destruir();
+            mp = MediaPlayer.create(this, R.raw.prueba_auditiva_a_mezcla);
         mp.start();
         final CounterClass timer = new CounterClass(161000, 1000);
         timer.start();
+        }
     }
 
     @Override
     protected void onDestroy() {
         super.onDestroy();
-        if(mp.isPlaying()){
+        if(mp != null) {
             mp.stop();
             mp.release();
+        }
+    }
+
+    public void destruir(){
+        if(mp != null){
+            mp.release();
+
         }
     }
 
@@ -158,6 +165,7 @@ public class lenguajeActivity extends ActionBarActivity {
             tiempo=hms;
             if(aciertos==0&&errores==0&&intrusion==0&&hms.equalsIgnoreCase("00:02:20")){
                 error();
+
             }
 
 
