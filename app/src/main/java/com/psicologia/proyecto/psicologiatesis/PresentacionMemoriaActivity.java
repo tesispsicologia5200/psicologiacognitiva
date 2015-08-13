@@ -36,7 +36,7 @@ public class PresentacionMemoriaActivity extends ActionBarActivity {
                 timer.start();
             }
             if(Vmemoria.equals("0")){
-                Intent data = new Intent(this, lenguajeActivity.class);
+                Intent data = new Intent(this, PresentacionLenguajeActivity.class);
                 data.putExtra("Id",id);
                 data.putExtra("VMemoria",Vmemoria);
                 data.putExtra("VFunciones",Vfunciones);

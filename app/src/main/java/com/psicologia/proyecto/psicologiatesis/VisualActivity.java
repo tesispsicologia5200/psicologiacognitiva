@@ -1277,7 +1277,7 @@ public class VisualActivity extends ActionBarActivity implements DialogInterface
             long i = db.insert("LenguajeVisual", null, registroNuevos);
             if (i > 0) {
                 Toast.makeText(this, "prueba de lenguaje visual resgistrada", Toast.LENGTH_SHORT).show();
-                Intent data = new Intent(this, atencionActivity.class);
+                Intent data = new Intent(this, PresentacionTokenActivity.class);
                 data.putExtra("Id", id);
                 data.putExtra("VMemoria",Vmemoria);
                 data.putExtra("VFunciones", Vfunciones);
