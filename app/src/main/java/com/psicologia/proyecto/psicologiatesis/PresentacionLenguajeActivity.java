@@ -1,63 +1,54 @@
 package com.psicologia.proyecto.psicologiatesis;
 
 import android.content.Intent;
-import android.content.pm.ActivityInfo;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.os.CountDownTimer;
 import android.support.v7.app.ActionBarActivity;
-import android.view.Menu;
-import android.view.MenuItem;
-import android.view.View;
 
 import java.util.concurrent.TimeUnit;
 
 /**
- * Created by jairo on 23/07/2015.
+ * Created by Henry Jaramillo on 13/08/2015.
  */
-public class memoriaActivity extends ActionBarActivity {
-    @Override
-    public void finish() {
-        Intent data = new Intent(this,UsuarioActivity.class);
-        startActivity(data);
-    }
+public class PresentacionLenguajeActivity extends ActionBarActivity {
 
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        return super.onCreateOptionsMenu(menu);
-    }
 
     String id;
-    String Vmemoria;
     String Vfunciones;
     String Vlenguaje;
     String Vatencion;
-    String ronda;
-
+    String Vmemoria;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         Bundle b=this.getIntent().getExtras();
         super.onCreate(savedInstanceState);
-
         if(b!=null){
-            ronda=b.getString("Ronda");
             id=b.getString("Id");
             Vmemoria=b.getString("VMemoria");
-            Vfunciones=b.getString("VFunciones");
-            Vlenguaje=b.getString("VLenguaje");
-            Vatencion=b.getString("VAtencion");
-            setContentView(R.layout.memoria1);
-            final CounterClass timer = new CounterClass(8000, 1000);
-            timer.start();
+            Vfunciones = b.getString("VFunciones");
+            Vlenguaje = b.getString("VLenguaje");
+            Vatencion = b.getString("VAtencion");
+            if(Vlenguaje.equals("1")){
+                setContentView(R.layout.presentacionlenguaje);
+                final CounterClass timer = new CounterClass(5000, 1000);
+                timer.start();
+            }
+            if(Vlenguaje.equals("0")){
+                Intent data = new Intent(this, atencionActivity.class);
+                data.putExtra("Id",id);
+                data.putExtra("VMemoria",Vmemoria);
+                data.putExtra("VFunciones",Vfunciones);
+                data.putExtra("VLenguaje",Vlenguaje);
+                data.putExtra("VAtencion",Vatencion);
+                startActivity(data);
+            }
         }
-
-
     }
 
-
     public void enviarDatos(){
-        Intent data = new Intent(this,memoria2Activity.class);
-        data.putExtra("Ronda",ronda);
+        Intent data = new Intent(this,lenguajeActivity.class);
         data.putExtra("Id",id);
         data.putExtra("VMemoria",Vmemoria);
         data.putExtra("VFunciones",Vfunciones);
@@ -66,32 +57,15 @@ public class memoriaActivity extends ActionBarActivity {
         startActivity(data);
     }
 
-
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        return super.onOptionsItemSelected(item);
-    }
-
-
-
-
-
-
-
-
-
-    public class CounterClass extends CountDownTimer  {
+    public class CounterClass extends CountDownTimer {
 
         public CounterClass(long millisInFuture, long countDownInterval) {
             super(millisInFuture, countDownInterval);
-            // TODO Auto-generated constructor stub
         }
 
 
         @Override
         public void onTick(long millisUntilFinished) {
-            // TODO Auto-generated method stub
-
             long millis = millisUntilFinished;
             String hms = String.format("%02d:%02d:%02d", TimeUnit.MILLISECONDS.toHours(millis),
                     TimeUnit.MILLISECONDS.toMinutes(millis) - TimeUnit.HOURS.toMinutes(TimeUnit.MILLISECONDS.toHours(millis)),
@@ -99,21 +73,12 @@ public class memoriaActivity extends ActionBarActivity {
             System.out.println(hms);
 
         }
-
-
-
-
         @Override
         public void onFinish() {
-            // TODO Auto-generated method stub
             enviarDatos();
         }
 
 
 
     }
-
-
-
-
 }

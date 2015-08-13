@@ -70,6 +70,11 @@
 
 
 
+    <string name="lb_presentacion_memoria">Prueba de memoria semántica con incremento asociativo</string>
+    <string name="lb_presentacion_atencion">Prueba de atencion auditiva y visual</string>
+
+
+
 
 
 </resources>

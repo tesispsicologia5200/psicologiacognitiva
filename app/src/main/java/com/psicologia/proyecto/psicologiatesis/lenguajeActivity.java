@@ -44,26 +44,14 @@ public class lenguajeActivity extends ActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
         Bundle b=this.getIntent().getExtras();
         super.onCreate(savedInstanceState);
-
         if(b!=null){
             id=b.getString("Id");
             Vmemoria=b.getString("VMemoria");
             Vfunciones = b.getString("VFunciones");
             Vlenguaje = b.getString("VLenguaje");
             Vatencion = b.getString("VAtencion");
-            if(Vlenguaje.equals("1")){
-                setContentView(R.layout.auditiva_a);
-                mp = MediaPlayer.create(this, R.raw.prueba_auditiva_a_mezcla);
-            }
-            if(Vlenguaje.equals("0")){
-                Intent data = new Intent(this, atencionActivity.class);
-                data.putExtra("Id",id);
-                data.putExtra("VMemoria",Vmemoria);
-                data.putExtra("VFunciones",Vfunciones);
-                data.putExtra("VLenguaje",Vlenguaje);
-                data.putExtra("VAtencion",Vatencion);
-                startActivity(data);
-            }
+            setContentView(R.layout.auditiva_a);
+            mp = MediaPlayer.create(this, R.raw.prueba_auditiva_a_mezcla);
         }
     }
 

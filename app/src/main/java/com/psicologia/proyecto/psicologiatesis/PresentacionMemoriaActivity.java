@@ -1,30 +1,16 @@
 package com.psicologia.proyecto.psicologiatesis;
 
 import android.content.Intent;
-import android.content.pm.ActivityInfo;
 import android.os.Bundle;
 import android.os.CountDownTimer;
 import android.support.v7.app.ActionBarActivity;
-import android.view.Menu;
-import android.view.MenuItem;
-import android.view.View;
 
 import java.util.concurrent.TimeUnit;
 
 /**
- * Created by jairo on 23/07/2015.
+ * Created by Henry Jaramillo on 13/08/2015.
  */
-public class memoriaActivity extends ActionBarActivity {
-    @Override
-    public void finish() {
-        Intent data = new Intent(this,UsuarioActivity.class);
-        startActivity(data);
-    }
-
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        return super.onCreateOptionsMenu(menu);
-    }
+public class PresentacionMemoriaActivity extends ActionBarActivity {
 
     String id;
     String Vmemoria;
@@ -32,8 +18,6 @@ public class memoriaActivity extends ActionBarActivity {
     String Vlenguaje;
     String Vatencion;
     String ronda;
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         Bundle b=this.getIntent().getExtras();
@@ -46,17 +30,25 @@ public class memoriaActivity extends ActionBarActivity {
             Vfunciones=b.getString("VFunciones");
             Vlenguaje=b.getString("VLenguaje");
             Vatencion=b.getString("VAtencion");
-            setContentView(R.layout.memoria1);
-            final CounterClass timer = new CounterClass(8000, 1000);
-            timer.start();
+            if(Vmemoria.equals("1")){
+                setContentView(R.layout.presentacionmemoria);
+                final CounterClass timer = new CounterClass(5000, 1000);
+                timer.start();
+            }
+            if(Vmemoria.equals("0")){
+                Intent data = new Intent(this, lenguajeActivity.class);
+                data.putExtra("Id",id);
+                data.putExtra("VMemoria",Vmemoria);
+                data.putExtra("VFunciones",Vfunciones);
+                data.putExtra("VLenguaje",Vlenguaje);
+                data.putExtra("VAtencion",Vatencion);
+                startActivity(data);
+            }
         }
-
-
     }
 
-
     public void enviarDatos(){
-        Intent data = new Intent(this,memoria2Activity.class);
+        Intent data = new Intent(this,memoriaActivity.class);
         data.putExtra("Ronda",ronda);
         data.putExtra("Id",id);
         data.putExtra("VMemoria",Vmemoria);
@@ -67,20 +59,7 @@ public class memoriaActivity extends ActionBarActivity {
     }
 
 
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        return super.onOptionsItemSelected(item);
-    }
-
-
-
-
-
-
-
-
-
-    public class CounterClass extends CountDownTimer  {
+    public class CounterClass extends CountDownTimer {
 
         public CounterClass(long millisInFuture, long countDownInterval) {
             super(millisInFuture, countDownInterval);
@@ -99,10 +78,6 @@ public class memoriaActivity extends ActionBarActivity {
             System.out.println(hms);
 
         }
-
-
-
-
         @Override
         public void onFinish() {
             // TODO Auto-generated method stub
@@ -112,8 +87,4 @@ public class memoriaActivity extends ActionBarActivity {
 
 
     }
-
-
-
-
 }

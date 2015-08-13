@@ -2,7 +2,6 @@ package com.psicologia.proyecto.psicologiatesis;
 
 import android.content.ContentValues;
 import android.content.Intent;
-import android.content.pm.ActivityInfo;
 import android.database.sqlite.SQLiteDatabase;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
@@ -189,7 +188,7 @@ public class UsuarioActivity extends ActionBarActivity {
                     long i = db.insert("Usuarios", null, registroNuevos);
                     if (i > 0) {
                         Toast.makeText(this, "usuario resgistrado", Toast.LENGTH_SHORT).show();
-                        Intent data = new Intent(this, memoriaActivity.class);
+                        Intent data = new Intent(this, PresentacionMemoriaActivity.class);
                         data.putExtra("Id",identificacion);
                         data.putExtra("VMemoria",Vmemoria);
                         data.putExtra("VFunciones",VFunciones);

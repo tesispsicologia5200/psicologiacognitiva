@@ -251,7 +251,7 @@ public class memoriaResultadoActivity2M extends ActionBarActivity {
             long i = db.insert("MemoriaDosM", null, registroNuevos);
             if (i > 0) {
                 Toast.makeText(this, "prueba de memoria resgistrada", Toast.LENGTH_SHORT).show();
-                Intent data = new Intent(this, lenguajeActivity.class);
+                Intent data = new Intent(this, PresentacionLenguajeActivity.class);
                 data.putExtra("Id", id);
                 data.putExtra("VMemoria",Vmemoria);
                 data.putExtra("VFunciones", Vfunciones);
