@@ -1233,7 +1233,7 @@ public class VisualActivity extends ActionBarActivity implements DialogInterface
             if(contadorA==16 && bandera==0)
             {
                 bandera=1;
-                timer.onFinish();
+                enviarDatos();
             }
             long millis = millisUntilFinished;
             String hms = String.format("%02d:%02d:%02d", TimeUnit.MILLISECONDS.toHours(millis),
@@ -1249,7 +1249,10 @@ public class VisualActivity extends ActionBarActivity implements DialogInterface
 
         @Override
         public void onFinish() {
-            enviarDatos();
+            if(bandera == 0){
+                enviarDatos();
+            }
+
         }
 
 
@@ -1257,7 +1260,8 @@ public class VisualActivity extends ActionBarActivity implements DialogInterface
     }
 
     public void imagenOnClick(View v){
-        timer.onFinish();
+        enviarDatos();
+        bandera=1;
     }
 
 

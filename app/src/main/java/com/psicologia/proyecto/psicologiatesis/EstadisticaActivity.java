@@ -19,12 +19,13 @@ public class EstadisticaActivity extends ActionBarActivity {
 
     EditText txt_identificacion;
     Number[] serieLenguajeAuditivo,serieLenguajeVisual,series1Numbers,serieTokenTest;
-    String id;
+    String id,tiempo;
     String banano,conejo,elefante,estufa,fresa,guante,jarra,mariposa,panuelo,pato,pinia,sarten,sombrero,tenedor,uvas,zapato;
     String banano2,conejo2,elefante2,estufa2,fresa2,guante2,jarra2,mariposa2,panuelo2,pato2,pinia2,sarten2,sombrero2,tenedor2,uvas2,zapato2;
     String banano3,conejo3,elefante3,estufa3,fresa3,guante3,jarra3,mariposa3,panuelo3,pato3,pinia3,sarten3,sombrero3,tenedor3,uvas3,zapato3;
     String banano4,conejo4,elefante4,estufa4,fresa4,guante4,jarra4,mariposa4,panuelo4,pato4,pinia4,sarten4,sombrero4,tenedor4,uvas4,zapato4;
     String test1s,test2s,test3s,test4s;
+    int intrusion,perseveracion,intrusion2,perseveracion2,intrusion3,perseveracion3,intrusion4,perseveracion4;
     int aciertos,errores,omisiones,intrusiones;
     int contador,omision,erroresvisual;
     int nivel,aciertostoken,puntaje;
@@ -44,7 +45,7 @@ public class EstadisticaActivity extends ActionBarActivity {
         Cursor k = db.rawQuery("SELECT Identificacion FROM Usuarios where Identificacion='" + id + "'", null);
         if (k.moveToFirst()) {
             if (db != null) {
-                Cursor c = db.rawQuery("SELECT Elefante ,Conejo ,Pato ,Mariposa ,Sarten ,Estufa ,Tenedor ,Jarra ,Guante ,Zapato ,Sombrero ,Panuelo ,Banano ,Uvas ,Fresa ,Pinia FROM MemoriaUno where Id='" + id + "'", null);
+                Cursor c = db.rawQuery("SELECT Elefante ,Conejo ,Pato ,Mariposa ,Sarten ,Estufa ,Tenedor ,Jarra ,Guante ,Zapato ,Sombrero ,Panuelo ,Banano ,Uvas ,Fresa ,Pinia,Intrucion,Perseveracion FROM MemoriaUno where Id='" + id + "'", null);
                 if (c.moveToFirst()) {
                     elefante = c.getString(0);
                     conejo = c.getString(1);
@@ -62,6 +63,8 @@ public class EstadisticaActivity extends ActionBarActivity {
                     uvas = c.getString(13);
                     fresa = c.getString(14);
                     pinia = c.getString(15);
+                    intrusion= c.getInt(16);
+                    perseveracion=c.getInt(17);
                     int ielefante = Integer.parseInt(elefante);
                     int iconejo = Integer.parseInt(conejo);
                     int ipato = Integer.parseInt(pato);
@@ -84,7 +87,7 @@ public class EstadisticaActivity extends ActionBarActivity {
                 else{
                     test1s="0";
                 }
-                Cursor d = db.rawQuery("SELECT Elefante ,Conejo ,Pato ,Mariposa ,Sarten ,Estufa ,Tenedor ,Jarra ,Guante ,Zapato ,Sombrero ,Panuelo ,Banano ,Uvas ,Fresa ,Pinia FROM MemoriaDos where Id='" + id + "'", null);
+                Cursor d = db.rawQuery("SELECT Elefante ,Conejo ,Pato ,Mariposa ,Sarten ,Estufa ,Tenedor ,Jarra ,Guante ,Zapato ,Sombrero ,Panuelo ,Banano ,Uvas ,Fresa ,Pinia,Intrucion,Perseveracion FROM MemoriaDos where Id='" + id + "'", null);
                 if (d.moveToFirst()) {
                     elefante2 = d.getString(0);
                     conejo2 = d.getString(1);
@@ -102,6 +105,8 @@ public class EstadisticaActivity extends ActionBarActivity {
                     uvas2 = d.getString(13);
                     fresa2 = d.getString(14);
                     pinia2 = d.getString(15);
+                    intrusion2= d.getInt(16);
+                    perseveracion2=d.getInt(17);
                     int i2elefante = Integer.parseInt(elefante2);
                     int i2conejo = Integer.parseInt(conejo2);
                     int i2pato = Integer.parseInt(pato2);
@@ -125,7 +130,7 @@ public class EstadisticaActivity extends ActionBarActivity {
                     test2s="0";
                 }
 
-                Cursor e = db.rawQuery("SELECT Elefante ,Conejo ,Pato ,Mariposa ,Sarten ,Estufa ,Tenedor ,Jarra ,Guante ,Zapato ,Sombrero ,Panuelo ,Banano ,Uvas ,Fresa ,Pinia FROM MemoriaDosM where Id='" + id + "'", null);
+                Cursor e = db.rawQuery("SELECT Elefante ,Conejo ,Pato ,Mariposa ,Sarten ,Estufa ,Tenedor ,Jarra ,Guante ,Zapato ,Sombrero ,Panuelo ,Banano ,Uvas ,Fresa ,Pinia,Intrucion,Perseveracion FROM MemoriaDosM where Id='" + id + "'", null);
                 if (e.moveToFirst()) {
                     elefante3 = e.getString(0);
                     conejo3 = e.getString(1);
@@ -143,6 +148,8 @@ public class EstadisticaActivity extends ActionBarActivity {
                     uvas3 = e.getString(13);
                     fresa3 = e.getString(14);
                     pinia3 = e.getString(15);
+                    intrusion3= e.getInt(16);
+                    perseveracion3=e.getInt(17);
                     int i3elefante = Integer.parseInt(elefante3);
                     int i3conejo = Integer.parseInt(conejo3);
                     int i3pato = Integer.parseInt(pato3);
@@ -166,7 +173,7 @@ public class EstadisticaActivity extends ActionBarActivity {
                     test3s="0";
                 }
 
-                Cursor r = db.rawQuery("SELECT Elefante ,Conejo ,Pato ,Mariposa ,Sarten ,Estufa ,Tenedor ,Jarra ,Guante ,Zapato ,Sombrero ,Panuelo ,Banano ,Uvas ,Fresa ,Pinia FROM MemoriaTres where Id='" + id + "'", null);
+                Cursor r = db.rawQuery("SELECT Elefante ,Conejo ,Pato ,Mariposa ,Sarten ,Estufa ,Tenedor ,Jarra ,Guante ,Zapato ,Sombrero ,Panuelo ,Banano ,Uvas ,Fresa ,Pinia,Intrucion,Perseveracion FROM MemoriaTres where Id='" + id + "'", null);
                 if (r.moveToFirst()) {
                     elefante4 = r.getString(0);
                     conejo4 = r.getString(1);
@@ -184,6 +191,8 @@ public class EstadisticaActivity extends ActionBarActivity {
                     uvas4 = r.getString(13);
                     fresa4 = r.getString(14);
                     pinia4 = r.getString(15);
+                    intrusion4= r.getInt(16);
+                    perseveracion4=r.getInt(17);
                     int i4elefante = Integer.parseInt(elefante4);
                     int i4conejo = Integer.parseInt(conejo4);
                     int i4pato = Integer.parseInt(pato4);
@@ -218,11 +227,12 @@ public class EstadisticaActivity extends ActionBarActivity {
                 serieLenguajeAuditivo = new Number[]{aciertos, errores, omisiones, intrusiones};
 
 
-                Cursor p = db.rawQuery("SELECT Contador_a ,Contador_omision ,Errores  FROM LenguajeVisual WHERE Id='" + id + "'", null);
+                Cursor p = db.rawQuery("SELECT Contador_a ,Contador_omision ,Errores,Tiempo  FROM LenguajeVisual WHERE Id='" + id + "'", null);
                 if (p.moveToFirst()) {
                     contador = p.getInt(0);
                     omision = p.getInt(1);
                     erroresvisual = p.getInt(2);
+                    tiempo= p.getString(3);
                 }
                 serieLenguajeVisual = new Number[]{contador, omision, erroresvisual};
 
