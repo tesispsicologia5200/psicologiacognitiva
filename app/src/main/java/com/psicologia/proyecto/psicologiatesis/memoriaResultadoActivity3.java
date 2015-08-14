@@ -53,7 +53,6 @@ public class memoriaResultadoActivity3 extends ActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
         Bundle b = this.getIntent().getExtras();
         super.onCreate(savedInstanceState);
-
         if (b != null) {
             id=b.getString("Id");
             Vmemoria=b.getString("VMemoria");

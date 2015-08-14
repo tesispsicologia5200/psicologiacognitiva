@@ -43,8 +43,8 @@ public class ResultadosTokenTestActivity extends ActionBarActivity {
             txt_nivel =(EditText) findViewById(R.id.nivel_alcance);
             txt_aciertos =(EditText) findViewById(R.id.frases_acertadas);
             txt_puntaje=(EditText) findViewById(R.id.puntaje);
-            String nive =txt_nivel.getText().toString();
-            String aciert=txt_aciertos.getText().toString();
+            String nive ="0";
+            String aciert="0";
             String punt="0";
         }
     }
@@ -77,7 +77,5 @@ public class ResultadosTokenTestActivity extends ActionBarActivity {
                 startActivity(data);
             }
         }
-
     }
-
 }

@@ -1231,8 +1231,8 @@ public class VisualActivity extends ActionBarActivity implements DialogInterface
             // TODO Auto-generated method stub
 
             if(contadorA==16 && bandera==0)
-                {
-                    bandera=1;
+            {
+                bandera=1;
                 timer.onFinish();
             }
             long millis = millisUntilFinished;
@@ -1249,10 +1249,7 @@ public class VisualActivity extends ActionBarActivity implements DialogInterface
 
         @Override
         public void onFinish() {
-            if(bandera==0){
-                enviarDatos();
-            }
-
+            enviarDatos();
         }
 
 

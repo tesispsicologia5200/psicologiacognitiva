@@ -55,14 +55,12 @@ public class memoriaResultadoActivity extends ActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
         Bundle b = this.getIntent().getExtras();
         super.onCreate(savedInstanceState);
-
         if (b != null) {
             id=b.getString("Id");
             Vmemoria=b.getString("VMemoria");
             Vfunciones = b.getString("VFunciones");
             Vlenguaje = b.getString("VLenguaje");
             Vatencion = b.getString("VAtencion");
-
             setContentView(R.layout.memoria_resultado);
         }
     }
