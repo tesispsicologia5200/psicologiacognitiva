@@ -9,6 +9,7 @@ import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.ImageView;
 import android.widget.Toast;
 
 /**
@@ -76,6 +77,8 @@ public class memoriaResultadoActivity3 extends ActionBarActivity {
             primerarecordada="elefante";
             bandera=1;
         }
+        ImageView elefante = (ImageView) findViewById(R.id.img_elefante);
+        elefante.setVisibility(View.INVISIBLE);
     }
     public void imagenConejoOnClick(View view){
         conejo="1";
@@ -84,6 +87,8 @@ public class memoriaResultadoActivity3 extends ActionBarActivity {
             primerarecordada="conejo";
             bandera=1;
         }
+        ImageView conejo = (ImageView) findViewById(R.id.img_conejo);
+        conejo.setVisibility(View.INVISIBLE);
     }
     public void imagenPatoOnClick(View view){
         pato="1";
@@ -92,6 +97,8 @@ public class memoriaResultadoActivity3 extends ActionBarActivity {
             primerarecordada="pato";
             bandera=1;
         }
+        ImageView pato = (ImageView) findViewById(R.id.img_pato);
+        pato.setVisibility(View.INVISIBLE);
     }
     public void imagenMariposaOnClick(View view){
         mariposa="1";
@@ -100,6 +107,8 @@ public class memoriaResultadoActivity3 extends ActionBarActivity {
             primerarecordada="mariposa";
             bandera=1;
         }
+        ImageView mariposa = (ImageView) findViewById(R.id.img_mariposa);
+        mariposa.setVisibility(View.INVISIBLE);
     }
     public void imagenSartenOnClick(View view){
         sarten="1";
@@ -108,6 +117,8 @@ public class memoriaResultadoActivity3 extends ActionBarActivity {
             primerarecordada="sarten";
             bandera=1;
         }
+        ImageView sarten = (ImageView) findViewById(R.id.img_sarten);
+        sarten.setVisibility(View.INVISIBLE);
     }
     public void imagenEstufaOnClick(View view){
         estufa="1";
@@ -116,6 +127,8 @@ public class memoriaResultadoActivity3 extends ActionBarActivity {
             primerarecordada="estufa";
             bandera=1;
         }
+        ImageView estufa = (ImageView) findViewById(R.id.img_estufa);
+        estufa.setVisibility(View.INVISIBLE);
     }
     public void imagenTenedorOnClick(View view){
         tenedor="1";
@@ -124,6 +137,8 @@ public class memoriaResultadoActivity3 extends ActionBarActivity {
             primerarecordada="tenedor";
             bandera=1;
         }
+        ImageView tenedor = (ImageView) findViewById(R.id.img_tenedor);
+        tenedor.setVisibility(View.INVISIBLE);
     }
     public void imagenJarraOnClick(View view){
         jarra="1";
@@ -132,6 +147,8 @@ public class memoriaResultadoActivity3 extends ActionBarActivity {
             primerarecordada="jarra";
             bandera=1;
         }
+        ImageView jarra = (ImageView) findViewById(R.id.img_jarra);
+        jarra.setVisibility(View.INVISIBLE);
     }
     public void imagenGuanteOnClick(View view){
         guante="1";
@@ -140,6 +157,8 @@ public class memoriaResultadoActivity3 extends ActionBarActivity {
             primerarecordada="guante";
             bandera=1;
         }
+        ImageView guante = (ImageView) findViewById(R.id.img_guante);
+        guante.setVisibility(View.INVISIBLE);
     }
     public void imagenZapatoOnClick(View view){
         zapato="1";
@@ -148,6 +167,8 @@ public class memoriaResultadoActivity3 extends ActionBarActivity {
             primerarecordada="zapato";
             bandera=1;
         }
+        ImageView zapato = (ImageView) findViewById(R.id.img_zapato);
+        zapato.setVisibility(View.INVISIBLE);
     }
     public void imagenSombreroOnClick(View view){
         sombrero="1";
@@ -156,6 +177,8 @@ public class memoriaResultadoActivity3 extends ActionBarActivity {
             primerarecordada="sombrero";
             bandera=1;
         }
+        ImageView sombrero = (ImageView) findViewById(R.id.img_sombrero);
+        sombrero.setVisibility(View.INVISIBLE);
     }
     public void imagenPanueloOnClick(View view){
         panuelo="1";
@@ -164,6 +187,8 @@ public class memoriaResultadoActivity3 extends ActionBarActivity {
             primerarecordada="panuelo";
             bandera=1;
         }
+        ImageView panuelo = (ImageView) findViewById(R.id.img_pañuelo);
+        panuelo.setVisibility(View.INVISIBLE);
     }
     public void imagenBananoOnClick(View view){
         banano="1";
@@ -172,6 +197,8 @@ public class memoriaResultadoActivity3 extends ActionBarActivity {
             primerarecordada="banano";
             bandera=1;
         }
+        ImageView banano = (ImageView) findViewById(R.id.img_banano);
+        banano.setVisibility(View.INVISIBLE);
     }
     public void imagenUvasOnClick(View view){
         uvas="1";
@@ -180,6 +207,8 @@ public class memoriaResultadoActivity3 extends ActionBarActivity {
             primerarecordada="uvas";
             bandera=1;
         }
+        ImageView uvas = (ImageView) findViewById(R.id.img_uvas);
+        uvas.setVisibility(View.INVISIBLE);
     }
     public void imagenFresaOnClick(View view){
         fresa="1";
@@ -188,6 +217,8 @@ public class memoriaResultadoActivity3 extends ActionBarActivity {
             primerarecordada="fresa";
             bandera=1;
         }
+        ImageView fresa = (ImageView) findViewById(R.id.img_fresa);
+        fresa.setVisibility(View.INVISIBLE);
     }
     public void imagenPiniaOnClick(View view){
         pinia="1";
@@ -196,6 +227,8 @@ public class memoriaResultadoActivity3 extends ActionBarActivity {
             primerarecordada="pinia";
             bandera=1;
         }
+        ImageView pinia = (ImageView) findViewById(R.id.img_piña);
+        pinia.setVisibility(View.INVISIBLE);
     }
     public void btnIntrucionOnClick(View view){
         intrucion++;

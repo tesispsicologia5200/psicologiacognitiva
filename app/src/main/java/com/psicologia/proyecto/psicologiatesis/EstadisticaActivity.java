@@ -86,6 +86,8 @@ public class EstadisticaActivity extends ActionBarActivity {
                 }
                 else{
                     test1s="0";
+                    intrusion=0;
+                    perseveracion=0;
                 }
                 Cursor d = db.rawQuery("SELECT Elefante ,Conejo ,Pato ,Mariposa ,Sarten ,Estufa ,Tenedor ,Jarra ,Guante ,Zapato ,Sombrero ,Panuelo ,Banano ,Uvas ,Fresa ,Pinia,Intrucion,Perseveracion FROM MemoriaDos where Id='" + id + "'", null);
                 if (d.moveToFirst()) {
@@ -128,6 +130,8 @@ public class EstadisticaActivity extends ActionBarActivity {
                 }
                 else{
                     test2s="0";
+                    intrusion2=0;
+                    perseveracion2=0;
                 }
 
                 Cursor e = db.rawQuery("SELECT Elefante ,Conejo ,Pato ,Mariposa ,Sarten ,Estufa ,Tenedor ,Jarra ,Guante ,Zapato ,Sombrero ,Panuelo ,Banano ,Uvas ,Fresa ,Pinia,Intrucion,Perseveracion FROM MemoriaDosM where Id='" + id + "'", null);
@@ -171,6 +175,8 @@ public class EstadisticaActivity extends ActionBarActivity {
                 }
                 else{
                     test3s="0";
+                    intrusion3=0;
+                    perseveracion3=0;
                 }
 
                 Cursor r = db.rawQuery("SELECT Elefante ,Conejo ,Pato ,Mariposa ,Sarten ,Estufa ,Tenedor ,Jarra ,Guante ,Zapato ,Sombrero ,Panuelo ,Banano ,Uvas ,Fresa ,Pinia,Intrucion,Perseveracion FROM MemoriaTres where Id='" + id + "'", null);
@@ -214,6 +220,8 @@ public class EstadisticaActivity extends ActionBarActivity {
                 }
                 else{
                     test4s="0";
+                    intrusion4=0;
+                    perseveracion4=0;
                 }
 
 
@@ -257,6 +265,7 @@ public class EstadisticaActivity extends ActionBarActivity {
                     contador = 0;
                     omision = 0;
                     erroresvisual = 0;
+                    tiempo="00:00";
                 }
 
                 String nivell = String.valueOf(nivel);
@@ -313,6 +322,9 @@ public class EstadisticaActivity extends ActionBarActivity {
             TextView comision = (TextView) findViewById(R.id.lb_comision);
             comision.setVisibility(View.VISIBLE);
             comision.setText("Comisiones: " + String.valueOf(omision));
+            TextView tiempoo = (TextView) findViewById(R.id.tiempovisual);
+            tiempoo.setVisibility(View.VISIBLE);
+            tiempoo.setText("Tiempo: " + String.valueOf(tiempo));
 
             TextView aciertostokenn = (TextView) findViewById(R.id.lb_aciertostoken);
             aciertostokenn.setVisibility(View.VISIBLE);
@@ -323,6 +335,19 @@ public class EstadisticaActivity extends ActionBarActivity {
             TextView puntajee = (TextView) findViewById(R.id.lb_errorestoken);
             puntajee.setVisibility(View.VISIBLE);
             puntajee.setText("Puntaje: " + String.valueOf(puntaje));
+
+            TextView test1falta = (TextView) findViewById(R.id.test1falta);
+            test1falta.setVisibility(View.VISIBLE);
+            test1falta.setText("Perseveraciones: " + String.valueOf(perseveracion)+" / Intrusiones: "+String.valueOf(intrusion));
+            TextView test2falta = (TextView) findViewById(R.id.test2falta);
+            test2falta.setVisibility(View.VISIBLE);
+            test2falta.setText("Perseveraciones: " + String.valueOf(perseveracion2)+" / Intrusiones: "+String.valueOf(intrusion2));
+            TextView test3falta = (TextView) findViewById(R.id.test3falta);
+            test3falta.setVisibility(View.VISIBLE);
+            test3falta.setText("Perseveraciones: " + String.valueOf(perseveracion3)+" / Intrusiones: "+String.valueOf(intrusion3));
+            TextView test4falta = (TextView) findViewById(R.id.test4falta);
+            test4falta.setVisibility(View.VISIBLE);
+            test4falta.setText("Perseveraciones: " + String.valueOf(perseveracion4)+" / Intrusiones: "+String.valueOf(intrusion4));
         }
         else{
             Toast.makeText(this, "el usuario no existe", Toast.LENGTH_SHORT).show();
