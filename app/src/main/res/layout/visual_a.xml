@@ -5,18 +5,9 @@
     android:layout_height="match_parent"
     android:id="@+id/layoutvisual" tools:context=".VisualActivity">
 
-    <ImageView
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
-        android:id="@+id/imageView11"
-        android:src="#ffffffff"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
-
     <TextView
-        android:layout_width="30dp"
-        android:layout_height="30dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="G"
         android:id="@+id/lb_8_1"
@@ -25,11 +16,15 @@
         android:layout_alignParentStart="true"
         android:textSize="12pt"
         android:layout_marginTop="528.5dp"
-        android:layout_marginLeft="50dp" />
+        android:layout_marginLeft="50dp"
+        android:layout_alignParentBottom="false"
+        android:layout_alignParentRight="false"
+        android:autoText="false"
+        android:gravity="center_vertical|center_horizontal" />
 
     <TextView
-        android:layout_width="30dp"
-        android:layout_height="30dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="B"
         android:id="@+id/lb_1_1"
@@ -38,11 +33,15 @@
         android:layout_alignParentStart="true"
         android:textSize="12pt"
         android:layout_marginTop="30dp"
-        android:layout_marginLeft="50dp" />
+        android:layout_marginLeft="50dp"
+        android:layout_alignParentBottom="false"
+        android:layout_alignParentRight="false"
+        android:autoText="false"
+        android:gravity="center_vertical|center_horizontal" />
 
     <TextView
-        android:layout_width="30dp"
-        android:layout_height="30dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="W"
         android:id="@+id/lb_4_1"
@@ -52,11 +51,15 @@
         android:textSize="12pt"
         android:layout_marginTop="243.75dp"
         android:layout_marginLeft="50dp"
-        android:onClick="labelOnClick"/>
+        android:onClick="labelOnClick"
+        android:layout_alignParentBottom="false"
+        android:layout_alignParentRight="false"
+        android:autoText="false"
+        android:gravity="center_vertical|center_horizontal" />
 
     <TextView
-        android:layout_width="30dp"
-        android:layout_height="30dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="Z"
         android:id="@+id/lb_3_1"
@@ -65,11 +68,15 @@
         android:layout_alignParentStart="true"
         android:textSize="12pt"
         android:layout_marginTop="172.5dp"
-        android:layout_marginLeft="50dp" />
+        android:layout_marginLeft="50dp"
+        android:layout_alignParentBottom="false"
+        android:layout_alignParentRight="false"
+        android:autoText="false"
+        android:gravity="center_vertical|center_horizontal" />
 
     <TextView
-        android:layout_width="30dp"
-        android:layout_height="30dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="A"
         android:id="@+id/lb_5_1"
@@ -78,11 +85,15 @@
         android:layout_alignParentStart="true"
         android:textSize="12pt"
         android:layout_marginTop="315dp"
-        android:layout_marginLeft="50dp" />
+        android:layout_marginLeft="50dp"
+        android:layout_alignParentBottom="false"
+        android:layout_alignParentRight="false"
+        android:autoText="false"
+        android:gravity="center_vertical|center_horizontal" />
 
     <TextView
-        android:layout_width="30dp"
-        android:layout_height="30dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="Q"
         android:id="@+id/lb_6_1"
@@ -91,11 +102,15 @@
         android:layout_alignParentStart="true"
         android:textSize="12pt"
         android:layout_marginTop="386.25dp"
-        android:layout_marginLeft="50dp" />
+        android:layout_marginLeft="50dp"
+        android:layout_alignParentBottom="false"
+        android:layout_alignParentRight="false"
+        android:autoText="false"
+        android:gravity="center_vertical|center_horizontal" />
 
     <TextView
-        android:layout_width="30dp"
-        android:layout_height="30dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="O"
         android:id="@+id/lb_2_1"
@@ -104,11 +119,15 @@
         android:layout_alignParentStart="true"
         android:textSize="12pt"
         android:layout_marginTop="101.25dp"
-        android:layout_marginLeft="50dp" />
+        android:layout_marginLeft="50dp"
+        android:layout_alignParentBottom="false"
+        android:layout_alignParentRight="false"
+        android:autoText="false"
+        android:gravity="center_vertical|center_horizontal" />
 
     <TextView
-        android:layout_width="30dp"
-        android:layout_height="30dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="V"
         android:id="@+id/lb_7_1"
@@ -117,11 +136,15 @@
         android:layout_alignParentStart="true"
         android:textSize="12pt"
         android:layout_marginTop="457.5dp"
-        android:layout_marginLeft="50dp" />
+        android:layout_marginLeft="50dp"
+        android:layout_alignParentBottom="false"
+        android:layout_alignParentRight="false"
+        android:autoText="false"
+        android:gravity="center_vertical|center_horizontal" />
 
     <TextView
-        android:layout_width="30dp"
-        android:layout_height="30dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="O"
         android:id="@+id/lb_8_2"
@@ -130,11 +153,15 @@
         android:layout_alignParentStart="true"
         android:textSize="12pt"
         android:layout_marginTop="528.5dp"
-        android:layout_marginLeft="110dp" />
+        android:layout_marginLeft="110dp"
+        android:layout_alignParentBottom="false"
+        android:layout_alignParentRight="false"
+        android:autoText="false"
+        android:gravity="center_vertical|center_horizontal" />
 
     <TextView
-        android:layout_width="30dp"
-        android:layout_height="30dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="S"
         android:id="@+id/lb_1_2"
@@ -143,11 +170,15 @@
         android:layout_alignParentStart="true"
         android:textSize="12pt"
         android:layout_marginTop="30dp"
-        android:layout_marginLeft="110dp" />
+        android:layout_marginLeft="110dp"
+        android:layout_alignParentBottom="false"
+        android:layout_alignParentRight="false"
+        android:autoText="false"
+        android:gravity="center_vertical|center_horizontal" />
 
     <TextView
-        android:layout_width="30dp"
-        android:layout_height="30dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="D"
         android:id="@+id/lb_4_2"
@@ -156,11 +187,15 @@
         android:layout_alignParentStart="true"
         android:textSize="12pt"
         android:layout_marginTop="243.75dp"
-        android:layout_marginLeft="110dp" />
+        android:layout_marginLeft="110dp"
+        android:layout_alignParentBottom="false"
+        android:layout_alignParentRight="false"
+        android:autoText="false"
+        android:gravity="center_vertical|center_horizontal" />
 
     <TextView
-        android:layout_width="30dp"
-        android:layout_height="30dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="L"
         android:id="@+id/lb_3_2"
@@ -169,11 +204,15 @@
         android:layout_alignParentStart="true"
         android:textSize="12pt"
         android:layout_marginTop="172.5dp"
-        android:layout_marginLeft="110dp" />
+        android:layout_marginLeft="110dp"
+        android:layout_alignParentBottom="false"
+        android:layout_alignParentRight="false"
+        android:autoText="false"
+        android:gravity="center_vertical|center_horizontal" />
 
     <TextView
-        android:layout_width="30dp"
-        android:layout_height="30dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="N"
         android:id="@+id/lb_5_2"
@@ -182,11 +221,15 @@
         android:layout_alignParentStart="true"
         android:textSize="12pt"
         android:layout_marginTop="315dp"
-        android:layout_marginLeft="110dp" />
+        android:layout_marginLeft="110dp"
+        android:layout_alignParentBottom="false"
+        android:layout_alignParentRight="false"
+        android:autoText="false"
+        android:gravity="center_vertical|center_horizontal" />
 
     <TextView
-        android:layout_width="30dp"
-        android:layout_height="30dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="W"
         android:id="@+id/lb_6_2"
@@ -195,11 +238,15 @@
         android:layout_alignParentStart="true"
         android:textSize="12pt"
         android:layout_marginTop="386.25dp"
-        android:layout_marginLeft="110dp" />
+        android:layout_marginLeft="110dp"
+        android:layout_alignParentBottom="false"
+        android:layout_alignParentRight="false"
+        android:autoText="false"
+        android:gravity="center_vertical|center_horizontal" />
 
     <TextView
-        android:layout_width="30dp"
-        android:layout_height="30dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="T"
         android:id="@+id/lb_2_2"
@@ -208,11 +255,15 @@
         android:layout_alignParentStart="true"
         android:textSize="12pt"
         android:layout_marginTop="101.25dp"
-        android:layout_marginLeft="110dp" />
+        android:layout_marginLeft="110dp"
+        android:layout_alignParentBottom="false"
+        android:layout_alignParentRight="false"
+        android:autoText="false"
+        android:gravity="center_vertical|center_horizontal" />
 
     <TextView
-        android:layout_width="30dp"
-        android:layout_height="30dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="A"
         android:id="@+id/lb_7_2"
@@ -221,11 +272,15 @@
         android:layout_alignParentStart="true"
         android:textSize="12pt"
         android:layout_marginTop="457.5dp"
-        android:layout_marginLeft="110dp" />
+        android:layout_marginLeft="110dp"
+        android:layout_alignParentBottom="false"
+        android:layout_alignParentRight="false"
+        android:autoText="false"
+        android:gravity="center_vertical|center_horizontal" />
 
     <TextView
-        android:layout_width="30dp"
-        android:layout_height="30dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="U"
         android:id="@+id/lb_8_3"
@@ -234,11 +289,15 @@
         android:layout_alignParentStart="true"
         android:textSize="12pt"
         android:layout_marginTop="528.5dp"
-        android:layout_marginLeft="170dp" />
+        android:layout_marginLeft="170dp"
+        android:layout_alignParentBottom="false"
+        android:layout_alignParentRight="false"
+        android:autoText="false"
+        android:gravity="center_vertical|center_horizontal" />
 
     <TextView
-        android:layout_width="30dp"
-        android:layout_height="30dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="A"
         android:id="@+id/lb_1_3"
@@ -247,11 +306,15 @@
         android:layout_alignParentStart="true"
         android:textSize="12pt"
         android:layout_marginTop="30dp"
-        android:layout_marginLeft="170dp" />
+        android:layout_marginLeft="170dp"
+        android:layout_alignParentBottom="false"
+        android:layout_alignParentRight="false"
+        android:autoText="false"
+        android:gravity="center_vertical|center_horizontal" />
 
     <TextView
-        android:layout_width="30dp"
-        android:layout_height="30dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="Q"
         android:id="@+id/lb_4_3"
@@ -260,11 +323,15 @@
         android:layout_alignParentStart="true"
         android:textSize="12pt"
         android:layout_marginTop="243.75dp"
-        android:layout_marginLeft="170dp" />
+        android:layout_marginLeft="170dp"
+        android:layout_alignParentBottom="false"
+        android:layout_alignParentRight="false"
+        android:autoText="false"
+        android:gravity="center_vertical|center_horizontal" />
 
     <TextView
-        android:layout_width="30dp"
-        android:layout_height="30dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="S"
         android:id="@+id/lb_3_3"
@@ -273,11 +340,15 @@
         android:layout_alignParentStart="true"
         android:textSize="12pt"
         android:layout_marginTop="172.5dp"
-        android:layout_marginLeft="170dp" />
+        android:layout_marginLeft="170dp"
+        android:layout_alignParentBottom="false"
+        android:layout_alignParentRight="false"
+        android:autoText="false"
+        android:gravity="center_vertical|center_horizontal" />
 
     <TextView
-        android:layout_width="30dp"
-        android:layout_height="30dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="C"
         android:id="@+id/lb_5_3"
@@ -286,11 +357,15 @@
         android:layout_alignParentStart="true"
         android:textSize="12pt"
         android:layout_marginTop="315dp"
-        android:layout_marginLeft="170dp" />
+        android:layout_marginLeft="170dp"
+        android:layout_alignParentBottom="false"
+        android:layout_alignParentRight="false"
+        android:autoText="false"
+        android:gravity="center_vertical|center_horizontal" />
 
     <TextView
-        android:layout_width="30dp"
-        android:layout_height="30dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="N"
         android:id="@+id/lb_6_3"
@@ -299,11 +374,15 @@
         android:layout_alignParentStart="true"
         android:textSize="12pt"
         android:layout_marginTop="386.25dp"
-        android:layout_marginLeft="170dp" />
+        android:layout_marginLeft="170dp"
+        android:layout_alignParentBottom="false"
+        android:layout_alignParentRight="false"
+        android:autoText="false"
+        android:gravity="center_vertical|center_horizontal" />
 
     <TextView
-        android:layout_width="30dp"
-        android:layout_height="30dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="M"
         android:id="@+id/lb_2_3"
@@ -312,11 +391,15 @@
         android:layout_alignParentStart="true"
         android:textSize="12pt"
         android:layout_marginTop="101.25dp"
-        android:layout_marginLeft="170dp" />
+        android:layout_marginLeft="170dp"
+        android:layout_alignParentBottom="false"
+        android:layout_alignParentRight="false"
+        android:autoText="false"
+        android:gravity="center_vertical|center_horizontal" />
 
     <TextView
-        android:layout_width="30dp"
-        android:layout_height="30dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="X"
         android:id="@+id/lb_7_3"
@@ -325,11 +408,15 @@
         android:layout_alignParentStart="true"
         android:textSize="12pt"
         android:layout_marginTop="457.5dp"
-        android:layout_marginLeft="170dp" />
+        android:layout_marginLeft="170dp"
+        android:layout_alignParentBottom="false"
+        android:layout_alignParentRight="false"
+        android:autoText="false"
+        android:gravity="center_vertical|center_horizontal" />
 
     <TextView
-        android:layout_width="30dp"
-        android:layout_height="30dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="A"
         android:id="@+id/lb_8_4"
@@ -338,11 +425,15 @@
         android:layout_alignParentStart="true"
         android:textSize="12pt"
         android:layout_marginTop="528.5dp"
-        android:layout_marginLeft="230dp" />
+        android:layout_marginLeft="230dp"
+        android:layout_alignParentBottom="false"
+        android:layout_alignParentRight="false"
+        android:autoText="false"
+        android:gravity="center_vertical|center_horizontal" />
 
     <TextView
-        android:layout_width="30dp"
-        android:layout_height="30dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="P"
         android:id="@+id/lb_1_4"
@@ -351,11 +442,15 @@
         android:layout_alignParentStart="true"
         android:textSize="12pt"
         android:layout_marginTop="30dp"
-        android:layout_marginLeft="230dp" />
+        android:layout_marginLeft="230dp"
+        android:layout_alignParentBottom="false"
+        android:layout_alignParentRight="false"
+        android:autoText="false"
+        android:gravity="center_vertical|center_horizontal" />
 
     <TextView
-        android:layout_width="30dp"
-        android:layout_height="30dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="Z"
         android:id="@+id/lb_4_4"
@@ -364,11 +459,15 @@
         android:layout_alignParentStart="true"
         android:textSize="12pt"
         android:layout_marginTop="243.75dp"
-        android:layout_marginLeft="230dp" />
+        android:layout_marginLeft="230dp"
+        android:layout_alignParentBottom="false"
+        android:layout_alignParentRight="false"
+        android:autoText="false"
+        android:gravity="center_vertical|center_horizontal" />
 
     <TextView
-        android:layout_width="30dp"
-        android:layout_height="30dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="Y"
         android:id="@+id/lb_3_4"
@@ -377,11 +476,15 @@
         android:layout_alignParentStart="true"
         android:textSize="12pt"
         android:layout_marginTop="172.5dp"
-        android:layout_marginLeft="230dp" />
+        android:layout_marginLeft="230dp"
+        android:layout_alignParentBottom="false"
+        android:layout_alignParentRight="false"
+        android:autoText="false"
+        android:gravity="center_vertical|center_horizontal" />
 
     <TextView
-        android:layout_width="30dp"
-        android:layout_height="30dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="U"
         android:id="@+id/lb_5_4"
@@ -390,11 +493,15 @@
         android:layout_alignParentStart="true"
         android:textSize="12pt"
         android:layout_marginTop="315dp"
-        android:layout_marginLeft="230dp" />
+        android:layout_marginLeft="230dp"
+        android:layout_alignParentBottom="false"
+        android:layout_alignParentRight="false"
+        android:autoText="false"
+        android:gravity="center_vertical|center_horizontal" />
 
     <TextView
-        android:layout_width="30dp"
-        android:layout_height="30dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="P"
         android:id="@+id/lb_6_4"
@@ -403,11 +510,15 @@
         android:layout_alignParentStart="true"
         android:textSize="12pt"
         android:layout_marginTop="386.25dp"
-        android:layout_marginLeft="230dp" />
+        android:layout_marginLeft="230dp"
+        android:layout_alignParentBottom="false"
+        android:layout_alignParentRight="false"
+        android:autoText="false"
+        android:gravity="center_vertical|center_horizontal" />
 
     <TextView
-        android:layout_width="30dp"
-        android:layout_height="30dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="C"
         android:id="@+id/lb_2_4"
@@ -416,11 +527,15 @@
         android:layout_alignParentStart="true"
         android:textSize="12pt"
         android:layout_marginTop="101.25dp"
-        android:layout_marginLeft="230dp" />
+        android:layout_marginLeft="230dp"
+        android:layout_alignParentBottom="false"
+        android:layout_alignParentRight="false"
+        android:autoText="false"
+        android:gravity="center_vertical|center_horizontal" />
 
     <TextView
-        android:layout_width="30dp"
-        android:layout_height="30dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="R"
         android:id="@+id/lb_7_4"
@@ -429,11 +544,15 @@
         android:layout_alignParentStart="true"
         android:textSize="12pt"
         android:layout_marginTop="457.5dp"
-        android:layout_marginLeft="230dp" />
+        android:layout_marginLeft="230dp"
+        android:layout_alignParentBottom="false"
+        android:layout_alignParentRight="false"
+        android:autoText="false"
+        android:gravity="center_vertical|center_horizontal" />
 
     <TextView
-        android:layout_width="30dp"
-        android:layout_height="30dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="N"
         android:id="@+id/lb_8_5"
@@ -442,11 +561,15 @@
         android:layout_alignParentStart="true"
         android:textSize="12pt"
         android:layout_marginTop="528.5dp"
-        android:layout_marginLeft="290dp" />
+        android:layout_marginLeft="290dp"
+        android:layout_alignParentBottom="false"
+        android:layout_alignParentRight="false"
+        android:autoText="false"
+        android:gravity="center_vertical|center_horizontal" />
 
     <TextView
-        android:layout_width="30dp"
-        android:layout_height="30dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="G"
         android:id="@+id/lb_1_5"
@@ -455,11 +578,15 @@
         android:layout_alignParentStart="true"
         android:textSize="12pt"
         android:layout_marginTop="30dp"
-        android:layout_marginLeft="290dp" />
+        android:layout_marginLeft="290dp"
+        android:layout_alignParentBottom="false"
+        android:layout_alignParentRight="false"
+        android:autoText="false"
+        android:gravity="center_vertical|center_horizontal" />
 
     <TextView
-        android:layout_width="30dp"
-        android:layout_height="30dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="B"
         android:id="@+id/lb_4_5"
@@ -468,11 +595,15 @@
         android:layout_alignParentStart="true"
         android:textSize="12pt"
         android:layout_marginTop="243.75dp"
-        android:layout_marginLeft="290dp" />
+        android:layout_marginLeft="290dp"
+        android:layout_alignParentBottom="false"
+        android:layout_alignParentRight="false"
+        android:autoText="false"
+        android:gravity="center_vertical|center_horizontal" />
 
     <TextView
-        android:layout_width="30dp"
-        android:layout_height="30dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="W"
         android:id="@+id/lb_3_5"
@@ -481,11 +612,15 @@
         android:layout_alignParentStart="true"
         android:textSize="12pt"
         android:layout_marginTop="172.5dp"
-        android:layout_marginLeft="290dp" />
+        android:layout_marginLeft="290dp"
+        android:layout_alignParentBottom="false"
+        android:layout_alignParentRight="false"
+        android:autoText="false"
+        android:gravity="center_vertical|center_horizontal" />
 
     <TextView
-        android:layout_width="30dp"
-        android:layout_height="30dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="F"
         android:id="@+id/lb_5_5"
@@ -494,11 +629,15 @@
         android:layout_alignParentStart="true"
         android:textSize="12pt"
         android:layout_marginTop="315dp"
-        android:layout_marginLeft="290dp" />
+        android:layout_marginLeft="290dp"
+        android:layout_alignParentBottom="false"
+        android:layout_alignParentRight="false"
+        android:autoText="false"
+        android:gravity="center_vertical|center_horizontal" />
 
     <TextView
-        android:layout_width="30dp"
-        android:layout_height="30dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="L"
         android:id="@+id/lb_6_5"
@@ -507,11 +646,15 @@
         android:layout_alignParentStart="true"
         android:textSize="12pt"
         android:layout_marginTop="386.25dp"
-        android:layout_marginLeft="290dp" />
+        android:layout_marginLeft="290dp"
+        android:layout_alignParentBottom="false"
+        android:layout_alignParentRight="false"
+        android:autoText="false"
+        android:gravity="center_vertical|center_horizontal" />
 
     <TextView
-        android:layout_width="30dp"
-        android:layout_height="30dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="L"
         android:id="@+id/lb_2_5"
@@ -520,11 +663,15 @@
         android:layout_alignParentStart="true"
         android:textSize="12pt"
         android:layout_marginTop="101.25dp"
-        android:layout_marginLeft="290dp" />
+        android:layout_marginLeft="290dp"
+        android:layout_alignParentBottom="false"
+        android:layout_alignParentRight="false"
+        android:autoText="false"
+        android:gravity="center_vertical|center_horizontal" />
 
     <TextView
-        android:layout_width="30dp"
-        android:layout_height="30dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="B"
         android:id="@+id/lb_7_5"
@@ -533,11 +680,15 @@
         android:layout_alignParentStart="true"
         android:textSize="12pt"
         android:layout_marginTop="457.5dp"
-        android:layout_marginLeft="290dp" />
+        android:layout_marginLeft="290dp"
+        android:layout_alignParentBottom="false"
+        android:layout_alignParentRight="false"
+        android:autoText="false"
+        android:gravity="center_vertical|center_horizontal" />
 
     <TextView
-        android:layout_width="30dp"
-        android:layout_height="30dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="G"
         android:id="@+id/lb_8_6"
@@ -546,11 +697,15 @@
         android:layout_alignParentStart="true"
         android:textSize="12pt"
         android:layout_marginTop="528.5dp"
-        android:layout_marginLeft="350dp" />
+        android:layout_marginLeft="350dp"
+        android:layout_alignParentBottom="false"
+        android:layout_alignParentRight="false"
+        android:autoText="false"
+        android:gravity="center_vertical|center_horizontal" />
 
     <TextView
-        android:layout_width="30dp"
-        android:layout_height="30dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="Q"
         android:id="@+id/lb_1_6"
@@ -559,11 +714,15 @@
         android:layout_alignParentStart="true"
         android:textSize="12pt"
         android:layout_marginTop="30dp"
-        android:layout_marginLeft="350dp" />
+        android:layout_marginLeft="350dp"
+        android:layout_alignParentBottom="false"
+        android:layout_alignParentRight="false"
+        android:autoText="false"
+        android:gravity="center_vertical|center_horizontal" />
 
     <TextView
-        android:layout_width="30dp"
-        android:layout_height="30dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="H"
         android:id="@+id/lb_4_6"
@@ -572,11 +731,15 @@
         android:layout_alignParentStart="true"
         android:textSize="12pt"
         android:layout_marginTop="243.75dp"
-        android:layout_marginLeft="350dp" />
+        android:layout_marginLeft="350dp"
+        android:layout_alignParentBottom="false"
+        android:layout_alignParentRight="false"
+        android:autoText="false"
+        android:gravity="center_vertical|center_horizontal" />
 
     <TextView
-        android:layout_width="30dp"
-        android:layout_height="30dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="A"
         android:id="@+id/lb_3_6"
@@ -585,11 +748,15 @@
         android:layout_alignParentStart="true"
         android:textSize="12pt"
         android:layout_marginTop="172.5dp"
-        android:layout_marginLeft="350dp" />
+        android:layout_marginLeft="350dp"
+        android:layout_alignParentBottom="false"
+        android:layout_alignParentRight="false"
+        android:autoText="false"
+        android:gravity="center_vertical|center_horizontal" />
 
     <TextView
-        android:layout_width="30dp"
-        android:layout_height="30dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="G"
         android:id="@+id/lb_5_6"
@@ -598,11 +765,15 @@
         android:layout_alignParentStart="true"
         android:textSize="12pt"
         android:layout_marginTop="315dp"
-        android:layout_marginLeft="350dp" />
+        android:layout_marginLeft="350dp"
+        android:layout_alignParentBottom="false"
+        android:layout_alignParentRight="false"
+        android:autoText="false"
+        android:gravity="center_vertical|center_horizontal" />
 
     <TextView
-        android:layout_width="30dp"
-        android:layout_height="30dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="C"
         android:id="@+id/lb_6_6"
@@ -611,11 +782,15 @@
         android:layout_alignParentStart="true"
         android:textSize="12pt"
         android:layout_marginTop="386.25dp"
-        android:layout_marginLeft="350dp" />
+        android:layout_marginLeft="350dp"
+        android:layout_alignParentBottom="false"
+        android:layout_alignParentRight="false"
+        android:autoText="false"
+        android:gravity="center_vertical|center_horizontal" />
 
     <TextView
-        android:layout_width="30dp"
-        android:layout_height="30dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="N"
         android:id="@+id/lb_2_6"
@@ -624,11 +799,15 @@
         android:layout_alignParentStart="true"
         android:textSize="12pt"
         android:layout_marginTop="101.25dp"
-        android:layout_marginLeft="350dp" />
+        android:layout_marginLeft="350dp"
+        android:layout_alignParentBottom="false"
+        android:layout_alignParentRight="false"
+        android:autoText="false"
+        android:gravity="center_vertical|center_horizontal" />
 
     <TextView
-        android:layout_width="30dp"
-        android:layout_height="30dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="J"
         android:id="@+id/lb_7_6"
@@ -637,11 +816,15 @@
         android:layout_alignParentStart="true"
         android:textSize="12pt"
         android:layout_marginTop="457.5dp"
-        android:layout_marginLeft="350dp" />
+        android:layout_marginLeft="350dp"
+        android:layout_alignParentBottom="false"
+        android:layout_alignParentRight="false"
+        android:autoText="false"
+        android:gravity="center_vertical|center_horizontal" />
 
     <TextView
-        android:layout_width="30dp"
-        android:layout_height="30dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="U"
         android:id="@+id/lb_8_7"
@@ -650,11 +833,15 @@
         android:layout_alignParentStart="true"
         android:textSize="12pt"
         android:layout_marginTop="528.5dp"
-        android:layout_marginLeft="410dp" />
+        android:layout_marginLeft="410dp"
+        android:layout_alignParentBottom="false"
+        android:layout_alignParentRight="false"
+        android:autoText="false"
+        android:gravity="center_vertical|center_horizontal" />
 
     <TextView
-        android:layout_width="30dp"
-        android:layout_height="30dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="T"
         android:id="@+id/lb_1_7"
@@ -663,11 +850,15 @@
         android:layout_alignParentStart="true"
         android:textSize="12pt"
         android:layout_marginTop="30dp"
-        android:layout_marginLeft="410dp" />
+        android:layout_marginLeft="410dp"
+        android:layout_alignParentBottom="false"
+        android:layout_alignParentRight="false"
+        android:autoText="false"
+        android:gravity="center_vertical|center_horizontal" />
 
     <TextView
-        android:layout_width="30dp"
-        android:layout_height="30dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="R"
         android:id="@+id/lb_4_7"
@@ -676,11 +867,15 @@
         android:layout_alignParentStart="true"
         android:textSize="12pt"
         android:layout_marginTop="243.75dp"
-        android:layout_marginLeft="410dp" />
+        android:layout_marginLeft="410dp"
+        android:layout_alignParentBottom="false"
+        android:layout_alignParentRight="false"
+        android:autoText="false"
+        android:gravity="center_vertical|center_horizontal" />
 
     <TextView
-        android:layout_width="30dp"
-        android:layout_height="30dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="N"
         android:id="@+id/lb_3_7"
@@ -689,11 +884,15 @@
         android:layout_alignParentStart="true"
         android:textSize="12pt"
         android:layout_marginTop="172.5dp"
-        android:layout_marginLeft="410dp" />
+        android:layout_marginLeft="410dp"
+        android:layout_alignParentBottom="false"
+        android:layout_alignParentRight="false"
+        android:autoText="false"
+        android:gravity="center_vertical|center_horizontal" />
 
     <TextView
-        android:layout_width="30dp"
-        android:layout_height="30dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="R"
         android:id="@+id/lb_5_7"
@@ -702,11 +901,15 @@
         android:layout_alignParentStart="true"
         android:textSize="12pt"
         android:layout_marginTop="315dp"
-        android:layout_marginLeft="410dp" />
+        android:layout_marginLeft="410dp"
+        android:layout_alignParentBottom="false"
+        android:layout_alignParentRight="false"
+        android:autoText="false"
+        android:gravity="center_vertical|center_horizontal" />
 
     <TextView
-        android:layout_width="30dp"
-        android:layout_height="30dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="I"
         android:id="@+id/lb_6_7"
@@ -715,11 +918,15 @@
         android:layout_alignParentStart="true"
         android:textSize="12pt"
         android:layout_marginTop="386.25dp"
-        android:layout_marginLeft="410dp" />
+        android:layout_marginLeft="410dp"
+        android:layout_alignParentBottom="false"
+        android:layout_alignParentRight="false"
+        android:autoText="false"
+        android:gravity="center_vertical|center_horizontal" />
 
     <TextView
-        android:layout_width="30dp"
-        android:layout_height="30dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="D"
         android:id="@+id/lb_2_7"
@@ -728,11 +935,15 @@
         android:layout_alignParentStart="true"
         android:textSize="12pt"
         android:layout_marginTop="101.25dp"
-        android:layout_marginLeft="410dp" />
+        android:layout_marginLeft="410dp"
+        android:layout_alignParentBottom="false"
+        android:layout_alignParentRight="false"
+        android:autoText="false"
+        android:gravity="center_vertical|center_horizontal" />
 
     <TextView
-        android:layout_width="30dp"
-        android:layout_height="30dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="C"
         android:id="@+id/lb_7_7"
@@ -741,11 +952,15 @@
         android:layout_alignParentStart="true"
         android:textSize="12pt"
         android:layout_marginTop="457.5dp"
-        android:layout_marginLeft="410dp" />
+        android:layout_marginLeft="410dp"
+        android:layout_alignParentBottom="false"
+        android:layout_alignParentRight="false"
+        android:autoText="false"
+        android:gravity="center_vertical|center_horizontal" />
 
     <TextView
-        android:layout_width="30dp"
-        android:layout_height="30dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="Z"
         android:id="@+id/lb_8_8"
@@ -754,11 +969,15 @@
         android:layout_alignParentStart="true"
         android:textSize="12pt"
         android:layout_marginTop="528.5dp"
-        android:layout_marginLeft="470dp" />
+        android:layout_marginLeft="470dp"
+        android:layout_alignParentBottom="false"
+        android:layout_alignParentRight="false"
+        android:autoText="false"
+        android:gravity="center_vertical|center_horizontal" />
 
     <TextView
-        android:layout_width="30dp"
-        android:layout_height="30dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="V"
         android:id="@+id/lb_1_8"
@@ -767,11 +986,15 @@
         android:layout_alignParentStart="true"
         android:textSize="12pt"
         android:layout_marginTop="30dp"
-        android:layout_marginLeft="470dp" />
+        android:layout_marginLeft="470dp"
+        android:layout_alignParentBottom="false"
+        android:layout_alignParentRight="false"
+        android:autoText="false"
+        android:gravity="center_vertical|center_horizontal" />
 
     <TextView
-        android:layout_width="30dp"
-        android:layout_height="30dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="Z"
         android:id="@+id/lb_4_8"
@@ -780,11 +1003,15 @@
         android:layout_alignParentStart="true"
         android:textSize="12pt"
         android:layout_marginTop="243.75dp"
-        android:layout_marginLeft="470dp" />
+        android:layout_marginLeft="470dp"
+        android:layout_alignParentBottom="false"
+        android:layout_alignParentRight="false"
+        android:autoText="false"
+        android:gravity="center_vertical|center_horizontal" />
 
     <TextView
-        android:layout_width="30dp"
-        android:layout_height="30dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="N"
         android:id="@+id/lb_3_8"
@@ -793,11 +1020,15 @@
         android:layout_alignParentStart="true"
         android:textSize="12pt"
         android:layout_marginTop="172.5dp"
-        android:layout_marginLeft="470dp" />
+        android:layout_marginLeft="470dp"
+        android:layout_alignParentBottom="false"
+        android:layout_alignParentRight="false"
+        android:autoText="false"
+        android:gravity="center_vertical|center_horizontal" />
 
     <TextView
-        android:layout_width="30dp"
-        android:layout_height="30dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="A"
         android:id="@+id/lb_5_8"
@@ -806,11 +1037,15 @@
         android:layout_alignParentStart="true"
         android:textSize="12pt"
         android:layout_marginTop="315dp"
-        android:layout_marginLeft="470dp" />
+        android:layout_marginLeft="470dp"
+        android:layout_alignParentBottom="false"
+        android:layout_alignParentRight="false"
+        android:autoText="false"
+        android:gravity="center_vertical|center_horizontal" />
 
     <TextView
-        android:layout_width="30dp"
-        android:layout_height="30dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="T"
         android:id="@+id/lb_6_8"
@@ -819,11 +1054,15 @@
         android:layout_alignParentStart="true"
         android:textSize="12pt"
         android:layout_marginTop="386.25dp"
-        android:layout_marginLeft="470dp" />
+        android:layout_marginLeft="470dp"
+        android:layout_alignParentBottom="false"
+        android:layout_alignParentRight="false"
+        android:autoText="false"
+        android:gravity="center_vertical|center_horizontal" />
 
     <TextView
-        android:layout_width="30dp"
-        android:layout_height="30dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="U"
         android:id="@+id/lb_2_8"
@@ -832,11 +1071,15 @@
         android:layout_alignParentStart="true"
         android:textSize="12pt"
         android:layout_marginTop="101.25dp"
-        android:layout_marginLeft="470dp" />
+        android:layout_marginLeft="470dp"
+        android:layout_alignParentBottom="false"
+        android:layout_alignParentRight="false"
+        android:autoText="false"
+        android:gravity="center_vertical|center_horizontal" />
 
     <TextView
-        android:layout_width="30dp"
-        android:layout_height="30dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="A"
         android:id="@+id/lb_7_8"
@@ -845,11 +1088,15 @@
         android:layout_alignParentStart="true"
         android:textSize="12pt"
         android:layout_marginTop="457.5dp"
-        android:layout_marginLeft="470dp" />
+        android:layout_marginLeft="470dp"
+        android:layout_alignParentBottom="false"
+        android:layout_alignParentRight="false"
+        android:autoText="false"
+        android:gravity="center_vertical|center_horizontal" />
 
     <TextView
-        android:layout_width="30dp"
-        android:layout_height="30dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="H"
         android:id="@+id/lb_8_9"
@@ -858,11 +1105,15 @@
         android:layout_alignParentStart="true"
         android:textSize="12pt"
         android:layout_marginTop="528.5dp"
-        android:layout_marginLeft="530dp" />
+        android:layout_marginLeft="530dp"
+        android:layout_alignParentBottom="false"
+        android:layout_alignParentRight="false"
+        android:autoText="false"
+        android:gravity="center_vertical|center_horizontal" />
 
     <TextView
-        android:layout_width="30dp"
-        android:layout_height="30dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="E"
         android:id="@+id/lb_1_9"
@@ -871,11 +1122,15 @@
         android:layout_alignParentStart="true"
         android:textSize="12pt"
         android:layout_marginTop="30dp"
-        android:layout_marginLeft="530dp" />
+        android:layout_marginLeft="530dp"
+        android:layout_alignParentBottom="false"
+        android:layout_alignParentRight="false"
+        android:autoText="false"
+        android:gravity="center_vertical|center_horizontal" />
 
     <TextView
-        android:layout_width="30dp"
-        android:layout_height="30dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="D"
         android:id="@+id/lb_4_9"
@@ -884,11 +1139,15 @@
         android:layout_alignParentStart="true"
         android:textSize="12pt"
         android:layout_marginTop="243.75dp"
-        android:layout_marginLeft="530dp" />
+        android:layout_marginLeft="530dp"
+        android:layout_alignParentBottom="false"
+        android:layout_alignParentRight="false"
+        android:autoText="false"
+        android:gravity="center_vertical|center_horizontal" />
 
     <TextView
-        android:layout_width="30dp"
-        android:layout_height="30dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="T"
         android:id="@+id/lb_3_9"
@@ -897,11 +1156,15 @@
         android:layout_alignParentStart="true"
         android:textSize="12pt"
         android:layout_marginTop="172.5dp"
-        android:layout_marginLeft="530dp" />
+        android:layout_marginLeft="530dp"
+        android:layout_alignParentBottom="false"
+        android:layout_alignParentRight="false"
+        android:autoText="false"
+        android:gravity="center_vertical|center_horizontal" />
 
     <TextView
-        android:layout_width="30dp"
-        android:layout_height="30dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="F"
         android:id="@+id/lb_5_9"
@@ -910,11 +1173,15 @@
         android:layout_alignParentStart="true"
         android:textSize="12pt"
         android:layout_marginTop="315dp"
-        android:layout_marginLeft="530dp" />
+        android:layout_marginLeft="530dp"
+        android:layout_alignParentBottom="false"
+        android:layout_alignParentRight="false"
+        android:autoText="false"
+        android:gravity="center_vertical|center_horizontal" />
 
     <TextView
-        android:layout_width="30dp"
-        android:layout_height="30dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="V"
         android:id="@+id/lb_6_9"
@@ -923,11 +1190,15 @@
         android:layout_alignParentStart="true"
         android:textSize="12pt"
         android:layout_marginTop="386.25dp"
-        android:layout_marginLeft="530dp" />
+        android:layout_marginLeft="530dp"
+        android:layout_alignParentBottom="false"
+        android:layout_alignParentRight="false"
+        android:autoText="false"
+        android:gravity="center_vertical|center_horizontal" />
 
     <TextView
-        android:layout_width="30dp"
-        android:layout_height="30dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="V"
         android:id="@+id/lb_2_9"
@@ -936,11 +1207,15 @@
         android:layout_alignParentStart="true"
         android:textSize="12pt"
         android:layout_marginTop="101.25dp"
-        android:layout_marginLeft="530dp" />
+        android:layout_marginLeft="530dp"
+        android:layout_alignParentBottom="false"
+        android:layout_alignParentRight="false"
+        android:autoText="false"
+        android:gravity="center_vertical|center_horizontal" />
 
     <TextView
-        android:layout_width="30dp"
-        android:layout_height="30dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="W"
         android:id="@+id/lb_7_9"
@@ -949,11 +1224,15 @@
         android:layout_alignParentStart="true"
         android:textSize="12pt"
         android:layout_marginTop="457.5dp"
-        android:layout_marginLeft="530dp" />
+        android:layout_marginLeft="530dp"
+        android:layout_alignParentBottom="false"
+        android:layout_alignParentRight="false"
+        android:autoText="false"
+        android:gravity="center_vertical|center_horizontal" />
 
     <TextView
-        android:layout_width="30dp"
-        android:layout_height="30dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="W"
         android:id="@+id/lb_8_10"
@@ -962,11 +1241,15 @@
         android:layout_alignParentStart="true"
         android:textSize="12pt"
         android:layout_marginTop="528.5dp"
-        android:layout_marginLeft="590dp" />
+        android:layout_marginLeft="590dp"
+        android:layout_alignParentBottom="false"
+        android:layout_alignParentRight="false"
+        android:autoText="false"
+        android:gravity="center_vertical|center_horizontal" />
 
     <TextView
-        android:layout_width="30dp"
-        android:layout_height="30dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="X"
         android:id="@+id/lb_1_10"
@@ -975,11 +1258,15 @@
         android:layout_alignParentStart="true"
         android:textSize="12pt"
         android:layout_marginTop="30dp"
-        android:layout_marginLeft="590dp" />
+        android:layout_marginLeft="590dp"
+        android:layout_alignParentBottom="false"
+        android:layout_alignParentRight="false"
+        android:autoText="false"
+        android:gravity="center_vertical|center_horizontal" />
 
     <TextView
-        android:layout_width="30dp"
-        android:layout_height="30dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="U"
         android:id="@+id/lb_4_10"
@@ -988,11 +1275,15 @@
         android:layout_alignParentStart="true"
         android:textSize="12pt"
         android:layout_marginTop="243.75dp"
-        android:layout_marginLeft="590dp" />
+        android:layout_marginLeft="590dp"
+        android:layout_alignParentBottom="false"
+        android:layout_alignParentRight="false"
+        android:autoText="false"
+        android:gravity="center_vertical|center_horizontal" />
 
     <TextView
-        android:layout_width="30dp"
-        android:layout_height="30dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="E"
         android:id="@+id/lb_3_10"
@@ -1001,11 +1292,15 @@
         android:layout_alignParentStart="true"
         android:textSize="12pt"
         android:layout_marginTop="172.5dp"
-        android:layout_marginLeft="590dp" />
+        android:layout_marginLeft="590dp"
+        android:layout_alignParentBottom="false"
+        android:layout_alignParentRight="false"
+        android:autoText="false"
+        android:gravity="center_vertical|center_horizontal" />
 
     <TextView
-        android:layout_width="30dp"
-        android:layout_height="30dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="J"
         android:id="@+id/lb_5_10"
@@ -1014,11 +1309,15 @@
         android:layout_alignParentStart="true"
         android:textSize="12pt"
         android:layout_marginTop="315dp"
-        android:layout_marginLeft="590dp" />
+        android:layout_marginLeft="590dp"
+        android:layout_alignParentBottom="false"
+        android:layout_alignParentRight="false"
+        android:autoText="false"
+        android:gravity="center_vertical|center_horizontal" />
 
     <TextView
-        android:layout_width="30dp"
-        android:layout_height="30dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="K"
         android:id="@+id/lb_6_10"
@@ -1027,11 +1326,15 @@
         android:layout_alignParentStart="true"
         android:textSize="12pt"
         android:layout_marginTop="386.25dp"
-        android:layout_marginLeft="590dp" />
+        android:layout_marginLeft="590dp"
+        android:layout_alignParentBottom="false"
+        android:layout_alignParentRight="false"
+        android:autoText="false"
+        android:gravity="center_vertical|center_horizontal" />
 
     <TextView
-        android:layout_width="30dp"
-        android:layout_height="30dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="C"
         android:id="@+id/lb_2_10"
@@ -1040,11 +1343,15 @@
         android:layout_alignParentStart="true"
         android:textSize="12pt"
         android:layout_marginTop="101.25dp"
-        android:layout_marginLeft="590dp" />
+        android:layout_marginLeft="590dp"
+        android:layout_alignParentBottom="false"
+        android:layout_alignParentRight="false"
+        android:autoText="false"
+        android:gravity="center_vertical|center_horizontal" />
 
     <TextView
-        android:layout_width="30dp"
-        android:layout_height="30dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="E"
         android:id="@+id/lb_7_10"
@@ -1053,11 +1360,15 @@
         android:layout_alignParentStart="true"
         android:textSize="12pt"
         android:layout_marginTop="457.5dp"
-        android:layout_marginLeft="590dp" />
+        android:layout_marginLeft="590dp"
+        android:layout_alignParentBottom="false"
+        android:layout_alignParentRight="false"
+        android:autoText="false"
+        android:gravity="center_vertical|center_horizontal" />
 
     <TextView
-        android:layout_width="30dp"
-        android:layout_height="30dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="D"
         android:id="@+id/lb_8_11"
@@ -1066,11 +1377,15 @@
         android:layout_alignParentStart="true"
         android:textSize="12pt"
         android:layout_marginTop="528.5dp"
-        android:layout_marginLeft="650dp" />
+        android:layout_marginLeft="650dp"
+        android:layout_alignParentBottom="false"
+        android:layout_alignParentRight="false"
+        android:autoText="false"
+        android:gravity="center_vertical|center_horizontal" />
 
     <TextView
-        android:layout_width="30dp"
-        android:layout_height="30dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="A"
         android:id="@+id/lb_1_11"
@@ -1079,11 +1394,15 @@
         android:layout_alignParentStart="true"
         android:textSize="12pt"
         android:layout_marginTop="30dp"
-        android:layout_marginLeft="650dp" />
+        android:layout_marginLeft="650dp"
+        android:layout_alignParentBottom="false"
+        android:layout_alignParentRight="false"
+        android:autoText="false"
+        android:gravity="center_vertical|center_horizontal" />
 
     <TextView
-        android:layout_width="30dp"
-        android:layout_height="30dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="S"
         android:id="@+id/lb_4_11"
@@ -1092,11 +1411,15 @@
         android:layout_alignParentStart="true"
         android:textSize="12pt"
         android:layout_marginTop="243.75dp"
-        android:layout_marginLeft="650dp" />
+        android:layout_marginLeft="650dp"
+        android:layout_alignParentBottom="false"
+        android:layout_alignParentRight="false"
+        android:autoText="false"
+        android:gravity="center_vertical|center_horizontal" />
 
     <TextView
-        android:layout_width="30dp"
-        android:layout_height="30dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="G"
         android:id="@+id/lb_3_11"
@@ -1105,11 +1428,15 @@
         android:layout_alignParentStart="true"
         android:textSize="12pt"
         android:layout_marginTop="172.5dp"
-        android:layout_marginLeft="650dp" />
+        android:layout_marginLeft="650dp"
+        android:layout_alignParentBottom="false"
+        android:layout_alignParentRight="false"
+        android:autoText="false"
+        android:gravity="center_vertical|center_horizontal" />
 
     <TextView
-        android:layout_width="30dp"
-        android:layout_height="30dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="Q"
         android:id="@+id/lb_5_11"
@@ -1118,11 +1445,15 @@
         android:layout_alignParentStart="true"
         android:textSize="12pt"
         android:layout_marginTop="315dp"
-        android:layout_marginLeft="650dp" />
+        android:layout_marginLeft="650dp"
+        android:layout_alignParentBottom="false"
+        android:layout_alignParentRight="false"
+        android:autoText="false"
+        android:gravity="center_vertical|center_horizontal" />
 
     <TextView
-        android:layout_width="30dp"
-        android:layout_height="30dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="U"
         android:id="@+id/lb_6_11"
@@ -1131,11 +1462,15 @@
         android:layout_alignParentStart="true"
         android:textSize="12pt"
         android:layout_marginTop="386.25dp"
-        android:layout_marginLeft="650dp" />
+        android:layout_marginLeft="650dp"
+        android:layout_alignParentBottom="false"
+        android:layout_alignParentRight="false"
+        android:autoText="false"
+        android:gravity="center_vertical|center_horizontal" />
 
     <TextView
-        android:layout_width="30dp"
-        android:layout_height="30dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="H"
         android:id="@+id/lb_2_11"
@@ -1144,11 +1479,15 @@
         android:layout_alignParentStart="true"
         android:textSize="12pt"
         android:layout_marginTop="101.25dp"
-        android:layout_marginLeft="650dp" />
+        android:layout_marginLeft="650dp"
+        android:layout_alignParentBottom="false"
+        android:layout_alignParentRight="false"
+        android:autoText="false"
+        android:gravity="center_vertical|center_horizontal" />
 
     <TextView
-        android:layout_width="30dp"
-        android:layout_height="30dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="S"
         android:id="@+id/lb_7_11"
@@ -1157,11 +1496,15 @@
         android:layout_alignParentStart="true"
         android:textSize="12pt"
         android:layout_marginTop="457.5dp"
-        android:layout_marginLeft="650dp" />
+        android:layout_marginLeft="650dp"
+        android:layout_alignParentBottom="false"
+        android:layout_alignParentRight="false"
+        android:autoText="false"
+        android:gravity="center_vertical|center_horizontal" />
 
     <TextView
-        android:layout_width="30dp"
-        android:layout_height="30dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="T"
         android:id="@+id/lb_8_12"
@@ -1170,11 +1513,15 @@
         android:layout_alignParentStart="true"
         android:textSize="12pt"
         android:layout_marginTop="528.5dp"
-        android:layout_marginLeft="710dp" />
+        android:layout_marginLeft="710dp"
+        android:layout_alignParentBottom="false"
+        android:layout_alignParentRight="false"
+        android:autoText="false"
+        android:gravity="center_vertical|center_horizontal" />
 
     <TextView
-        android:layout_width="30dp"
-        android:layout_height="30dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="C"
         android:id="@+id/lb_1_12"
@@ -1183,11 +1530,15 @@
         android:layout_alignParentStart="true"
         android:textSize="12pt"
         android:layout_marginTop="30dp"
-        android:layout_marginLeft="710dp" />
+        android:layout_marginLeft="710dp"
+        android:layout_alignParentBottom="false"
+        android:layout_alignParentRight="false"
+        android:autoText="false"
+        android:gravity="center_vertical|center_horizontal" />
 
     <TextView
-        android:layout_width="30dp"
-        android:layout_height="30dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="Y"
         android:id="@+id/lb_4_12"
@@ -1196,11 +1547,15 @@
         android:layout_alignParentStart="true"
         android:textSize="12pt"
         android:layout_marginTop="243.75dp"
-        android:layout_marginLeft="710dp" />
+        android:layout_marginLeft="710dp"
+        android:layout_alignParentBottom="false"
+        android:layout_alignParentRight="false"
+        android:autoText="false"
+        android:gravity="center_vertical|center_horizontal" />
 
     <TextView
-        android:layout_width="30dp"
-        android:layout_height="30dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="A"
         android:id="@+id/lb_3_12"
@@ -1209,11 +1564,15 @@
         android:layout_alignParentStart="true"
         android:textSize="12pt"
         android:layout_marginTop="172.5dp"
-        android:layout_marginLeft="710dp" />
+        android:layout_marginLeft="710dp"
+        android:layout_alignParentBottom="false"
+        android:layout_alignParentRight="false"
+        android:autoText="false"
+        android:gravity="center_vertical|center_horizontal" />
 
     <TextView
-        android:layout_width="30dp"
-        android:layout_height="30dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="H"
         android:id="@+id/lb_5_12"
@@ -1222,11 +1581,15 @@
         android:layout_alignParentStart="true"
         android:textSize="12pt"
         android:layout_marginTop="315dp"
-        android:layout_marginLeft="710dp" />
+        android:layout_marginLeft="710dp"
+        android:layout_alignParentBottom="false"
+        android:layout_alignParentRight="false"
+        android:autoText="false"
+        android:gravity="center_vertical|center_horizontal" />
 
     <TextView
-        android:layout_width="30dp"
-        android:layout_height="30dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="E"
         android:id="@+id/lb_6_12"
@@ -1235,11 +1598,15 @@
         android:layout_alignParentStart="true"
         android:textSize="12pt"
         android:layout_marginTop="386.25dp"
-        android:layout_marginLeft="710dp" />
+        android:layout_marginLeft="710dp"
+        android:layout_alignParentBottom="false"
+        android:layout_alignParentRight="false"
+        android:autoText="false"
+        android:gravity="center_vertical|center_horizontal" />
 
     <TextView
-        android:layout_width="30dp"
-        android:layout_height="30dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="M"
         android:id="@+id/lb_2_12"
@@ -1248,11 +1615,15 @@
         android:layout_alignParentStart="true"
         android:textSize="12pt"
         android:layout_marginTop="101.25dp"
-        android:layout_marginLeft="710dp" />
+        android:layout_marginLeft="710dp"
+        android:layout_alignParentBottom="false"
+        android:layout_alignParentRight="false"
+        android:autoText="false"
+        android:gravity="center_vertical|center_horizontal" />
 
     <TextView
-        android:layout_width="30dp"
-        android:layout_height="30dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="C"
         android:id="@+id/lb_7_12"
@@ -1261,11 +1632,15 @@
         android:layout_alignParentStart="true"
         android:textSize="12pt"
         android:layout_marginTop="457.5dp"
-        android:layout_marginLeft="710dp" />
+        android:layout_marginLeft="710dp"
+        android:layout_alignParentBottom="false"
+        android:layout_alignParentRight="false"
+        android:autoText="false"
+        android:gravity="center_vertical|center_horizontal" />
 
     <TextView
-        android:layout_width="30dp"
-        android:layout_height="30dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="Q"
         android:id="@+id/lb_8_13"
@@ -1274,11 +1649,15 @@
         android:layout_alignParentStart="true"
         android:textSize="12pt"
         android:layout_marginTop="528.5dp"
-        android:layout_marginLeft="770dp" />
+        android:layout_marginLeft="770dp"
+        android:layout_alignParentBottom="false"
+        android:layout_alignParentRight="false"
+        android:autoText="false"
+        android:gravity="center_vertical|center_horizontal" />
 
     <TextView
-        android:layout_width="30dp"
-        android:layout_height="30dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="B"
         android:id="@+id/lb_1_13"
@@ -1287,11 +1666,15 @@
         android:layout_alignParentStart="true"
         android:textSize="12pt"
         android:layout_marginTop="30dp"
-        android:layout_marginLeft="770dp" />
+        android:layout_marginLeft="770dp"
+        android:layout_alignParentBottom="false"
+        android:layout_alignParentRight="false"
+        android:autoText="false"
+        android:gravity="center_vertical|center_horizontal" />
 
     <TextView
-        android:layout_width="30dp"
-        android:layout_height="30dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="A"
         android:id="@+id/lb_4_13"
@@ -1300,11 +1683,15 @@
         android:layout_alignParentStart="true"
         android:textSize="12pt"
         android:layout_marginTop="243.75dp"
-        android:layout_marginLeft="770dp" />
+        android:layout_marginLeft="770dp"
+        android:layout_alignParentBottom="false"
+        android:layout_alignParentRight="false"
+        android:autoText="false"
+        android:gravity="center_vertical|center_horizontal" />
 
     <TextView
-        android:layout_width="30dp"
-        android:layout_height="30dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="C"
         android:id="@+id/lb_3_13"
@@ -1313,11 +1700,15 @@
         android:layout_alignParentStart="true"
         android:textSize="12pt"
         android:layout_marginTop="172.5dp"
-        android:layout_marginLeft="770dp" />
+        android:layout_marginLeft="770dp"
+        android:layout_alignParentBottom="false"
+        android:layout_alignParentRight="false"
+        android:autoText="false"
+        android:gravity="center_vertical|center_horizontal" />
 
     <TextView
-        android:layout_width="30dp"
-        android:layout_height="30dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="R"
         android:id="@+id/lb_5_13"
@@ -1326,11 +1717,15 @@
         android:layout_alignParentStart="true"
         android:textSize="12pt"
         android:layout_marginTop="315dp"
-        android:layout_marginLeft="770dp" />
+        android:layout_marginLeft="770dp"
+        android:layout_alignParentBottom="false"
+        android:layout_alignParentRight="false"
+        android:autoText="false"
+        android:gravity="center_vertical|center_horizontal" />
 
     <TextView
-        android:layout_width="30dp"
-        android:layout_height="30dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="Z"
         android:id="@+id/lb_6_13"
@@ -1339,11 +1734,15 @@
         android:layout_alignParentStart="true"
         android:textSize="12pt"
         android:layout_marginTop="386.25dp"
-        android:layout_marginLeft="770dp" />
+        android:layout_marginLeft="770dp"
+        android:layout_alignParentBottom="false"
+        android:layout_alignParentRight="false"
+        android:autoText="false"
+        android:gravity="center_vertical|center_horizontal" />
 
     <TextView
-        android:layout_width="30dp"
-        android:layout_height="30dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="G"
         android:id="@+id/lb_2_13"
@@ -1352,11 +1751,15 @@
         android:layout_alignParentStart="true"
         android:textSize="12pt"
         android:layout_marginTop="101.25dp"
-        android:layout_marginLeft="770dp" />
+        android:layout_marginLeft="770dp"
+        android:layout_alignParentBottom="false"
+        android:layout_alignParentRight="false"
+        android:autoText="false"
+        android:gravity="center_vertical|center_horizontal" />
 
     <TextView
-        android:layout_width="30dp"
-        android:layout_height="30dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="U"
         android:id="@+id/lb_7_13"
@@ -1365,11 +1768,15 @@
         android:layout_alignParentStart="true"
         android:textSize="12pt"
         android:layout_marginTop="457.5dp"
-        android:layout_marginLeft="770dp" />
+        android:layout_marginLeft="770dp"
+        android:layout_alignParentBottom="false"
+        android:layout_alignParentRight="false"
+        android:autoText="false"
+        android:gravity="center_vertical|center_horizontal" />
 
     <TextView
-        android:layout_width="30dp"
-        android:layout_height="30dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="C"
         android:id="@+id/lb_8_14"
@@ -1378,11 +1785,15 @@
         android:layout_alignParentStart="true"
         android:textSize="12pt"
         android:layout_marginTop="528.5dp"
-        android:layout_marginLeft="830dp" />
+        android:layout_marginLeft="830dp"
+        android:layout_alignParentBottom="false"
+        android:layout_alignParentRight="false"
+        android:autoText="false"
+        android:gravity="center_vertical|center_horizontal" />
 
     <TextView
-        android:layout_width="30dp"
-        android:layout_height="30dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="Y"
         android:id="@+id/lb_1_14"
@@ -1391,11 +1802,15 @@
         android:layout_alignParentStart="true"
         android:textSize="12pt"
         android:layout_marginTop="30dp"
-        android:layout_marginLeft="830dp" />
+        android:layout_marginLeft="830dp"
+        android:layout_alignParentBottom="false"
+        android:layout_alignParentRight="false"
+        android:autoText="false"
+        android:gravity="center_vertical|center_horizontal" />
 
     <TextView
-        android:layout_width="30dp"
-        android:layout_height="30dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="L"
         android:id="@+id/lb_4_14"
@@ -1404,11 +1819,15 @@
         android:layout_alignParentStart="true"
         android:textSize="12pt"
         android:layout_marginTop="243.75dp"
-        android:layout_marginLeft="830dp" />
+        android:layout_marginLeft="830dp"
+        android:layout_alignParentBottom="false"
+        android:layout_alignParentRight="false"
+        android:autoText="false"
+        android:gravity="center_vertical|center_horizontal" />
 
     <TextView
-        android:layout_width="30dp"
-        android:layout_height="30dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="O"
         android:id="@+id/lb_3_14"
@@ -1417,11 +1836,15 @@
         android:layout_alignParentStart="true"
         android:textSize="12pt"
         android:layout_marginTop="172.5dp"
-        android:layout_marginLeft="830dp" />
+        android:layout_marginLeft="830dp"
+        android:layout_alignParentBottom="false"
+        android:layout_alignParentRight="false"
+        android:autoText="false"
+        android:gravity="center_vertical|center_horizontal" />
 
     <TextView
-        android:layout_width="30dp"
-        android:layout_height="30dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="F"
         android:id="@+id/lb_5_14"
@@ -1430,11 +1853,15 @@
         android:layout_alignParentStart="true"
         android:textSize="12pt"
         android:layout_marginTop="315dp"
-        android:layout_marginLeft="830dp" />
+        android:layout_marginLeft="830dp"
+        android:layout_alignParentBottom="false"
+        android:layout_alignParentRight="false"
+        android:autoText="false"
+        android:gravity="center_vertical|center_horizontal" />
 
     <TextView
-        android:layout_width="30dp"
-        android:layout_height="30dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="L"
         android:id="@+id/lb_6_14"
@@ -1443,11 +1870,15 @@
         android:layout_alignParentStart="true"
         android:textSize="12pt"
         android:layout_marginTop="386.25dp"
-        android:layout_marginLeft="830dp" />
+        android:layout_marginLeft="830dp"
+        android:layout_alignParentBottom="false"
+        android:layout_alignParentRight="false"
+        android:autoText="false"
+        android:gravity="center_vertical|center_horizontal" />
 
     <TextView
-        android:layout_width="30dp"
-        android:layout_height="30dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="T"
         android:id="@+id/lb_2_14"
@@ -1456,11 +1887,15 @@
         android:layout_alignParentStart="true"
         android:textSize="12pt"
         android:layout_marginTop="101.25dp"
-        android:layout_marginLeft="830dp" />
+        android:layout_marginLeft="830dp"
+        android:layout_alignParentBottom="false"
+        android:layout_alignParentRight="false"
+        android:autoText="false"
+        android:gravity="center_vertical|center_horizontal" />
 
     <TextView
-        android:layout_width="30dp"
-        android:layout_height="30dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="F"
         android:id="@+id/lb_7_14"
@@ -1469,11 +1904,15 @@
         android:layout_alignParentStart="true"
         android:textSize="12pt"
         android:layout_marginTop="457.5dp"
-        android:layout_marginLeft="830dp" />
+        android:layout_marginLeft="830dp"
+        android:layout_alignParentBottom="false"
+        android:layout_alignParentRight="false"
+        android:autoText="false"
+        android:gravity="center_vertical|center_horizontal" />
 
     <TextView
-        android:layout_width="30dp"
-        android:layout_height="30dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="J"
         android:id="@+id/lb_8_15"
@@ -1482,11 +1921,15 @@
         android:layout_alignParentStart="true"
         android:textSize="12pt"
         android:layout_marginTop="528.5dp"
-        android:layout_marginLeft="890dp" />
+        android:layout_marginLeft="890dp"
+        android:layout_alignParentBottom="false"
+        android:layout_alignParentRight="false"
+        android:autoText="false"
+        android:gravity="center_vertical|center_horizontal" />
 
     <TextView
-        android:layout_width="30dp"
-        android:layout_height="30dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="W"
         android:id="@+id/lb_1_15"
@@ -1495,11 +1938,15 @@
         android:layout_alignParentStart="true"
         android:textSize="12pt"
         android:layout_marginTop="30dp"
-        android:layout_marginLeft="890dp" />
+        android:layout_marginLeft="890dp"
+        android:layout_alignParentBottom="false"
+        android:layout_alignParentRight="false"
+        android:autoText="false"
+        android:gravity="center_vertical|center_horizontal" />
 
     <TextView
-        android:layout_width="30dp"
-        android:layout_height="30dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="I"
         android:id="@+id/lb_4_15"
@@ -1508,11 +1955,15 @@
         android:layout_alignParentStart="true"
         android:textSize="12pt"
         android:layout_marginTop="243.75dp"
-        android:layout_marginLeft="890dp" />
+        android:layout_marginLeft="890dp"
+        android:layout_alignParentBottom="false"
+        android:layout_alignParentRight="false"
+        android:autoText="false"
+        android:gravity="center_vertical|center_horizontal" />
 
     <TextView
-        android:layout_width="30dp"
-        android:layout_height="30dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="A"
         android:id="@+id/lb_3_15"
@@ -1521,11 +1972,15 @@
         android:layout_alignParentStart="true"
         android:textSize="12pt"
         android:layout_marginTop="172.5dp"
-        android:layout_marginLeft="890dp" />
+        android:layout_marginLeft="890dp"
+        android:layout_alignParentBottom="false"
+        android:layout_alignParentRight="false"
+        android:autoText="false"
+        android:gravity="center_vertical|center_horizontal" />
 
     <TextView
-        android:layout_width="30dp"
-        android:layout_height="30dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="M"
         android:id="@+id/lb_5_15"
@@ -1534,11 +1989,15 @@
         android:layout_alignParentStart="true"
         android:textSize="12pt"
         android:layout_marginTop="315dp"
-        android:layout_marginLeft="890dp" />
+        android:layout_marginLeft="890dp"
+        android:layout_alignParentBottom="false"
+        android:layout_alignParentRight="false"
+        android:autoText="false"
+        android:gravity="center_vertical|center_horizontal" />
 
     <TextView
-        android:layout_width="30dp"
-        android:layout_height="30dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="C"
         android:id="@+id/lb_6_15"
@@ -1547,11 +2006,15 @@
         android:layout_alignParentStart="true"
         android:textSize="12pt"
         android:layout_marginTop="386.25dp"
-        android:layout_marginLeft="890dp" />
+        android:layout_marginLeft="890dp"
+        android:layout_alignParentBottom="false"
+        android:layout_alignParentRight="false"
+        android:autoText="false"
+        android:gravity="center_vertical|center_horizontal" />
 
     <TextView
-        android:layout_width="30dp"
-        android:layout_height="30dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="R"
         android:id="@+id/lb_2_15"
@@ -1560,11 +2023,15 @@
         android:layout_alignParentStart="true"
         android:textSize="12pt"
         android:layout_marginTop="101.25dp"
-        android:layout_marginLeft="890dp" />
+        android:layout_marginLeft="890dp"
+        android:layout_alignParentBottom="false"
+        android:layout_alignParentRight="false"
+        android:autoText="false"
+        android:gravity="center_vertical|center_horizontal" />
 
     <TextView
-        android:layout_width="30dp"
-        android:layout_height="30dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="I"
         android:id="@+id/lb_7_15"
@@ -1573,11 +2040,15 @@
         android:layout_alignParentStart="true"
         android:textSize="12pt"
         android:layout_marginTop="457.5dp"
-        android:layout_marginLeft="890dp" />
+        android:layout_marginLeft="890dp"
+        android:layout_alignParentBottom="false"
+        android:layout_alignParentRight="false"
+        android:autoText="false"
+        android:gravity="center_vertical|center_horizontal" />
 
     <TextView
-        android:layout_width="30dp"
-        android:layout_height="30dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="N"
         android:id="@+id/lb_8_16"
@@ -1586,11 +2057,15 @@
         android:layout_alignParentStart="true"
         android:textSize="12pt"
         android:layout_marginTop="528.5dp"
-        android:layout_marginLeft="950dp" />
+        android:layout_marginLeft="950dp"
+        android:layout_alignParentBottom="false"
+        android:layout_alignParentRight="false"
+        android:autoText="false"
+        android:gravity="center_vertical|center_horizontal" />
 
     <TextView
-        android:layout_width="30dp"
-        android:layout_height="30dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="P"
         android:id="@+id/lb_1_16"
@@ -1599,11 +2074,15 @@
         android:layout_alignParentStart="true"
         android:textSize="12pt"
         android:layout_marginTop="30dp"
-        android:layout_marginLeft="950dp" />
+        android:layout_marginLeft="950dp"
+        android:layout_alignParentBottom="false"
+        android:layout_alignParentRight="false"
+        android:autoText="false"
+        android:gravity="center_vertical|center_horizontal" />
 
     <TextView
-        android:layout_width="30dp"
-        android:layout_height="30dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="Z"
         android:id="@+id/lb_4_16"
@@ -1612,11 +2091,15 @@
         android:layout_alignParentStart="true"
         android:textSize="12pt"
         android:layout_marginTop="243.75dp"
-        android:layout_marginLeft="950dp" />
+        android:layout_marginLeft="950dp"
+        android:layout_alignParentBottom="false"
+        android:layout_alignParentRight="false"
+        android:autoText="false"
+        android:gravity="center_vertical|center_horizontal" />
 
     <TextView
-        android:layout_width="30dp"
-        android:layout_height="30dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="V"
         android:id="@+id/lb_3_16"
@@ -1625,11 +2108,15 @@
         android:layout_alignParentStart="true"
         android:textSize="12pt"
         android:layout_marginTop="172.5dp"
-        android:layout_marginLeft="950dp" />
+        android:layout_marginLeft="950dp"
+        android:layout_alignParentBottom="false"
+        android:layout_alignParentRight="false"
+        android:autoText="false"
+        android:gravity="center_vertical|center_horizontal" />
 
     <TextView
-        android:layout_width="30dp"
-        android:layout_height="30dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="G"
         android:id="@+id/lb_5_16"
@@ -1638,11 +2125,15 @@
         android:layout_alignParentStart="true"
         android:textSize="12pt"
         android:layout_marginTop="315dp"
-        android:layout_marginLeft="950dp" />
+        android:layout_marginLeft="950dp"
+        android:layout_alignParentBottom="false"
+        android:layout_alignParentRight="false"
+        android:autoText="false"
+        android:gravity="center_vertical|center_horizontal" />
 
     <TextView
-        android:layout_width="30dp"
-        android:layout_height="30dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="H"
         android:id="@+id/lb_6_16"
@@ -1651,11 +2142,15 @@
         android:layout_alignParentStart="true"
         android:textSize="12pt"
         android:layout_marginTop="386.25dp"
-        android:layout_marginLeft="950dp" />
+        android:layout_marginLeft="950dp"
+        android:layout_alignParentBottom="false"
+        android:layout_alignParentRight="false"
+        android:autoText="false"
+        android:gravity="center_vertical|center_horizontal" />
 
     <TextView
-        android:layout_width="30dp"
-        android:layout_height="30dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="A"
         android:id="@+id/lb_2_16"
@@ -1664,11 +2159,15 @@
         android:layout_alignParentStart="true"
         android:textSize="12pt"
         android:layout_marginTop="101.25dp"
-        android:layout_marginLeft="950dp" />
+        android:layout_marginLeft="950dp"
+        android:layout_alignParentBottom="false"
+        android:layout_alignParentRight="false"
+        android:autoText="false"
+        android:gravity="center_vertical|center_horizontal" />
 
     <TextView
-        android:layout_width="30dp"
-        android:layout_height="30dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="A"
         android:id="@+id/lb_7_16"
@@ -1677,11 +2176,15 @@
         android:layout_alignParentStart="true"
         android:textSize="12pt"
         android:layout_marginTop="457.5dp"
-        android:layout_marginLeft="950dp" />
+        android:layout_marginLeft="950dp"
+        android:layout_alignParentBottom="false"
+        android:layout_alignParentRight="false"
+        android:autoText="false"
+        android:gravity="center_vertical|center_horizontal" />
 
     <TextView
-        android:layout_width="30dp"
-        android:layout_height="30dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="V"
         android:id="@+id/lb_8_17"
@@ -1690,11 +2193,15 @@
         android:layout_alignParentStart="true"
         android:textSize="12pt"
         android:layout_marginTop="528.5dp"
-        android:layout_marginLeft="1010dp" />
+        android:layout_marginLeft="1010dp"
+        android:layout_alignParentBottom="false"
+        android:layout_alignParentRight="false"
+        android:autoText="false"
+        android:gravity="center_vertical|center_horizontal" />
 
     <TextView
-        android:layout_width="30dp"
-        android:layout_height="30dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="K"
         android:id="@+id/lb_1_17"
@@ -1703,11 +2210,15 @@
         android:layout_alignParentStart="true"
         android:textSize="12pt"
         android:layout_marginTop="30dp"
-        android:layout_marginLeft="1010dp" />
+        android:layout_marginLeft="1010dp"
+        android:layout_alignParentBottom="false"
+        android:layout_alignParentRight="false"
+        android:autoText="false"
+        android:gravity="center_vertical|center_horizontal" />
 
     <TextView
-        android:layout_width="30dp"
-        android:layout_height="30dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="A"
         android:id="@+id/lb_4_17"
@@ -1716,11 +2227,15 @@
         android:layout_alignParentStart="true"
         android:textSize="12pt"
         android:layout_marginTop="243.75dp"
-        android:layout_marginLeft="1010dp" />
+        android:layout_marginLeft="1010dp"
+        android:layout_alignParentBottom="false"
+        android:layout_alignParentRight="false"
+        android:autoText="false"
+        android:gravity="center_vertical|center_horizontal" />
 
     <TextView
-        android:layout_width="30dp"
-        android:layout_height="30dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="S"
         android:id="@+id/lb_3_17"
@@ -1729,11 +2244,15 @@
         android:layout_alignParentStart="true"
         android:textSize="12pt"
         android:layout_marginTop="172.5dp"
-        android:layout_marginLeft="1010dp" />
+        android:layout_marginLeft="1010dp"
+        android:layout_alignParentBottom="false"
+        android:layout_alignParentRight="false"
+        android:autoText="false"
+        android:gravity="center_vertical|center_horizontal" />
 
     <TextView
-        android:layout_width="30dp"
-        android:layout_height="30dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="W"
         android:id="@+id/lb_5_17"
@@ -1742,11 +2261,15 @@
         android:layout_alignParentStart="true"
         android:textSize="12pt"
         android:layout_marginTop="315dp"
-        android:layout_marginLeft="1010dp" />
+        android:layout_marginLeft="1010dp"
+        android:layout_alignParentBottom="false"
+        android:layout_alignParentRight="false"
+        android:autoText="false"
+        android:gravity="center_vertical|center_horizontal" />
 
     <TextView
-        android:layout_width="30dp"
-        android:layout_height="30dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="S"
         android:id="@+id/lb_6_17"
@@ -1755,11 +2278,15 @@
         android:layout_alignParentStart="true"
         android:textSize="12pt"
         android:layout_marginTop="386.25dp"
-        android:layout_marginLeft="1010dp" />
+        android:layout_marginLeft="1010dp"
+        android:layout_alignParentBottom="false"
+        android:layout_alignParentRight="false"
+        android:autoText="false"
+        android:gravity="center_vertical|center_horizontal" />
 
     <TextView
-        android:layout_width="30dp"
-        android:layout_height="30dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="B"
         android:id="@+id/lb_2_17"
@@ -1768,11 +2295,15 @@
         android:layout_alignParentStart="true"
         android:textSize="12pt"
         android:layout_marginTop="101.25dp"
-        android:layout_marginLeft="1010dp" />
+        android:layout_marginLeft="1010dp"
+        android:layout_alignParentBottom="false"
+        android:layout_alignParentRight="false"
+        android:autoText="false"
+        android:gravity="center_vertical|center_horizontal" />
 
     <TextView
-        android:layout_width="30dp"
-        android:layout_height="30dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="R"
         android:id="@+id/lb_7_17"
@@ -1781,11 +2312,15 @@
         android:layout_alignParentStart="true"
         android:textSize="12pt"
         android:layout_marginTop="457.5dp"
-        android:layout_marginLeft="1010dp" />
+        android:layout_marginLeft="1010dp"
+        android:layout_alignParentBottom="false"
+        android:layout_alignParentRight="false"
+        android:autoText="false"
+        android:gravity="center_vertical|center_horizontal" />
 
     <TextView
-        android:layout_width="30dp"
-        android:layout_height="30dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="W"
         android:id="@+id/lb_8_18"
@@ -1794,11 +2329,15 @@
         android:layout_alignParentStart="true"
         android:textSize="12pt"
         android:layout_marginTop="528.5dp"
-        android:layout_marginLeft="1070dp" />
+        android:layout_marginLeft="1070dp"
+        android:layout_alignParentBottom="false"
+        android:layout_alignParentRight="false"
+        android:autoText="false"
+        android:gravity="center_vertical|center_horizontal" />
 
     <TextView
-        android:layout_width="30dp"
-        android:layout_height="30dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="N"
         android:id="@+id/lb_1_18"
@@ -1807,11 +2346,15 @@
         android:layout_alignParentStart="true"
         android:textSize="12pt"
         android:layout_marginTop="30dp"
-        android:layout_marginLeft="1070dp" />
+        android:layout_marginLeft="1070dp"
+        android:layout_alignParentBottom="false"
+        android:layout_alignParentRight="false"
+        android:autoText="false"
+        android:gravity="center_vertical|center_horizontal" />
 
     <TextView
-        android:layout_width="30dp"
-        android:layout_height="30dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="B"
         android:id="@+id/lb_4_18"
@@ -1820,11 +2363,15 @@
         android:layout_alignParentStart="true"
         android:textSize="12pt"
         android:layout_marginTop="243.75dp"
-        android:layout_marginLeft="1070dp" />
+        android:layout_marginLeft="1070dp"
+        android:layout_alignParentBottom="false"
+        android:layout_alignParentRight="false"
+        android:autoText="false"
+        android:gravity="center_vertical|center_horizontal" />
 
     <TextView
-        android:layout_width="30dp"
-        android:layout_height="30dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="J"
         android:id="@+id/lb_3_18"
@@ -1833,11 +2380,15 @@
         android:layout_alignParentStart="true"
         android:textSize="12pt"
         android:layout_marginTop="172.5dp"
-        android:layout_marginLeft="1070dp" />
+        android:layout_marginLeft="1070dp"
+        android:layout_alignParentBottom="false"
+        android:layout_alignParentRight="false"
+        android:autoText="false"
+        android:gravity="center_vertical|center_horizontal" />
 
     <TextView
-        android:layout_width="30dp"
-        android:layout_height="30dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="F"
         android:id="@+id/lb_5_18"
@@ -1846,11 +2397,15 @@
         android:layout_alignParentStart="true"
         android:textSize="12pt"
         android:layout_marginTop="315dp"
-        android:layout_marginLeft="1070dp" />
+        android:layout_marginLeft="1070dp"
+        android:layout_alignParentBottom="false"
+        android:layout_alignParentRight="false"
+        android:autoText="false"
+        android:gravity="center_vertical|center_horizontal" />
 
     <TextView
-        android:layout_width="30dp"
-        android:layout_height="30dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="H"
         android:id="@+id/lb_6_18"
@@ -1859,11 +2414,15 @@
         android:layout_alignParentStart="true"
         android:textSize="12pt"
         android:layout_marginTop="386.25dp"
-        android:layout_marginLeft="1070dp" />
+        android:layout_marginLeft="1070dp"
+        android:layout_alignParentBottom="false"
+        android:layout_alignParentRight="false"
+        android:autoText="false"
+        android:gravity="center_vertical|center_horizontal" />
 
     <TextView
-        android:layout_width="30dp"
-        android:layout_height="30dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="D"
         android:id="@+id/lb_2_18"
@@ -1872,11 +2431,15 @@
         android:layout_alignParentStart="true"
         android:textSize="12pt"
         android:layout_marginTop="101.25dp"
-        android:layout_marginLeft="1070dp" />
+        android:layout_marginLeft="1070dp"
+        android:layout_alignParentBottom="false"
+        android:layout_alignParentRight="false"
+        android:autoText="false"
+        android:gravity="center_vertical|center_horizontal" />
 
     <TextView
-        android:layout_width="30dp"
-        android:layout_height="30dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="Z"
         android:id="@+id/lb_7_18"
@@ -1885,11 +2448,15 @@
         android:layout_alignParentStart="true"
         android:textSize="12pt"
         android:layout_marginTop="457.5dp"
-        android:layout_marginLeft="1070dp" />
+        android:layout_marginLeft="1070dp"
+        android:layout_alignParentBottom="false"
+        android:layout_alignParentRight="false"
+        android:autoText="false"
+        android:gravity="center_vertical|center_horizontal" />
 
     <TextView
-        android:layout_width="30dp"
-        android:layout_height="30dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="K"
         android:id="@+id/lb_8_19"
@@ -1898,11 +2465,15 @@
         android:layout_alignParentStart="true"
         android:textSize="12pt"
         android:layout_marginTop="528.5dp"
-        android:layout_marginLeft="1130dp" />
+        android:layout_marginLeft="1130dp"
+        android:layout_alignParentBottom="false"
+        android:layout_alignParentRight="false"
+        android:autoText="false"
+        android:gravity="center_vertical|center_horizontal" />
 
     <TextView
-        android:layout_width="30dp"
-        android:layout_height="30dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="A"
         android:id="@+id/lb_1_19"
@@ -1911,11 +2482,15 @@
         android:layout_alignParentStart="true"
         android:textSize="12pt"
         android:layout_marginTop="30dp"
-        android:layout_marginLeft="1130dp" />
+        android:layout_marginLeft="1130dp"
+        android:layout_alignParentBottom="false"
+        android:layout_alignParentRight="false"
+        android:autoText="false"
+        android:gravity="center_vertical|center_horizontal" />
 
     <TextView
-        android:layout_width="30dp"
-        android:layout_height="30dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="D"
         android:id="@+id/lb_4_19"
@@ -1924,11 +2499,15 @@
         android:layout_alignParentStart="true"
         android:textSize="12pt"
         android:layout_marginTop="243.75dp"
-        android:layout_marginLeft="1130dp" />
+        android:layout_marginLeft="1130dp"
+        android:layout_alignParentBottom="false"
+        android:layout_alignParentRight="false"
+        android:autoText="false"
+        android:gravity="center_vertical|center_horizontal" />
 
     <TextView
-        android:layout_width="30dp"
-        android:layout_height="30dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="C"
         android:id="@+id/lb_3_19"
@@ -1937,11 +2516,15 @@
         android:layout_alignParentStart="true"
         android:textSize="12pt"
         android:layout_marginTop="172.5dp"
-        android:layout_marginLeft="1130dp" />
+        android:layout_marginLeft="1130dp"
+        android:layout_alignParentBottom="false"
+        android:layout_alignParentRight="false"
+        android:autoText="false"
+        android:gravity="center_vertical|center_horizontal" />
 
     <TextView
-        android:layout_width="30dp"
-        android:layout_height="30dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="T"
         android:id="@+id/lb_5_19"
@@ -1950,11 +2533,15 @@
         android:layout_alignParentStart="true"
         android:textSize="12pt"
         android:layout_marginTop="315dp"
-        android:layout_marginLeft="1130dp" />
+        android:layout_marginLeft="1130dp"
+        android:layout_alignParentBottom="false"
+        android:layout_alignParentRight="false"
+        android:autoText="false"
+        android:gravity="center_vertical|center_horizontal" />
 
     <TextView
-        android:layout_width="30dp"
-        android:layout_height="30dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="I"
         android:id="@+id/lb_6_19"
@@ -1963,11 +2550,15 @@
         android:layout_alignParentStart="true"
         android:textSize="12pt"
         android:layout_marginTop="386.25dp"
-        android:layout_marginLeft="1130dp" />
+        android:layout_marginLeft="1130dp"
+        android:layout_alignParentBottom="false"
+        android:layout_alignParentRight="false"
+        android:autoText="false"
+        android:gravity="center_vertical|center_horizontal" />
 
     <TextView
-        android:layout_width="30dp"
-        android:layout_height="30dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="V"
         android:id="@+id/lb_2_19"
@@ -1976,11 +2567,15 @@
         android:layout_alignParentStart="true"
         android:textSize="12pt"
         android:layout_marginTop="101.25dp"
-        android:layout_marginLeft="1130dp" />
+        android:layout_marginLeft="1130dp"
+        android:layout_alignParentBottom="false"
+        android:layout_alignParentRight="false"
+        android:autoText="false"
+        android:gravity="center_vertical|center_horizontal" />
 
     <TextView
-        android:layout_width="30dp"
-        android:layout_height="30dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="A"
         android:id="@+id/lb_7_19"
@@ -1989,11 +2584,15 @@
         android:layout_alignParentStart="true"
         android:textSize="12pt"
         android:layout_marginTop="457.5dp"
-        android:layout_marginLeft="1130dp" />
+        android:layout_marginLeft="1130dp"
+        android:layout_alignParentBottom="false"
+        android:layout_alignParentRight="false"
+        android:autoText="false"
+        android:gravity="center_vertical|center_horizontal" />
 
     <TextView
-        android:layout_width="30dp"
-        android:layout_height="30dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="E"
         android:id="@+id/lb_8_20"
@@ -2002,11 +2601,15 @@
         android:layout_alignParentStart="true"
         android:textSize="12pt"
         android:layout_marginTop="528.5dp"
-        android:layout_marginLeft="1190dp" />
+        android:layout_marginLeft="1190dp"
+        android:layout_alignParentBottom="false"
+        android:layout_alignParentRight="false"
+        android:autoText="false"
+        android:gravity="center_vertical|center_horizontal" />
 
     <TextView
-        android:layout_width="30dp"
-        android:layout_height="30dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="F"
         android:id="@+id/lb_1_20"
@@ -2015,11 +2618,15 @@
         android:layout_alignParentStart="true"
         android:textSize="12pt"
         android:layout_marginTop="30dp"
-        android:layout_marginLeft="1190dp" />
+        android:layout_marginLeft="1190dp"
+        android:layout_alignParentBottom="false"
+        android:layout_alignParentRight="false"
+        android:autoText="false"
+        android:gravity="center_vertical|center_horizontal" />
 
     <TextView
-        android:layout_width="30dp"
-        android:layout_height="30dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="P"
         android:id="@+id/lb_4_20"
@@ -2028,11 +2635,15 @@
         android:layout_alignParentStart="true"
         android:textSize="12pt"
         android:layout_marginTop="243.75dp"
-        android:layout_marginLeft="1190dp" />
+        android:layout_marginLeft="1190dp"
+        android:layout_alignParentBottom="false"
+        android:layout_alignParentRight="false"
+        android:autoText="false"
+        android:gravity="center_vertical|center_horizontal" />
 
     <TextView
-        android:layout_width="30dp"
-        android:layout_height="30dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="E"
         android:id="@+id/lb_3_20"
@@ -2041,11 +2652,15 @@
         android:layout_alignParentStart="true"
         android:textSize="12pt"
         android:layout_marginTop="172.5dp"
-        android:layout_marginLeft="1190dp" />
+        android:layout_marginLeft="1190dp"
+        android:layout_alignParentBottom="false"
+        android:layout_alignParentRight="false"
+        android:autoText="false"
+        android:gravity="center_vertical|center_horizontal" />
 
     <TextView
-        android:layout_width="30dp"
-        android:layout_height="30dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="C"
         android:id="@+id/lb_5_20"
@@ -2054,11 +2669,15 @@
         android:layout_alignParentStart="true"
         android:textSize="12pt"
         android:layout_marginTop="315dp"
-        android:layout_marginLeft="1190dp" />
+        android:layout_marginLeft="1190dp"
+        android:layout_alignParentBottom="false"
+        android:layout_alignParentRight="false"
+        android:autoText="false"
+        android:gravity="center_vertical|center_horizontal" />
 
     <TextView
-        android:layout_width="30dp"
-        android:layout_height="30dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="O"
         android:id="@+id/lb_6_20"
@@ -2067,11 +2686,15 @@
         android:layout_alignParentStart="true"
         android:textSize="12pt"
         android:layout_marginTop="386.25dp"
-        android:layout_marginLeft="1190dp" />
+        android:layout_marginLeft="1190dp"
+        android:layout_alignParentBottom="false"
+        android:layout_alignParentRight="false"
+        android:autoText="false"
+        android:gravity="center_vertical|center_horizontal" />
 
     <TextView
-        android:layout_width="30dp"
-        android:layout_height="30dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="X"
         android:id="@+id/lb_2_20"
@@ -2080,11 +2703,15 @@
         android:layout_alignParentStart="true"
         android:textSize="12pt"
         android:layout_marginTop="101.25dp"
-        android:layout_marginLeft="1190dp" />
+        android:layout_marginLeft="1190dp"
+        android:layout_alignParentBottom="false"
+        android:layout_alignParentRight="false"
+        android:autoText="false"
+        android:gravity="center_vertical|center_horizontal" />
 
     <TextView
-        android:layout_width="30dp"
-        android:layout_height="30dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="I"
         android:id="@+id/lb_7_20"
@@ -2093,7 +2720,11 @@
         android:layout_alignParentStart="true"
         android:textSize="12pt"
         android:layout_marginTop="457.5dp"
-        android:layout_marginLeft="1190dp" />
+        android:layout_marginLeft="1190dp"
+        android:layout_alignParentBottom="false"
+        android:layout_alignParentRight="false"
+        android:autoText="false"
+        android:gravity="center_vertical|center_horizontal" />
 
     <ImageView
         android:layout_width="100dp"

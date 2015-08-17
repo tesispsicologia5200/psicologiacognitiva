@@ -25,12 +25,12 @@ public class lenguajeActivity extends ActionBarActivity {
     int errores=0;
     int intrusion=0;
     int omision=0;
-    String tiempo="00:02:41";
     String id;
     String Vfunciones;
     String Vlenguaje;
     String Vatencion;
     String Vmemoria;
+    float tiemporeal=0;
 
     MediaPlayer mp ;
 
@@ -99,8 +99,6 @@ public class lenguajeActivity extends ActionBarActivity {
             destruir();
             mp = MediaPlayer.create(this, R.raw.prueba_auditiva_a_mezcla);
         mp.start();
-        final CounterClass timer = new CounterClass(161000, 1000);
-        timer.start();
         }
     }
 
@@ -122,10 +120,13 @@ public class lenguajeActivity extends ActionBarActivity {
 
     public void botonOnClick(View v){
 
-        if(tiempo.equalsIgnoreCase("00:02:37")||tiempo.equalsIgnoreCase("00:02:29")||tiempo.equalsIgnoreCase("00:02:21")||tiempo.equalsIgnoreCase("00:02:04")||tiempo.equalsIgnoreCase("00:01:54")||tiempo.equalsIgnoreCase("00:01:48")||tiempo.equalsIgnoreCase("00:01:45")||tiempo.equalsIgnoreCase("00:01:19")||tiempo.equalsIgnoreCase("00:01:13")||tiempo.equalsIgnoreCase("00:01:09")||tiempo.equalsIgnoreCase("00:01:02")||tiempo.equalsIgnoreCase("00:00:28")||tiempo.equalsIgnoreCase("00:00:22")||tiempo.equalsIgnoreCase("00:00:14")||tiempo.equalsIgnoreCase("00:00:11")||tiempo.equalsIgnoreCase("00:00:06")){
+        tiemporeal=mp.getCurrentPosition()/1000;
+        if(tiemporeal==3||tiemporeal==11||tiemporeal==19||tiemporeal==36||tiemporeal==46||tiemporeal==52||tiemporeal==55||tiemporeal==73||tiemporeal==77||tiemporeal==81||tiemporeal==88||tiemporeal==122||tiemporeal==128||tiemporeal==136||tiemporeal==139||tiemporeal==144)
+        {
             aciertos++;
         }
-        else if(tiempo.equalsIgnoreCase("00:02:23")||tiempo.equalsIgnoreCase("00:02:09")||tiempo.equalsIgnoreCase("00:01:47")||tiempo.equalsIgnoreCase("00:01:34")||tiempo.equalsIgnoreCase("00:01:08")||tiempo.equalsIgnoreCase("00:00:50")||tiempo.equalsIgnoreCase("00:00:44")||tiempo.equalsIgnoreCase("00:00:42")||tiempo.equalsIgnoreCase("00:00:11")||tiempo.equalsIgnoreCase("00:00:01")||tiempo.equalsIgnoreCase("00:01:59")||tiempo.equalsIgnoreCase("00:01:36")||tiempo.equalsIgnoreCase("00:01:32")||tiempo.equalsIgnoreCase("00:01:24")||tiempo.equalsIgnoreCase("00:00:47")||tiempo.equalsIgnoreCase("00:00:22")||tiempo.equalsIgnoreCase("00:00:12")){
+        else if(tiemporeal==17||tiemporeal==31||tiemporeal==41||tiemporeal==53||tiemporeal==64||tiemporeal==66||tiemporeal==68||tiemporeal==76||tiemporeal==92||tiemporeal==113||tiemporeal==116||tiemporeal==118||tiemporeal==138||tiemporeal==149||tiemporeal==148||tiemporeal==159)
+        {
             intrusion++;
         }
         else{
@@ -144,46 +145,4 @@ public class lenguajeActivity extends ActionBarActivity {
     public boolean onOptionsItemSelected(MenuItem item) {
         return super.onOptionsItemSelected(item);
     }
-
-    public class CounterClass extends CountDownTimer {
-
-        public CounterClass(long millisInFuture, long countDownInterval) {
-            super(millisInFuture, countDownInterval);
-            // TODO Auto-generated constructor stub
-        }
-
-
-        @Override
-        public void onTick(long millisUntilFinished) {
-            // TODO Auto-generated method stub
-
-            long millis = millisUntilFinished;
-            String hms = String.format("%02d:%02d:%02d", TimeUnit.MILLISECONDS.toHours(millis),
-                    TimeUnit.MILLISECONDS.toMinutes(millis) - TimeUnit.HOURS.toMinutes(TimeUnit.MILLISECONDS.toHours(millis)),
-                    TimeUnit.MILLISECONDS.toSeconds(millis) - TimeUnit.MINUTES.toSeconds(TimeUnit.MILLISECONDS.toMinutes(millis)));
-            System.out.println(hms);
-            tiempo=hms;
-            if(aciertos==0&&errores==0&&intrusion==0&&hms.equalsIgnoreCase("00:02:20")){
-                error();
-
-            }
-
-
-        }
-
-
-
-
-        @Override
-        public void onFinish() {
-            // TODO Auto-generated method stub
-
-        }
-
-
-
-    }
-
-
-
 }
