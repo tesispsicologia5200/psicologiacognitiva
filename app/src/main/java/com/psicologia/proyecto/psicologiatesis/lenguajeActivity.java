@@ -121,11 +121,11 @@ public class lenguajeActivity extends ActionBarActivity {
     public void botonOnClick(View v){
 
         tiemporeal=mp.getCurrentPosition()/1000;
-        if(tiemporeal==3||tiemporeal==11||tiemporeal==19||tiemporeal==36||tiemporeal==46||tiemporeal==52||tiemporeal==55||tiemporeal==73||tiemporeal==77||tiemporeal==81||tiemporeal==88||tiemporeal==122||tiemporeal==128||tiemporeal==136||tiemporeal==139||tiemporeal==144)
+        if(tiemporeal==5||tiemporeal==6||tiemporeal==21||tiemporeal==22||tiemporeal==37||tiemporeal==38||tiemporeal==71||tiemporeal==72||tiemporeal==91||tiemporeal==92||tiemporeal==103||tiemporeal==104||tiemporeal==109||tiemporeal==110||tiemporeal==145||tiemporeal==146||tiemporeal==153||tiemporeal==154||tiemporeal==161||tiemporeal==162||tiemporeal==195||tiemporeal==196||tiemporeal==243||tiemporeal==244||tiemporeal==255||tiemporeal==256||tiemporeal==271||tiemporeal==272||tiemporeal==277||tiemporeal==278||tiemporeal==287||tiemporeal==288)
         {
             aciertos++;
         }
-        else if(tiemporeal==17||tiemporeal==31||tiemporeal==41||tiemporeal==53||tiemporeal==64||tiemporeal==66||tiemporeal==68||tiemporeal==76||tiemporeal==92||tiemporeal==113||tiemporeal==116||tiemporeal==118||tiemporeal==138||tiemporeal==149||tiemporeal==148||tiemporeal==159)
+        else if(tiemporeal==33||tiemporeal==34||tiemporeal==61||tiemporeal==62||tiemporeal==81||tiemporeal==82||tiemporeal==105||tiemporeal==106||tiemporeal==127||tiemporeal==128||tiemporeal==131||tiemporeal==132||tiemporeal==135||tiemporeal==136||tiemporeal==151||tiemporeal==152||tiemporeal==183||tiemporeal==184||tiemporeal==225||tiemporeal==226||tiemporeal==231||tiemporeal==232||tiemporeal==235||tiemporeal==236||tiemporeal==275||tiemporeal==276||tiemporeal==297||tiemporeal==298||tiemporeal==295||tiemporeal==296||tiemporeal==317||tiemporeal==318)
         {
             intrusion++;
         }
