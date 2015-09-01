@@ -11,9 +11,6 @@ import android.view.View;
 
 import java.util.concurrent.TimeUnit;
 
-/**
- * Created by jairo on 23/07/2015.
- */
 public class memoriaActivity extends ActionBarActivity {
     @Override
     public void finish() {

@@ -1,16 +1,12 @@
 package com.psicologia.proyecto.psicologiatesis;
 
 import android.content.Intent;
-import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.os.CountDownTimer;
 import android.support.v7.app.ActionBarActivity;
 
 import java.util.concurrent.TimeUnit;
 
-/**
- * Created by Henry Jaramillo on 13/08/2015.
- */
 public class PresentacionLenguajeActivity extends ActionBarActivity {
 
 
@@ -48,7 +44,7 @@ public class PresentacionLenguajeActivity extends ActionBarActivity {
     }
 
     public void enviarDatos(){
-        Intent data = new Intent(this,lenguajeActivity.class);
+        Intent data = new Intent(this,AtencionAuditivaActivity.class);
         data.putExtra("Id",id);
         data.putExtra("VMemoria",Vmemoria);
         data.putExtra("VFunciones",Vfunciones);

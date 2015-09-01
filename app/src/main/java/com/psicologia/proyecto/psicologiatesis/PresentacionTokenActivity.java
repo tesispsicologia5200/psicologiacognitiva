@@ -7,9 +7,6 @@ import android.support.v7.app.ActionBarActivity;
 
 import java.util.concurrent.TimeUnit;
 
-/**
- * Created by Henry Jaramillo on 13/08/2015.
- */
 public class PresentacionTokenActivity extends ActionBarActivity {
 
 
@@ -47,7 +44,7 @@ public class PresentacionTokenActivity extends ActionBarActivity {
         }
     }
     public void enviarDatos(){
-        Intent data = new Intent(this,atencionActivity.class);
+        Intent data = new Intent(this,LenguajeActivity.class);
         data.putExtra("Id",id);
         data.putExtra("VMemoria",Vmemoria);
         data.putExtra("VFunciones",Vfunciones);

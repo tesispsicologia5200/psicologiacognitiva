@@ -19,7 +19,7 @@
         </activity>
 
         <activity
-            android:name=".pausaMemoria"
+            android:name=".pausaMemoriaActivity"
             android:label="@string/app_name"
             android:screenOrientation="landscape">
         </activity>
@@ -54,7 +54,7 @@
         </activity>
 
         <activity
-            android:name=".memoriaBlanco"
+            android:name=".memoriaBlancoActivity"
             android:label="@string/app_name"
             android:screenOrientation="landscape"
             >
@@ -85,7 +85,7 @@
         </activity>
 
         <activity
-            android:name=".lenguajeActivity"
+            android:name=".AtencionAuditivaActivity"
             android:label="@string/app_name"
             android:screenOrientation="landscape">
         </activity>
@@ -103,19 +103,19 @@
 
 
         <activity
-            android:name=".atencionActivity"
+            android:name=".LenguajeActivity"
             android:label="@string/app_name"
             android:screenOrientation="landscape">
         </activity>
 
         <activity
-            android:name=".atencionGrandeActivity"
+            android:name=".LenguajeGrandeActivity"
             android:label="@string/app_name"
             android:screenOrientation="landscape">
         </activity>
 
         <activity
-            android:name=".VisualActivity"
+            android:name=".AtencionVisualActivity"
             android:label="@string/app_name"
             android:screenOrientation="landscape">
         </activity>
@@ -127,13 +127,13 @@
         </activity>
 
         <activity
-            android:name=".ExplicacionVisualActivity"
+            android:name=".ExplicacionAtencionVisualActivity"
             android:label="@string/app_name"
             android:screenOrientation="landscape">
         </activity>
 
         <activity
-            android:name=".ResultadosTokenTestActivity"
+            android:name=".ResultadosPruebaLenguajeActivity"
             android:label="@string/app_name"
             android:screenOrientation="landscape">
         </activity>

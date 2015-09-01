@@ -14,7 +14,6 @@ import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.Toast;
 
-
 public class UsuarioActivity extends ActionBarActivity {
 
     String[] Estrato={"","1","2","3","4","5","6"};
@@ -165,7 +164,7 @@ public class UsuarioActivity extends ActionBarActivity {
         String funciones=VFunciones;
         String lenguaje=Vlenguaje;
 
-            UsuariosHelper usuariosHelper = new UsuariosHelper(this, "Psicologia22", null, 1);
+            SqlHelper usuariosHelper = new SqlHelper(this, "Psicologia22", null, 1);
             SQLiteDatabase db = usuariosHelper.getWritableDatabase();
         try {
             if (!nombre.equalsIgnoreCase("") && !apellidos.equalsIgnoreCase("") && !identificacion.equalsIgnoreCase("") && !edad.equalsIgnoreCase("") && !fecha.equalsIgnoreCase("") && !estrato.equalsIgnoreCase("") && !curso.equalsIgnoreCase("") && !genero.equalsIgnoreCase("") && !aditamientos.equalsIgnoreCase("") && !lateralidad.equalsIgnoreCase("")) {

@@ -3,7 +3,6 @@ package com.psicologia.proyecto.psicologiatesis;
 import android.content.ContentValues;
 import android.content.DialogInterface;
 import android.content.Intent;
-import android.content.pm.ActivityInfo;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.os.CountDownTimer;
@@ -16,10 +15,7 @@ import android.widget.Toast;
 
 import java.util.concurrent.TimeUnit;
 
-/**
- * Created by Henry Jaramillo on 27/07/2015.
- */
-public class VisualActivity extends ActionBarActivity implements DialogInterface.OnClickListener {
+public class AtencionVisualActivity extends ActionBarActivity implements DialogInterface.OnClickListener {
 
     @Override
     public void finish() {
@@ -36,6 +32,8 @@ public class VisualActivity extends ActionBarActivity implements DialogInterface
     String Vatencion;
     String Vmemoria;
     String tiempo;
+    int minutero=0;
+    int segundero=0;
     int bandera=0;
 
     final CounterClass timer = new CounterClass(180000, 1000);
@@ -1229,7 +1227,12 @@ public class VisualActivity extends ActionBarActivity implements DialogInterface
         @Override
         public void onTick(long millisUntilFinished) {
             // TODO Auto-generated method stub
-
+            segundero++;
+            if(segundero==60)
+            {
+                minutero++;
+                segundero=0;
+            }
             if(contadorA==16 && bandera==0)
             {
                 bandera=1;
@@ -1240,7 +1243,7 @@ public class VisualActivity extends ActionBarActivity implements DialogInterface
                     TimeUnit.MILLISECONDS.toMinutes(millis) - TimeUnit.HOURS.toMinutes(TimeUnit.MILLISECONDS.toHours(millis)),
                     TimeUnit.MILLISECONDS.toSeconds(millis) - TimeUnit.MINUTES.toSeconds(TimeUnit.MILLISECONDS.toMinutes(millis)));
             System.out.println(hms);
-            tiempo=hms;
+
 
         }
 
@@ -1266,7 +1269,10 @@ public class VisualActivity extends ActionBarActivity implements DialogInterface
 
 
     public void enviarDatos(){
-        UsuariosHelper memoria1Helper= new UsuariosHelper(this,"Psicologia22",null,1);
+        String elMinutero=String.valueOf(minutero);
+        String elSegundero=String.valueOf(segundero);
+        tiempo=elMinutero+":"+elSegundero+":0";
+        SqlHelper memoria1Helper= new SqlHelper(this,"Psicologia22",null,1);
         SQLiteDatabase db = memoria1Helper.getWritableDatabase();
         if (db != null) {
             ContentValues registroNuevos = new ContentValues();
@@ -1277,7 +1283,7 @@ public class VisualActivity extends ActionBarActivity implements DialogInterface
             registroNuevos.put("Tiempo",tiempo);
             long i = db.insert("LenguajeVisual", null, registroNuevos);
             if (i > 0) {
-                Toast.makeText(this, "prueba de lenguaje visual resgistrada", Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, "prueba de atencion visual resgistrada", Toast.LENGTH_SHORT).show();
                 Intent data = new Intent(this, PresentacionTokenActivity.class);
                 data.putExtra("Id", id);
                 data.putExtra("VMemoria",Vmemoria);

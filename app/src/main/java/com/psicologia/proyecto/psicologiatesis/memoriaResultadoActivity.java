@@ -2,7 +2,6 @@ package com.psicologia.proyecto.psicologiatesis;
 
 import android.content.ContentValues;
 import android.content.Intent;
-import android.content.pm.ActivityInfo;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
@@ -10,12 +9,8 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageView;
-import android.widget.TextView;
 import android.widget.Toast;
 
-/**
- * Created by Henry Jaramillo on 27/07/2015.
- */
 public class memoriaResultadoActivity extends ActionBarActivity {
 
     @Override
@@ -257,7 +252,7 @@ public class memoriaResultadoActivity extends ActionBarActivity {
     }
 
     public void btnSiguienteOnclick(View view){
-        UsuariosHelper memoria1Helper= new UsuariosHelper(this,"Psicologia22",null,1);
+        SqlHelper memoria1Helper= new SqlHelper(this,"Psicologia22",null,1);
         SQLiteDatabase db = memoria1Helper.getWritableDatabase();
         if (db != null) {
             ContentValues registroNuevos = new ContentValues();
@@ -285,7 +280,7 @@ public class memoriaResultadoActivity extends ActionBarActivity {
             long i = db.insert("MemoriaUno", null, registroNuevos);
             if (i > 0) {
                 Toast.makeText(this, "prueba de memoria resgistrada", Toast.LENGTH_SHORT).show();
-                Intent data = new Intent(this, pausaMemoria.class);
+                Intent data = new Intent(this, pausaMemoriaActivity.class);
                 data.putExtra("Ronda",ronda);
                 data.putExtra("Id", id);
                 data.putExtra("VMemoria",Vmemoria);

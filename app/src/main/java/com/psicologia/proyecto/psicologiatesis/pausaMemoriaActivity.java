@@ -6,10 +6,7 @@ import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
 import android.view.View;
 
-/**
- * Created by jairo on 29/07/2015.
- */
-public class pausaMemoria extends ActionBarActivity {
+public class pausaMemoriaActivity extends ActionBarActivity {
 
     @Override
     public void finish() {

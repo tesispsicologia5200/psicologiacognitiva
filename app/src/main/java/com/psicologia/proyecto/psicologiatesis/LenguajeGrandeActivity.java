@@ -9,10 +9,7 @@ import android.view.MotionEvent;
 import android.view.View;
 import android.widget.RelativeLayout;
 
-/**
- * Created by jairo on 23/07/2015.
- */
-public class atencionGrandeActivity extends ActionBarActivity implements View.OnTouchListener {
+public class LenguajeGrandeActivity extends ActionBarActivity implements View.OnTouchListener {
 
     @Override
     public void finish() {
@@ -28,7 +25,7 @@ public class atencionGrandeActivity extends ActionBarActivity implements View.On
 
 
     public void btnSiguienteOnclickFG(View v) {
-        Intent data = new Intent(this,ResultadosTokenTestActivity.class);
+        Intent data = new Intent(this,ResultadosPruebaLenguajeActivity.class);
         data.putExtra("Id", id);
         data.putExtra("VMemoria",Vmemoria);
         data.putExtra("VFunciones", Vfunciones);
@@ -38,7 +35,7 @@ public class atencionGrandeActivity extends ActionBarActivity implements View.On
     }
 
     public void btnCambiarBotones(View v){
-        Intent data = new Intent(this,atencionActivity.class);
+        Intent data = new Intent(this,LenguajeActivity.class);
         data.putExtra("Id", id);
         data.putExtra("VMemoria",Vmemoria);
         data.putExtra("VFunciones", Vfunciones);

@@ -1,7 +1,6 @@
 package com.psicologia.proyecto.psicologiatesis;
 
 import android.content.Intent;
-import android.content.pm.ActivityInfo;
 import android.os.Bundle;
 import android.os.CountDownTimer;
 import android.support.v7.app.ActionBarActivity;
@@ -9,10 +8,6 @@ import android.view.Menu;
 import android.view.MenuItem;
 
 import java.util.concurrent.TimeUnit;
-
-/**
- * Created by Henry Jaramillo on 27/07/2015.
- */
 
 public class memoria4Activity extends ActionBarActivity {
 
@@ -49,7 +44,7 @@ public class memoria4Activity extends ActionBarActivity {
 
     }
     public void enviarDatos(){
-        Intent data = new Intent(this,memoriaBlanco.class);
+        Intent data = new Intent(this,memoriaBlancoActivity.class);
         data.putExtra("Ronda",ronda);
         data.putExtra("Id",id);
         data.putExtra("VMemoria",Vmemoria);

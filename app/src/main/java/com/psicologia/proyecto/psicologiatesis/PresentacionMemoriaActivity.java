@@ -7,9 +7,7 @@ import android.support.v7.app.ActionBarActivity;
 
 import java.util.concurrent.TimeUnit;
 
-/**
- * Created by Henry Jaramillo on 13/08/2015.
- */
+
 public class PresentacionMemoriaActivity extends ActionBarActivity {
 
     String id;

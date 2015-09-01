@@ -6,10 +6,7 @@ import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
 import android.view.View;
 
-/**
- * Created by Henry Jaramillo on 27/07/2015.
- */
-public class memoriaBlanco extends ActionBarActivity {
+public class memoriaBlancoActivity extends ActionBarActivity {
 
     @Override
     public void finish() {

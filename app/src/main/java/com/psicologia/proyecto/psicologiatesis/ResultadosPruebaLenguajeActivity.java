@@ -9,10 +9,7 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
 
-/**
- * Created by jairo on 08/08/2015.
- */
-public class ResultadosTokenTestActivity extends ActionBarActivity {
+public class ResultadosPruebaLenguajeActivity extends ActionBarActivity {
 
     @Override
     public void finish() {
@@ -57,7 +54,7 @@ public class ResultadosTokenTestActivity extends ActionBarActivity {
         int nivel=Integer.parseInt(nive);
         int aciertos=Integer.parseInt(aciert);
         int puntaje=Integer.parseInt(punt);
-        UsuariosHelper usuariosHelper = new UsuariosHelper(this, "Psicologia22", null, 1);
+        SqlHelper usuariosHelper = new SqlHelper(this, "Psicologia22", null, 1);
         SQLiteDatabase db = usuariosHelper.getWritableDatabase();
         if (db != null) {
             ContentValues registroNuevos = new ContentValues();
@@ -67,7 +64,7 @@ public class ResultadosTokenTestActivity extends ActionBarActivity {
             registroNuevos.put("Puntaje", puntaje);
             long i = db.insert("TokenTest", null, registroNuevos);
             if (i > 0) {
-                Toast.makeText(this, "resultados Token test registrados", Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, "resultados de la prueba de lenguaje registrados", Toast.LENGTH_SHORT).show();
                 Intent data = new Intent(this, memoriaResultadoActivity3.class);
                 data.putExtra("Id",id);
                 data.putExtra("VMemoria",Vmemoria);

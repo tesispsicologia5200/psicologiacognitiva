@@ -10,9 +10,6 @@ import android.view.MenuItem;
 
 import java.util.concurrent.TimeUnit;
 
-/**
- * Created by Henry Jaramillo on 24/07/2015.
- */
 public class memoria2Activity extends ActionBarActivity {
 
     @Override

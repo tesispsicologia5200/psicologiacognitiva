@@ -4,10 +4,7 @@ import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
-/**
- * Created by Henry Jaramillo on 22/07/2015.
- */
-public class UsuariosHelper extends SQLiteOpenHelper {
+public class SqlHelper extends SQLiteOpenHelper {
 
     String tabla="CREATE TABLE Usuarios(Nombre text,Apellidos text,Identificacion text,Edad text,Fecha text,Estrato text,Curso text,Genero text,Aditamentos text,Lateralidad text,Atencion text,Memoria text,Auditivo text,Lenguaje text)";
 
@@ -26,7 +23,7 @@ public class UsuariosHelper extends SQLiteOpenHelper {
     String tabla8="CREATE TABLE TokenTest(Id text,Nivel INTEGER,Aciertos INTEGER,Puntaje INTEGER)";
 
 
-    public UsuariosHelper(Context context, String name, SQLiteDatabase.CursorFactory factory, int version) {
+    public SqlHelper(Context context, String name, SQLiteDatabase.CursorFactory factory, int version) {
         super(context, name, factory, version);
     }
 

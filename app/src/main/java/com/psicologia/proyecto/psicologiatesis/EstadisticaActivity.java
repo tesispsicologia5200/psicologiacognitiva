@@ -9,9 +9,6 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
-/**
- * Created by Henry Jaramillo on 06/08/2015.
- */
 public class EstadisticaActivity extends ActionBarActivity {
 
 
@@ -40,7 +37,7 @@ public class EstadisticaActivity extends ActionBarActivity {
     public void buscarOnClick(View v) {
         txt_identificacion = (EditText) findViewById(R.id.txt_identificacionestadistica);
         id = txt_identificacion.getText().toString();
-        UsuariosHelper usuariosHelper = new UsuariosHelper(this, "Psicologia22", null, 1);
+        SqlHelper usuariosHelper = new SqlHelper(this, "Psicologia22", null, 1);
         SQLiteDatabase db = usuariosHelper.getReadableDatabase();
         Cursor k = db.rawQuery("SELECT Identificacion FROM Usuarios where Identificacion='" + id + "'", null);
         if (k.moveToFirst()) {

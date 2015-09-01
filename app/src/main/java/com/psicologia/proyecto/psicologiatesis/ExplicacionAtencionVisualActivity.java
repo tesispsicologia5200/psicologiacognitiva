@@ -1,16 +1,12 @@
 package com.psicologia.proyecto.psicologiatesis;
 
 import android.content.Intent;
-import android.content.pm.ActivityInfo;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
 import android.view.View;
 import android.widget.TextView;
 
-/**
- * Created by Henry Jaramillo on 05/08/2015.
- */
-public class ExplicacionVisualActivity extends ActionBarActivity {
+public class ExplicacionAtencionVisualActivity extends ActionBarActivity {
 
     String id;
     String Vfunciones;
@@ -145,7 +141,7 @@ public class ExplicacionVisualActivity extends ActionBarActivity {
 
 
     public void btnSiguienteOnclickE(View v){
-        Intent data = new Intent(this, VisualActivity.class);
+        Intent data = new Intent(this, AtencionVisualActivity.class);
         data.putExtra("Id", id);
         data.putExtra("VMemoria",Vmemoria);
         data.putExtra("VFunciones", Vfunciones);
