@@ -5,12 +5,15 @@ import android.content.Intent;
 import android.database.sqlite.SQLiteDatabase;
 import android.media.MediaPlayer;
 import android.os.Bundle;
+import android.os.CountDownTimer;
 import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 
 import android.widget.Toast;
+
+import java.util.concurrent.TimeUnit;
 
 public class AtencionAuditivaActivity extends ActionBarActivity {
 
@@ -91,7 +94,9 @@ public class AtencionAuditivaActivity extends ActionBarActivity {
         if(mp == null) {
             destruir();
             mp = MediaPlayer.create(this, R.raw.prueba_auditiva_a_mezcla);
-        mp.start();
+            mp.start();
+            final CounterClass timer = new CounterClass(41000, 1000);
+            timer.start();
         }
     }
 
@@ -137,5 +142,35 @@ public class AtencionAuditivaActivity extends ActionBarActivity {
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         return super.onOptionsItemSelected(item);
+    }
+
+
+    public class CounterClass extends CountDownTimer {
+
+        public CounterClass(long millisInFuture, long countDownInterval) {
+            super(millisInFuture, countDownInterval);
+            // TODO Auto-generated constructor stub
+        }
+
+
+        @Override
+        public void onTick(long millisUntilFinished) {
+            // TODO Auto-generated method stub
+
+            long millis = millisUntilFinished;
+            String hms = String.format("%02d:%02d:%02d", TimeUnit.MILLISECONDS.toHours(millis),
+                    TimeUnit.MILLISECONDS.toMinutes(millis) - TimeUnit.HOURS.toMinutes(TimeUnit.MILLISECONDS.toHours(millis)),
+                    TimeUnit.MILLISECONDS.toSeconds(millis) - TimeUnit.MINUTES.toSeconds(TimeUnit.MILLISECONDS.toMinutes(millis)));
+        }
+
+
+
+
+        @Override
+        public void onFinish() {
+            if(aciertos==0||errores==0||intrusion==0){
+                error();
+            }
+        }
     }
 }

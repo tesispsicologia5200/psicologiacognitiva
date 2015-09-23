@@ -1194,7 +1194,6 @@ public class AtencionVisualActivity extends ActionBarActivity implements DialogI
 
 
     public void labelOnClick(TextView id){
-
         if(id.getText().toString().equalsIgnoreCase("a")) {
             contadorA++;
         }
@@ -1205,8 +1204,6 @@ public class AtencionVisualActivity extends ActionBarActivity implements DialogI
             error++;
         }
         id.setText("");
-
-
     }
 
 
@@ -1242,24 +1239,14 @@ public class AtencionVisualActivity extends ActionBarActivity implements DialogI
             String hms = String.format("%02d:%02d:%02d", TimeUnit.MILLISECONDS.toHours(millis),
                     TimeUnit.MILLISECONDS.toMinutes(millis) - TimeUnit.HOURS.toMinutes(TimeUnit.MILLISECONDS.toHours(millis)),
                     TimeUnit.MILLISECONDS.toSeconds(millis) - TimeUnit.MINUTES.toSeconds(TimeUnit.MILLISECONDS.toMinutes(millis)));
-            System.out.println(hms);
-
-
         }
-
-
-
 
         @Override
         public void onFinish() {
             if(bandera == 0){
                 enviarDatos();
             }
-
         }
-
-
-
     }
 
     public void imagenOnClick(View v){
