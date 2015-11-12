@@ -118,6 +118,8 @@ public class AtencionAuditivaActivity extends ActionBarActivity {
 
     public void botonOnClick(View v){
 
+        if(mp != null){
+
         tiemporeal=mp.getCurrentPosition()/1000;
         if(tiemporeal==5||tiemporeal==6||tiemporeal==21||tiemporeal==22||tiemporeal==37||tiemporeal==38||tiemporeal==71||tiemporeal==72||tiemporeal==91||tiemporeal==92||tiemporeal==103||tiemporeal==104||tiemporeal==109||tiemporeal==110||tiemporeal==145||tiemporeal==146||tiemporeal==153||tiemporeal==154||tiemporeal==161||tiemporeal==162||tiemporeal==195||tiemporeal==196||tiemporeal==243||tiemporeal==244||tiemporeal==255||tiemporeal==256||tiemporeal==271||tiemporeal==272||tiemporeal==277||tiemporeal==278||tiemporeal==287||tiemporeal==288)
         {
@@ -129,6 +131,11 @@ public class AtencionAuditivaActivity extends ActionBarActivity {
         }
         else{
             errores++;
+        }
+        }
+        else
+        {
+            Toast.makeText(this, "Primero reproducir audio", Toast.LENGTH_SHORT).show();
         }
     }
 

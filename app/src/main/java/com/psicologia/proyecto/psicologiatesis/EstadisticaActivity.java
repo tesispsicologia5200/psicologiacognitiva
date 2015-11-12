@@ -347,6 +347,77 @@ public class EstadisticaActivity extends ActionBarActivity {
             test4falta.setText("Perseveraciones: " + String.valueOf(perseveracion4)+" / Intrusiones: "+String.valueOf(intrusion4));
         }
         else{
+            //fijar textviews, definir texto y visibles
+            TextView memoria = (TextView) findViewById(R.id.lb_memoriamemoria);
+            memoria.setVisibility(View.INVISIBLE);
+            TextView visual = (TextView) findViewById(R.id.lb_auditivaaaaaa);
+            visual.setVisibility(View.INVISIBLE);
+            TextView auditiva = (TextView) findViewById(R.id.lb_visualllll);
+            auditiva.setVisibility(View.INVISIBLE);
+            TextView token = (TextView) findViewById(R.id.lb_tokentest);
+            token.setVisibility(View.INVISIBLE);
+
+            TextView test1ya = (TextView) findViewById(R.id.lb_test1);
+            test1ya.setVisibility(View.INVISIBLE);
+
+            TextView test2ya = (TextView) findViewById(R.id.lb_test2);
+            test2ya.setVisibility(View.INVISIBLE);
+
+            TextView test3ya = (TextView) findViewById(R.id.lb_test3);
+            test3ya.setVisibility(View.INVISIBLE);
+
+            TextView test4ya = (TextView) findViewById(R.id.lb_test4);
+            test4ya.setVisibility(View.INVISIBLE);
+
+
+            TextView aciertoss = (TextView) findViewById(R.id.lb_aciertos);
+            aciertoss.setVisibility(View.INVISIBLE);
+
+            TextView erroress = (TextView) findViewById(R.id.lb_errores);
+            erroress.setVisibility(View.INVISIBLE);
+
+            TextView intrusionn = (TextView) findViewById(R.id.lb_intrusiones);
+            intrusionn.setVisibility(View.INVISIBLE);
+
+            TextView omisioness = (TextView) findViewById(R.id.lb_omisiones);
+            omisioness.setVisibility(View.INVISIBLE);
+
+
+            TextView aciertosvisuales = (TextView) findViewById(R.id.lb_corractasvisual);
+            aciertosvisuales.setVisibility(View.INVISIBLE);
+
+            TextView erroresvisuales = (TextView) findViewById(R.id.lb_erroresvisual);
+            erroresvisuales.setVisibility(View.INVISIBLE);
+
+            TextView comision = (TextView) findViewById(R.id.lb_comision);
+            comision.setVisibility(View.INVISIBLE);
+
+            TextView tiempoo = (TextView) findViewById(R.id.tiempovisual);
+            tiempoo.setVisibility(View.INVISIBLE);
+
+
+            TextView aciertostokenn = (TextView) findViewById(R.id.lb_aciertostoken);
+            aciertostokenn.setVisibility(View.INVISIBLE);
+
+            TextView nivelll = (TextView) findViewById(R.id.lb_comisiontoken);
+            nivelll.setVisibility(View.INVISIBLE);
+
+            TextView puntajee = (TextView) findViewById(R.id.lb_errorestoken);
+            puntajee.setVisibility(View.INVISIBLE);
+
+
+            TextView test1falta = (TextView) findViewById(R.id.test1falta);
+            test1falta.setVisibility(View.INVISIBLE);
+
+            TextView test2falta = (TextView) findViewById(R.id.test2falta);
+            test2falta.setVisibility(View.INVISIBLE);
+
+            TextView test3falta = (TextView) findViewById(R.id.test3falta);
+            test3falta.setVisibility(View.INVISIBLE);
+
+            TextView test4falta = (TextView) findViewById(R.id.test4falta);
+            test4falta.setVisibility(View.INVISIBLE);
+
             Toast.makeText(this, "el usuario no existe", Toast.LENGTH_SHORT).show();
         }
     }
